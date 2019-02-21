@@ -1,4 +1,4 @@
-@import "aos/dist/aos.css";
+@import 'aos/dist/aos.css';
 
 @import 'colors';
 
@@ -14,114 +14,148 @@ body {
   color: $primary !important;
 }
 
+.bg-secondary {
+  background-color: $secondary !important;
+  background-image: linear-gradient(-224deg, $secondary 0%, $secondary-light 100%) !important;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 5rem;
+
+  strong {
+    font-weight: 500;
+  }
+}
+
+.spaced-container {
+  padding-top: 6.2rem;
+  padding-bottom: 6.2rem;
+}
+
 .page-padding {
   padding-left: 5rem;
   padding-right: 5rem;
+}
 
-  .navbar {
-    padding: 1.7rem 0;
+.navbar {
+  padding: 1.7rem 0;
 
-    .navbar-brand {
-      font-size: 1.8rem;
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $primary;
+  }
+
+  .nav-item {
+    font-size: 1.2rem;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 3rem;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.jumbotron {
+  padding-top: 7.8rem;
+  padding-bottom: 7.8rem;
+  margin-bottom: 0;
+  // min-height: calc(100vh - 10rem);
+
+  h1 {
+    font-weight: 300;
+    font-size: 4.3rem;
+
+    strong {
       font-weight: 500;
-      color: $primary;
-    }
-
-    .nav-item {
-      font-size: 1.2rem;
-      padding-left: 0;
-      padding-right: 0;
-      margin-right: 3rem;
-
-      &:last-of-type {
-        margin-right: 0;
-      }
     }
   }
+}
 
-  .jumbotron {
-    padding-top: 7.8rem;
-    padding-bottom: 7.8rem;
-    // min-height: calc(100vh - 10rem);
+.jumbo-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 40%;
+  height: 80%;
+  background-image: url('http://placehold.it/480x490');
+  background-size: cover;
+}
 
-    h1 {
+.lead-boxes {
+  text-align: center;
+
+  .lead-box {
+    border: 1px solid $primary;
+    height: 100%;
+    padding: 1.5rem;
+
+    .lead-box-icon {
+      height: 100px;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      font-weight: 400;
+      margin-top: 1rem;
+
+      em {
+        font-weight: 700;
+      }
+    }
+
+    hr {
+      width: 45%;
+      height: 5px;
+      border: 0;
+      background-image: linear-gradient(to right, $primary 0%, $secondary 100%);
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-size: 1.1rem;
       font-weight: 300;
-      font-size: 4.3rem;
-
-      strong {
-        font-weight: 500;
-      }
+      line-height: 1.4;
     }
   }
+}
 
-  .jumbo-image {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 40%;
-    height: 80%;
-    background-image: url('http://placehold.it/480x490');
-    background-size: cover;
-  }
+.showcase-boxes {
+  .showcase-box {
+    border: 1px solid $primary;
+    height: 100%;
+    padding: 1.5rem;
 
-  .lead-text {
-    margin-top: 6.2rem;
-    margin-bottom: 6.2rem;
+    .showcase-box-icon {
+      height: 61px;
 
-    h2 {
-      font-size: 2.5rem;
-      font-weight: 300;
+      svg {
+        height: 100%;
+      }
 
-      strong {
-        font-weight: 500;
+      &.slo {
+        height: 51px;
+        margin-bottom: 10px;
       }
     }
-  }
 
-  .lead-boxes {
-    margin-bottom: 6.2rem;
-    text-align: center;
-
-    .lead-box {
-      border: 1px solid $primary;
-      height: 100%;
-      padding: 1.5rem;
-
-      .lead-box-icon {
-        height: 100px;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-
-        svg {
-          width: 100%;
-          height: 100%;
-        }
-      }
-
-      h3 {
-        font-size: 1.8rem;
-        font-weight: 400;
-        margin-top: 1rem;
-
-        em {
-          font-weight: 700;
-        }
-      }
-
-      hr {
-        width: 45%;
-        height: 5px;
-        border: 0;
-        background-image: linear-gradient(to right, #564dfb 0%, #efeef6 100%);
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-      }
-
-      p {
-        font-size: 1.1rem;
-        font-weight: 300;
-        line-height: 1.4;
-      }
+    p {
+      font-size: 1.1;
+      font-weight: 500;
+      padding-top: 1rem;
+      margin-bottom: 0;
     }
   }
 }
