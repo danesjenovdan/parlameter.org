@@ -18,6 +18,7 @@
     "sass": "^1.17.1"
   },
   "dependencies": {
-    "aos": "^2.3.4"
+    "aos": "^2.3.4",
+    "replaceme": "git+https://github.com/adrianklimek/replaceme.git#40e51929cda5ca94ea99273fa9484e224211f524"
   }
 }

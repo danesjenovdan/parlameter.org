@@ -1,6 +1,11 @@
 @import 'aos/dist/aos.css';
 
 @import 'colors';
+@import 'animations';
+
+::selection {
+  background-color: $secondary;
+}
 
 body {
   font-family: Roboto, sans-serif;
@@ -14,9 +19,45 @@ body {
   color: $primary !important;
 }
 
+.btn-primary {
+  &,
+  &:hover,
+  &:not(:disabled):not(.disabled):active {
+    background-color: $primary;
+    border-color: $primary;
+  }
+}
+
 .bg-secondary {
   background-color: $secondary !important;
   background-image: linear-gradient(-224deg, $secondary 0%, $secondary-light 100%) !important;
+}
+
+.djnd {
+  font-family: 'Titillium Web';
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: $primary;
+
+  &::before {
+    content: 'DANES JE NOV DAN';
+  }
+}
+
+a {
+  &,
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    color: $primary;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 h2 {
@@ -32,6 +73,16 @@ h2 {
 .spaced-container {
   padding-top: 6.2rem;
   padding-bottom: 6.2rem;
+
+  &-md {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  &-sm {
+    padding-top: 3.1rem;
+    padding-bottom: 3.1rem;
+  }
 }
 
 .page-padding {
@@ -45,18 +96,35 @@ h2 {
   .navbar-brand {
     font-size: 1.8rem;
     font-weight: 500;
-    color: $primary;
+    text-decoration: none;
+
+    &,
+    &:hover,
+    &:active {
+      color: $primary;
+    }
   }
 
   .nav-item {
     font-size: 1.2rem;
     padding-left: 0;
     padding-right: 0;
-    margin-right: 3rem;
+    margin-right: 1.5rem;
+    text-decoration: none;
 
     &:last-of-type {
       margin-right: 0;
     }
+  }
+
+  .custom-select {
+    border-radius: 0;
+    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3e%3cpath fill="%23#{str-slice("#{$primary}", 2)}" d="M12 15L8 9h8z"/%3e%3c/svg%3e');
+    background-size: contain;
+    background-position: right -0.15rem center;
+    padding-right: 2rem;
+    font-size: 0.85rem;
+    color: rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -156,6 +224,81 @@ h2 {
       font-weight: 500;
       padding-top: 1rem;
       margin-bottom: 0;
+    }
+  }
+}
+
+.contact-info {
+  .contact-icon {
+    height: 84px;
+
+    svg {
+      height: 100%;
+    }
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-top: 1rem;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 1.1rem;
+  }
+}
+
+.contact-form {
+  .form-group {
+    position: relative;
+
+    label {
+      position: absolute;
+      top: -0.9rem;
+      left: .75rem;
+      font-size: 1.1rem;
+      font-weight: 300;
+      padding: 0 .5rem;
+      background-color: $primary;
+    }
+
+    .form-control {
+      background: transparent;
+      border-radius: 0;
+      padding: 1.75rem 1.25rem;
+      margin-top: 2rem;
+      color: #fff;
+      font-weight: 300;
+    }
+  }
+}
+
+.footer {
+  p {
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .heart {
+    display: inline-block;
+    width: 22px;
+    height: 20px;
+    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="15 18 70 64"%3e%3cpath d="M33.78 18C22.142 18 15 28.178 15 36.526 15 54.578 35.517 71.333 50 82c14.483-10.667 35-27.422 35-45.474C85 28.178 77.858 18 66.22 18c-6.5 0-12.053 5.182-16.22 10.105C45.833 23.182 40.28 18 33.78 18z" overflow="visible" fill="%23#{str-slice("#{$primary}", 2)}"/%3e%3c/svg%3e');
+  }
+
+  .btn.github {
+    display: inline-block;
+    padding: .15rem 1.5rem;
+    color: #fff;
+
+    svg {
+      height: 13px;
     }
   }
 }
