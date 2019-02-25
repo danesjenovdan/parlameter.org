@@ -228,6 +228,66 @@ h2 {
   }
 }
 
+.carousel {
+  img {
+    opacity: 0;
+    transition: opacity 1s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  dl {
+    margin-left: 1rem;
+
+    dt {
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+      line-height: 1.2;
+      font-weight: 500;
+      position: relative;
+      color: rgba(0, 0, 0, 0.6);
+      cursor: pointer;
+
+      &.active {
+        color: #000;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: -1rem;
+        display: block;
+        width: 5px;
+        height: 100%;
+        background-image: linear-gradient(to bottom, $primary 0%, $secondary 100%);
+      }
+    }
+
+    dd + dt {
+      margin-top: 1.5rem;
+    }
+
+    dd {
+      margin-left: 1rem;
+      font-size: 1.1rem;
+      font-weight: 300;
+      overflow: hidden;
+      height: 0;
+      transition: height 1s ease;
+    }
+
+    dt.active + dd {
+      height: auto;
+    }
+  }
+}
+
 .contact-info {
   .contact-icon {
     height: 84px;
