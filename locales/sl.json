@@ -42,5 +42,21 @@
   "developed-by": "Ustvaril",
   "about": "O ekipi",
   "developed-with-support": "Ustvarjeno s podporo",
-  "open-source": "Parlameter je - in vedno bo - odprtokodni projekt."
+  "open-source": "Parlameter je - in vedno bo - odprtokodni projekt.",
+  "maja-title": "Project manager",
+  "maja-desc": "Maja je bila Filipova debaterska partnerica in skupaj sta zmagala na večini najpomembnejših evropskih in svetovnih debaterskih prvenstev. Pred magisterijem na Univerzi Cornell je dve leti delala v Katarju. Zaradi svojih bogatih mednarodnih izkušenj na področju vodenja ekip in projektov Maja skrbi za odnose inštituta s podporniki, NVO in mediji.",
+  "filip-title": "General manager",
+  "filip-desc": "Preden je postal direktor inštituta, je Filip na Danes je nov dan vodil ekipo programerjev. Izkušen javni govorec, filozof in sociolog kulture še vedno vodi programerje in prispeva kodo, ki pokriva obdelavo naravnega jezika, kompleksne statistične analize in strojno učenje. Je tudi eden od ustanoviteljev inštituta.",
+  "tomaz-title": "Backend programmer",
+  "tomaz-desc": "Tomaž je profesionalni programer s 7 leti izkušenj in je odgovoren za naše podatkovne API klice. Preden se je pridružil Danes je nov dan, je podatke pretvarjal v informacije pod okriljem Inštituta Jožef Stefan.",
+  "miha-title": "Full stack programmer",
+  "miha-desc": "Miha se je ekipi pridružil v sklopu študijske prakse in je hitro postal nepogrešljiv član razvijalskih sil. Miha je izrazito vsestranski razvijalec, na Danes je nov dan pa največkrat poskrbi, da oblikovalske ideje enako dobro, hitro in živahno delujejo na vseh napravah.",
+  "jasmina-title": "Art director",
+  "jasmina-desc": "Jasmina je soustanoviteljica in art direktorica inštituta že vse od njegovih začetkov. Trenutno živi v Las Palmasu. Ponaša se z leti izkušenj v različnih oglaševalskih agencijah in je odgovorna za vizualni jezik inštituta in njegovih izdelkov. Prejela je številne nagrade iz oglaševalske stroke, med njimi tudi prestižno Brumnovo nagrado za delo na Parlametru.",
+  "tadej-title": "Head of content production",
+  "tadej-desc": "Tadej je nekdanji produktni direktor Celtre z 8 leti podlage v različnih digitalnih agencijah. Trenutno živi v Berlinu, kjer sodeluje z mnogimi uspešnimi evropskimi digitalnimi ekipami, na Danes je nov dan pa še vedno vodi multimedijsko produkcijo.",
+  "eva-title": "Board Director and Chief copywriter",
+  "eva-desc": "Eva je soustanoviteljica in prva direktorica inštituta. Zaposlena je na Fakulteti za družbene vede in ima doktorat iz sociologije. Je predsednica sveta zavoda Danes je nov dan, na inštitutu pa dela kot tekstopiska, urednica, raziskovalka in jezikovna težakinja. Poleg tega kultivira odnose z akademskimi institucijami in si izmenjuje PR vljudnosti z ljudmi, ki jih ne pozna.",
+  "ziga-title": "Product manager",
+  "ziga-desc": "Informacijski arhitekt z 10 leti izkušenj v internetni industriji na inštitutu skrbi za uporabniško izkušnjo in produktni razvoj. Preden je soustanovil Danes je nov dan, je bil zaposlen kot direktor produktnega razvoja v Outfit7, kjer je skrbel za produktno vodenje nekaterih mobilnih iger z več kot 100 milijoni mesečnih uporabnikov."
 }
