@@ -150,7 +150,7 @@ h2 {
   bottom: 0;
   width: 40%;
   height: 80%;
-  background-image: url('http://placehold.it/480x490');
+  background-image: url('../img/site-landing@2x.jpg');
   background-size: cover;
 }
 
@@ -349,7 +349,9 @@ h2 {
     display: inline-block;
     width: 22px;
     height: 20px;
-    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="15 18 70 64"%3e%3cpath d="M33.78 18C22.142 18 15 28.178 15 36.526 15 54.578 35.517 71.333 50 82c14.483-10.667 35-27.422 35-45.474C85 28.178 77.858 18 66.22 18c-6.5 0-12.053 5.182-16.22 10.105C45.833 23.182 40.28 18 33.78 18z" overflow="visible" fill="%23#{str-slice("#{$primary}", 2)}"/%3e%3c/svg%3e');
+    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23#{str-slice("#{$primary}", 2)}"%3e%3cpath d="M88.037 17.963A23.7 23.7 0 0 0 71.226 11a23.699 23.699 0 0 0-16.81 6.963L50 22.379l-4.416-4.416A23.699 23.699 0 0 0 28.774 11a23.7 23.7 0 0 0-16.811 6.963c-9.284 9.284-9.284 24.337 0 33.621L50 89.621l38.037-38.037c9.284-9.284 9.284-24.337 0-33.621"/%3e%3c/svg%3e');
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .btn.github {

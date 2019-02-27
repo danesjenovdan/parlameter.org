@@ -15,7 +15,8 @@
     "eslint-plugin-import": "^2.14.0",
     "parcel-bundler": "^1.11.0",
     "rimraf": "^2.6.3",
-    "sass": "^1.17.1"
+    "sass": "^1.17.1",
+    "static-i18n": "^0.2.2"
   },
   "dependencies": {
     "aos": "^2.3.4",
