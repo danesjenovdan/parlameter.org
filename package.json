@@ -20,6 +20,8 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
-    "replaceme": "git+https://github.com/adrianklimek/replaceme.git#40e51929cda5ca94ea99273fa9484e224211f524"
+    "es6-promise": "^4.2.6",
+    "replaceme": "git+https://github.com/adrianklimek/replaceme.git#40e51929cda5ca94ea99273fa9484e224211f524",
+    "whatwg-fetch": "^3.0.0"
   }
 }

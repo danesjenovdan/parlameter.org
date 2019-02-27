@@ -1,9 +1,15 @@
+import Promise from 'es6-promise';
+import { fetch } from 'whatwg-fetch';
 import AOS from 'aos';
 import 'replaceme';
+
 
 // ---
 // Polyfill
 // ---
+if (!window.Promise) {
+  window.Promise = Promise;
+}
 if (window.NodeList && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = Array.prototype.forEach;
 }
@@ -81,3 +87,48 @@ function loopCarousel(i) {
   setTimeout(loopCarousel, 8000, i + 1);
 }
 loopCarousel(0);
+
+// ---
+// Contact form
+// ---
+document.querySelector('.contact-form').addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const btn = event.target.querySelector('button');
+  const el = event.target.elements;
+  const data = [
+    `name=${encodeURIComponent(el.name.value)}`,
+    `organization=${encodeURIComponent(el.organization.value)}`,
+    `email=${encodeURIComponent(el.email.value)}`,
+    `message=${encodeURIComponent(el.message.value)}`,
+  ];
+
+  console.log(data.join('&'));
+
+  btn.setAttribute('disabled', true);
+
+  fetch(event.target.action, {
+    method: event.target.method.toUpperCase(),
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: data.join('&'),
+  })
+    .then(res => res.text())
+    .then((text) => {
+      if (text.toLowerCase().indexOf('error') === -1) {
+        btn.textContent = 'Done!';
+      } else {
+        // eslint-disable-next-line no-console
+        console.error(text);
+        btn.removeAttribute('disabled');
+        btn.textContent = 'Error :(';
+      }
+    })
+    .catch((error) => {
+      // eslint-disable-next-line no-console
+      console.error(error);
+      btn.removeAttribute('disabled');
+      btn.textContent = 'Error :(';
+    });
+});

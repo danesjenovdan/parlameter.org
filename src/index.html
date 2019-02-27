@@ -262,24 +262,29 @@
             </div>
           </div>
           <div class="col-5 p-0">
-            <form class="contact-form" data-aos="fade" data-aos-delay="250">
+            <form method="POST" action="https://api.djnd.si/sendMailParlameterOrg" class="contact-form" data-aos="fade" data-aos-delay="250">
               <div class="form-group">
                 <label for="name">Your name</label>
-                <input class="form-control" id="name">
+                <input class="form-control" id="name" name="name">
               </div>
               <div class="form-group">
                 <label for="organization">Your organization</label>
-                <input class="form-control" id="organization">
+                <input class="form-control" id="organization" name="organization">
               </div>
               <div class="form-group">
                 <label for="email">Your email</label>
-                <input type="email" class="form-control" id="email">
+                <input type="email" class="form-control" id="email" name="email">
               </div>
               <div class="form-group">
                 <label for="message">Message for us</label>
-                <textarea class="form-control" id="message" rows="4"></textarea>
+                <textarea class="form-control" id="message" rows="4" name="message"></textarea>
               </div>
-              <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+              <button type="submit" class="btn btn-primary float-right rounded-0">
+                <span class="btn-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="currentColor"><path d="M93.7 23.5H41.6c-2.1 0-3.8 1.7-3.8 3.8v32c0 2.1 1.7 3.8 3.8 3.8h6.6v10c0 3 3.7 4.5 5.8 2.4L66.4 63h27.3c2.1 0 3.8-1.7 3.8-3.8v-32c0-2-1.7-3.7-3.8-3.7zM27.6 28h-11c-1.6 0-2.8 1.3-2.8 2.8s1.3 2.8 2.8 2.8h10.9c1.6 0 2.8-1.3 2.8-2.8S29.1 28 27.6 28zm0 12H11c-1.6 0-2.8 1.3-2.8 2.8 0 1.6 1.3 2.8 2.8 2.8h16.6c1.6 0 2.8-1.3 2.8-2.8 0-1.6-1.3-2.8-2.8-2.8zm0 12H5.3c-1.6 0-2.8 1.3-2.8 2.8s1.3 2.8 2.8 2.8h22.2c1.6 0 2.8-1.3 2.8-2.8S29.1 52 27.6 52z"/></svg>
+                </span>
+                Send
+              </button>
             </form>
           </div>
         </div>
@@ -316,10 +321,10 @@
               </p>
               <div class="row">
                 <div class="col align-items-center d-flex">
-                  <img src="img/google_dni_logo@2x.png" alt="" class="img-fluid">
+                  <img src="img/google_dni_logo@2x.png" alt="Google DNI logo" class="img-fluid">
                 </div>
                 <div class="col align-items-center d-flex">
-                  <img src="img/NED-Logo@2x.png" alt="" class="img-fluid">
+                  <img src="img/NED-Logo@2x.png" alt="NED logo" class="img-fluid">
                 </div>
               </div>
             </div>
