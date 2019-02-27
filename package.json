@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html --open",
-    "build": "rimraf dist && parcel build src/index.html"
+    "build": "rimraf dist && parcel build src/index.html && rimraf i18n && static-i18n -i en -i sl -o dist dist"
   },
   "author": "danesjenovdan",
   "license": "Unlicense",

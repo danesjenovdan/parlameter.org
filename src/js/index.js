@@ -33,6 +33,19 @@ document.querySelectorAll('.nav-link').forEach((link) => {
 });
 
 // ---
+// Handle language select
+// ---
+const langSelect = document.querySelector('.select-lang');
+langSelect.addEventListener('change', (event) => {
+  window.location = event.target.value;
+});
+langSelect.querySelectorAll('option').forEach((option) => {
+  if (window.location.pathname.indexOf(option.value) === 0) {
+    option.setAttribute('selected', true);
+  }
+});
+
+// ---
 // Carousel/Accordion combo
 // ---
 document.querySelectorAll('.carousel dt').forEach((dt, i) => {
