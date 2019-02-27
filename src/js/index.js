@@ -103,8 +103,6 @@ document.querySelector('.contact-form').addEventListener('submit', (event) => {
     `message=${encodeURIComponent(el.message.value)}`,
   ];
 
-  console.log(data.join('&'));
-
   btn.setAttribute('disabled', true);
 
   fetch(event.target.action, {
