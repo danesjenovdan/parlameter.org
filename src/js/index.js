@@ -57,7 +57,7 @@ document.querySelectorAll('.carousel dt').forEach((dt, i) => {
       imgs[i % imgs.length].classList.add('active');
       dt.closest('dl').querySelectorAll('dt').forEach((e) => {
         const dd = e.nextElementSibling;
-        const height = `${dd.clientHeight}px`;
+        const height = `${dd.firstElementChild.clientHeight}px`;
         dd.style.height = height;
         setTimeout(() => {
           dd.style.height = '0px';
@@ -66,8 +66,7 @@ document.querySelectorAll('.carousel dt').forEach((dt, i) => {
       });
       dt.classList.add('active');
       const dd = dt.nextElementSibling;
-      dd.style.height = 'auto';
-      const height = `${dd.clientHeight}px`;
+      const height = `${dd.firstElementChild.clientHeight}px`;
       dd.style.height = '0px';
       setTimeout(() => {
         dd.style.height = height;
