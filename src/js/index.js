@@ -113,6 +113,22 @@ loopCarousel(0);
 
 
 // ---
+// Fix carousel height
+// ---
+const dl = document.querySelector('.carousel dl');
+if (dl) {
+  const height = dl.offsetHeight;
+  let largest = 0;
+  dl.querySelectorAll('dd > div').forEach((el) => {
+    if (el.clientHeight > largest) {
+      largest = el.clientHeight;
+    }
+  });
+  dl.style.height = `${height + largest}px`;
+}
+
+
+// ---
 // Contact form
 // ---
 const contactForm = document.querySelector('.contact-form');
