@@ -24,7 +24,7 @@ AOS.init({ duration: 800 });
 // ---
 const replaceElem = document.querySelector('.replace-me');
 if (replaceElem) {
-  new window.ReplaceMe(replaceElem).start();
+  new window.ReplaceMe(replaceElem, { speed: 4000 }).start();
 }
 
 // ---
@@ -32,12 +32,15 @@ if (replaceElem) {
 // ---
 document.querySelectorAll('.nav-link').forEach((link) => {
   link.addEventListener('click', (event) => {
-    event.preventDefault();
-    document.querySelector(link.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-      inline: 'nearest',
-    });
+    const href = link.getAttribute('href');
+    if (href.indexOf('#') === 0) {
+      event.preventDefault();
+      document.querySelector(href).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        inline: 'nearest',
+      });
+    }
   });
 });
 
