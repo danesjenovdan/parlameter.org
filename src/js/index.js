@@ -60,41 +60,57 @@ langSelect.querySelectorAll('option').forEach((option) => {
 // ---
 // Carousel/Accordion combo
 // ---
+function changeCarousel(dt, i) {
+  if (!dt.classList.contains('active')) {
+    const imgs = document.querySelectorAll('.carousel img');
+    imgs.forEach(img => img.classList.remove('active'));
+    imgs[i % imgs.length].classList.add('active');
+    dt.closest('dl').querySelectorAll('dt').forEach((e) => {
+      const dd = e.nextElementSibling;
+      const height = `${dd.firstElementChild.clientHeight}px`;
+      dd.style.height = height;
+      setTimeout(() => {
+        dd.style.height = '0px';
+      }, 0);
+      e.classList.remove('active');
+    });
+    dt.classList.add('active');
+    const dd = dt.nextElementSibling;
+    const height = `${dd.firstElementChild.clientHeight}px`;
+    dd.style.height = '0px';
+    setTimeout(() => {
+      dd.style.height = height;
+    }, 0);
+  }
+}
+
+let loopTID = null;
+
 document.querySelectorAll('.carousel dt').forEach((dt, i) => {
   dt.addEventListener('click', (event) => {
     event.preventDefault();
-    if (!dt.classList.contains('active')) {
-      const imgs = document.querySelectorAll('.carousel img');
-      imgs.forEach(img => img.classList.remove('active'));
-      imgs[i % imgs.length].classList.add('active');
-      dt.closest('dl').querySelectorAll('dt').forEach((e) => {
-        const dd = e.nextElementSibling;
-        const height = `${dd.firstElementChild.clientHeight}px`;
-        dd.style.height = height;
-        setTimeout(() => {
-          dd.style.height = '0px';
-        }, 0);
-        e.classList.remove('active');
-      });
-      dt.classList.add('active');
-      const dd = dt.nextElementSibling;
-      const height = `${dd.firstElementChild.clientHeight}px`;
-      dd.style.height = '0px';
-      setTimeout(() => {
-        dd.style.height = height;
-      }, 0);
+    if (loopTID) {
+      clearTimeout(loopTID);
+      loopTID = null;
     }
+    changeCarousel(dt, i);
   });
 });
 
 function loopCarousel(i) {
   const dts = document.querySelectorAll('.carousel dt');
   if (dts.length) {
-    dts[i % dts.length].click();
-    setTimeout(loopCarousel, 8000, i + 1);
+    const idx = i % dts.length;
+    const dt = dts[idx];
+    changeCarousel(dt, idx);
+    loopTID = setTimeout(() => {
+      loopCarousel(i + 1);
+    }, 8000);
   }
 }
+
 loopCarousel(0);
+
 
 // ---
 // Contact form
