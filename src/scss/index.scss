@@ -351,6 +351,10 @@ h2 {
     flex-direction: column;
     justify-content: center;
 
+    @media (max-width: 991.98px) {
+      height: auto !important;
+    }
+
     dt {
       margin-left: 1rem;
       margin-bottom: 1rem;
@@ -387,6 +391,13 @@ h2 {
       overflow: hidden;
       height: 0;
       transition: height 1s ease;
+
+      & > div {
+        .image {
+          margin: 2rem 0;
+          text-align: center;
+        }
+      }
     }
 
     dt.active + dd {
