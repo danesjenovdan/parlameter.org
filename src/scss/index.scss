@@ -7,6 +7,12 @@
   background-color: $secondary;
 }
 
+html {
+  @media (max-width: 767.98px) {
+    font-size: 12px;
+  }
+}
+
 body {
   font-family: Roboto, sans-serif;
 }
@@ -107,6 +113,11 @@ h2 {
 .page-padding {
   padding-left: 5rem;
   padding-right: 5rem;
+
+  @media (max-width: 767.98px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .navbar {
@@ -145,6 +156,11 @@ h2 {
     font-size: 0.85rem;
     color: rgba(0, 0, 0, 0.5);
     margin-left: 100px;
+
+    @media (max-width: 767.98px) {
+      margin-left: 0;
+      font-size: 1rem;
+    }
   }
 }
 
@@ -153,6 +169,11 @@ h2 {
   padding-bottom: 7.8rem;
   margin-bottom: 0;
   // min-height: calc(100vh - 10rem);
+
+  @media (max-width: 767.98px) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 
   &.jumbotron-about {
     padding-top: 5rem;
@@ -178,15 +199,36 @@ h2 {
   background-image: url('../img/site-landing@2x.jpg');
   background-size: cover;
   background-position: top center;
+
+  @media (max-width: 767.98px) {
+    position: static;
+    width: 90%;
+    padding-top: 110%;
+    margin: 0 auto;
+  }
 }
 
 .lead-boxes {
   text-align: center;
 
+  & > div {
+    margin-bottom: 1.5rem;
+  }
+
   .lead-box {
     border: 1px solid $primary;
     height: 100%;
     padding: 1.5rem;
+
+    &.lead-box--last {
+      @media (max-width: 767.98px) {
+
+        .lead-box-image,
+        hr {
+          display: none;
+        }
+      }
+    }
 
     .lead-box-icon {
       height: 100px;
@@ -234,7 +276,18 @@ h2 {
   }
 }
 
+.wild-title {
+  @media (max-width: 767.98px) {
+    font-size: 2rem;
+  }
+}
+
 .showcase-boxes {
+
+  & > div {
+    margin-bottom: 1.5rem;
+  }
+
   .showcase-box {
     display: block;
     border: 1px solid $primary;
@@ -418,6 +471,24 @@ h2 {
 }
 
 .footer {
+
+  & > .row {
+    @media (max-width: 991.98px) {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .footer-col:not(:last-of-type) {
+      @media (max-width: 991.98px) {
+        border-bottom: 2px solid $primary;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+
+
   p {
     font-weight: 300;
     font-size: 1.1rem;
