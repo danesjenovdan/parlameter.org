@@ -145,6 +145,15 @@ if (contactForm) {
       `message=${encodeURIComponent(el.message.value)}`,
     ];
 
+    if (el.email.value === '') {
+      alert('You need to enter an email address.');
+      return false;
+    }
+    if (el.humanity.value !== '25') {
+      alert('Please provide a correct answer to the last question.');
+      return false;
+    }
+
     btn.setAttribute('disabled', true);
 
     fetch(event.target.action, {
