@@ -10,18 +10,18 @@
   "author": "danesjenovdan",
   "license": "Unlicense",
   "devDependencies": {
-    "eslint": "^5.3.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.14.0",
-    "parcel-bundler": "^1.11.0",
-    "parcel-plugin-static-files-copy": "^2.0.0",
-    "rimraf": "^2.6.3",
-    "sass": "^1.17.1",
-    "static-i18n": "^0.2.2"
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-static-files-copy": "^2.3.1",
+    "rimraf": "^3.0.2",
+    "sass": "^1.26.1",
+    "static-i18n": "^0.2.6"
   },
   "dependencies": {
     "aos": "^2.3.4",
-    "es6-promise": "^4.2.6",
+    "es6-promise": "^4.2.8",
     "replaceme": "git+https://github.com/adrianklimek/replaceme.git#40e51929cda5ca94ea99273fa9484e224211f524",
     "whatwg-fetch": "^3.0.0"
   }
