@@ -1,8 +1,6 @@
 import Promise from 'es6-promise';
 import { fetch } from 'whatwg-fetch';
 import AOS from 'aos';
-import 'replaceme';
-
 
 // ---
 // Polyfill
@@ -20,14 +18,6 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 AOS.init({ duration: 800 });
 
 // ---
-// Loop text strings
-// ---
-const replaceElem = document.querySelector('.replace-me');
-if (replaceElem) {
-  new window.ReplaceMe(replaceElem, { speed: 5000 }).start();
-}
-
-// ---
 // Smooth scroll to content on nav link click
 // ---
 document.querySelectorAll('.nav-link').forEach((link) => {
@@ -42,19 +32,6 @@ document.querySelectorAll('.nav-link').forEach((link) => {
       });
     }
   });
-});
-
-// ---
-// Handle language select
-// ---
-const langSelect = document.querySelector('.select-lang');
-langSelect.addEventListener('change', (event) => {
-  window.location = event.target.value;
-});
-langSelect.querySelectorAll('option').forEach((option) => {
-  if (window.location.pathname.indexOf(option.value) === 0) {
-    option.setAttribute('selected', true);
-  }
 });
 
 // ---
