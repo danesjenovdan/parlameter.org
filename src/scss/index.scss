@@ -285,6 +285,54 @@ h2 {
     font-weight: 300;
   }
 }
+
+.form-control-lg {
+  height: calc(1.5em + 2.5rem + 2px);
+  padding: 1.25rem 1.5rem;
+  font-size: 1.25rem;
+  font-style: italic;
+
+  &,
+  &:focus {
+    border: 2px solid $primary;
+  }
+}
+
+.custom-control {
+  padding-left: 3rem;
+  margin-bottom: 2rem;
+
+  .custom-control-label {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 2rem;
+    font-style: italic;
+  }
+
+  .custom-control-label::before {
+    border-color: $primary;
+    border-width: 2px;
+    background-color: transparent;
+  }
+
+  &.custom-checkbox,
+  &.custom-radio {
+    .custom-control-label::before,
+    .custom-control-label::after {
+      width: 2rem;
+      height: 2rem;
+      top: 0;
+      left: -3rem;
+    }
+
+    .custom-control-input:focus ~ .custom-control-label::before,
+    .custom-control-input:active ~ .custom-control-label::before {
+      border-color: $primary;
+      border-width: 2px;
+    }
+  }
+}
+
 /*
 
 a {
