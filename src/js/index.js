@@ -35,6 +35,19 @@ document.querySelectorAll('.nav-link').forEach((link) => {
 });
 
 // ---
+// Load counters
+// ---
+fetch('https://analize.parlametar.hr/v1/s/getBuggyStats/')
+  .then((res) => res.json()).then((json) => {
+    Object.keys(json).forEach((key) => {
+      const el = document.querySelector(`.js-${key}`);
+      if (el) {
+        el.textContent = json[key];
+      }
+    });
+  });
+
+// ---
 // Carousel/Accordion combo
 // ---
 function changeCarousel(dt, i) {
