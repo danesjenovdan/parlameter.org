@@ -139,6 +139,34 @@ if (showAllSignaturesButton) {
 
 
 // ---
+// Social share buttons
+// ---
+let link = document.location.href;
+fetch(`https://djnd.si/yomamasofat/?fatmama=${encodeURIComponent(document.location.href)}`)
+  .then((res) => res.text())
+  .then((text) => {
+    link = text;
+  });
+
+const title = 'TODO: Share title';
+const text = 'TODO: Share text';
+const hashtags = 'TODO: Hashtags';
+
+document.querySelector('.js-facebook').addEventListener('click', () => {
+  const url = `https://www.facebook.com/dialog/feed?app_id=301375193309601&redirect_uri=${encodeURIComponent(document.location.href)}&link=${encodeURIComponent(document.location.href)}&ref=responsive&name=${encodeURIComponent(title)}`;
+  window.open(url, '_blank');
+});
+document.querySelector('.js-twitter').addEventListener('click', () => {
+  const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(`${text} ${hashtags} ${link}`)}`;
+  window.open(url, '_blank');
+});
+document.querySelector('.js-email').addEventListener('click', () => {
+  // const url = `https://mail.google.com/mail/?view=cm&su=${encodeURIComponent(title)}&body=${text} ${encodeURIComponent(document.location.href)}`;
+  const url = `mailto:?subject=${encodeURIComponent(title)}&body=${text} ${encodeURIComponent(document.location.href)}`;
+  window.open(url, '_blank');
+});
+
+// ---
 // Contact form
 // ---
 // const contactForm = document.querySelector('.contact-form');
