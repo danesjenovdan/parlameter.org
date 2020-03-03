@@ -48,6 +48,11 @@ body {
 .spaced-container {
   padding-top: 4rem;
   padding-bottom: 4rem;
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
 .bg-secondary-gradient {
@@ -84,6 +89,10 @@ h1 {
   font-size: 3.5rem;
   font-weight: 300;
 
+  @include media-breakpoint-down(sm) {
+    font-size: 2.25rem;
+  }
+
   strong {
     font-weight: 500;
   }
@@ -92,11 +101,19 @@ h1 {
 h2 {
   font-size: 3rem;
   font-weight: 400;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 2rem;
+  }
 }
 
 .lead-boxes {
   margin-top: 3.5rem;
   text-align: center;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 2rem;
+  }
 
   & > div {
     margin-bottom: 1.5rem;
@@ -257,6 +274,11 @@ h2 {
   font-weight: 300;
   line-height: 1.5;
 
+  @include media-breakpoint-down(sm) {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+  }
+
   ul {
     list-style: none;
     padding-left: 0;
@@ -278,11 +300,19 @@ h2 {
   h2 {
     font-size: 3.75rem;
     font-weight: 300;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 2.25rem;
+    }
   }
 
   h3 {
     font-size: 3.125rem;
     font-weight: 300;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 2rem;
+    }
   }
 }
 
@@ -352,12 +382,20 @@ h2 {
 .signatures__title {
   font-size: 2.5rem;
   font-weight: 300;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 1.75rem;
+  }
 }
 
 .signatures {
   .signatures__names {
     font-size: 1.5rem;
     font-weight: 300;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 1rem;
+    }
 
     &.show-less {
       max-height: 500px;
@@ -381,6 +419,10 @@ h2 {
     position: relative;
     display: block;
     margin: -4rem auto 0;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -389,6 +431,11 @@ h2 {
     width: 11rem;
     height: 11rem;
     border: 4px solid $primary;
+
+    @include media-breakpoint-down(sm) {
+      width: 6rem;
+      height: 6rem;
+    }
 
     svg {
       width: 75%;
@@ -401,6 +448,10 @@ h2 {
   img,
   svg {
     height: 50px;
+
+    @include media-breakpoint-down(sm) {
+      height: 25px;
+    }
   }
 }
 

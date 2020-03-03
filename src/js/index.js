@@ -98,9 +98,9 @@ function loopCarousel(i) {
     const idx = i % dts.length;
     const dt = dts[idx];
     changeCarousel(dt, idx);
-    loopTID = setTimeout(() => {
-      loopCarousel(i + 1);
-    }, 8000);
+    // loopTID = setTimeout(() => {
+    //   loopCarousel(i + 1);
+    // }, 8000);
   }
 }
 
