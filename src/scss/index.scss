@@ -397,51 +397,18 @@ h2 {
   }
 }
 
-/*
 .footer {
-
-  & > .row {
-    @media (max-width: 991.98px) {
-      max-width: 400px;
-      margin: 0 auto;
-    }
-
-    .footer-col:not(:last-of-type) {
-      @media (max-width: 991.98px) {
-        border-bottom: 2px solid $primary;
-        padding-bottom: 2rem;
-        margin-bottom: 2rem;
-      }
-    }
-  }
-
-
-
-  p {
-    font-weight: 300;
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  .heart {
-    display: inline-block;
-    width: 22px;
-    height: 20px;
-    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23#{str-slice("#{$primary}", 2)}"%3e%3cpath d="M88.037 17.963A23.7 23.7 0 0 0 71.226 11a23.699 23.699 0 0 0-16.81 6.963L50 22.379l-4.416-4.416A23.699 23.699 0 0 0 28.774 11a23.7 23.7 0 0 0-16.811 6.963c-9.284 9.284-9.284 24.337 0 33.621L50 89.621l38.037-38.037c9.284-9.284 9.284-24.337 0-33.621"/%3e%3c/svg%3e');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-
-  .logo {
-    a {
-      display: block;
-      width: 100%;
-    }
+  img,
+  svg {
+    height: 50px;
   }
 }
-*/
+
+.progress {
+  border: 2px solid $primary;
+  border-radius: 2rem;
+}
+
+.progress__numbers {
+  font-size: 1.85rem;
+}
