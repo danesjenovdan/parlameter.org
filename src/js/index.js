@@ -142,22 +142,22 @@ if (showAllSignaturesButton) {
 // Social share buttons
 // ---
 let link = document.location.href;
-fetch(`https://djnd.si/yomamasofat/?fatmama=${encodeURIComponent(document.location.href)}`)
+fetch(`https://parla.me/shortner/generate?url=${encodeURIComponent(document.location.href)}`)
   .then((res) => res.text())
   .then((text) => {
     link = text;
   });
 
-const title = 'TODO: Share title';
-const text = 'TODO: Share text';
-const hashtags = 'TODO: Hashtags';
+const title = 'Imamo pravo znati!';
+const text = 'Tko je glasao za, a tko protiv smjene ministra financija spašenog jednim glasom? Što su zaključila saborska istražna povjerenstva o Agrokoru i Imunološkom zavodu? Što se uopće događa na sjednicama saborskih radnih tijela? Na koju e-mail adresu možemo pisati zastupnicama? Potpiši za otvaranje Hrvatskog sabora!';
+const hashtags = '';
 
 document.querySelector('.js-facebook').addEventListener('click', () => {
   const url = `https://www.facebook.com/dialog/feed?app_id=301375193309601&redirect_uri=${encodeURIComponent(document.location.href)}&link=${encodeURIComponent(document.location.href)}&ref=responsive&name=${encodeURIComponent(title)}`;
   window.open(url, '_blank');
 });
 document.querySelector('.js-twitter').addEventListener('click', () => {
-  const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(`${text} ${hashtags} ${link}`)}`;
+  const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(`${text.slice(0, 250)}… ${hashtags} ${link}`)}`;
   window.open(url, '_blank');
 });
 document.querySelector('.js-email').addEventListener('click', () => {
