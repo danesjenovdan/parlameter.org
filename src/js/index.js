@@ -146,26 +146,78 @@ if (showAllSignaturesButton) {
 // ---
 // Get signatures
 // ---
-fetch('https://api.djnd.si/getAllSignaturesAndCountForMultiple/?peticije=otvaranje-sabora')
-  .then((res) => res.json())
-  .then((json) => {
-    const sigNames = document.querySelector('.js-signature-names');
-    sigNames.textContent = json.names;
-    if (parseInt(window.getComputedStyle(sigNames)['max-height'], 10) > sigNames.clientHeight) {
-      showAllSignatures();
-    }
-    const maxSignatures = parseInt(document.querySelector('.js-signature-max').textContent, 10);
-    const count = json.counter;
-    if (typeof count === 'number' && !Number.isNaN(count)) {
-      const percent = Math.floor(Math.min((count / maxSignatures) * 100, 100));
-      document.querySelectorAll('.js-signature-count').forEach((el) => {
-        // eslint-disable-next-line no-param-reassign
-        el.textContent = count;
-      });
-      document.querySelector('.progress-bar').setAttribute('aria-valuenow', percent);
-      document.querySelector('.progress-bar').style.width = `${percent}%`;
-    }
+const peticija = 'otvaranje-sabora';
+
+function fetchSignatures() {
+  fetch(`https://api.djnd.si/getAllSignaturesAndCountForMultiple/?peticije=${peticija}`)
+    .then((res) => res.json())
+    .then((json) => {
+      const sigNames = document.querySelector('.js-signature-names');
+      sigNames.textContent = json.names;
+      if (parseInt(window.getComputedStyle(sigNames)['max-height'], 10) > sigNames.clientHeight) {
+        showAllSignatures();
+      }
+      const maxSignatures = parseInt(document.querySelector('.js-signature-max').textContent, 10);
+      const count = json.counter;
+      if (typeof count === 'number' && !Number.isNaN(count)) {
+        const percent = Math.floor(Math.min((count / maxSignatures) * 100, 100));
+        document.querySelectorAll('.js-signature-count').forEach((el) => {
+          // eslint-disable-next-line no-param-reassign
+          el.textContent = count;
+        });
+        document.querySelector('.progress-bar').setAttribute('aria-valuenow', percent);
+        document.querySelector('.progress-bar').style.width = `${percent}%`;
+      }
+    });
+}
+
+fetchSignatures();
+
+// ---
+// Submit signature
+// ---
+document.querySelector('.petition__form').addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  const name = document.querySelector('#petition-name').value;
+  const email = document.querySelector('#petition-email').value;
+  const isPublic = document.querySelector('#petition-show-name').checked;
+  const peticijaType = `${peticija}${isPublic ? '.public' : '.private'}.sign`;
+
+  if (!name) {
+    return;
+  }
+
+  const form = event.currentTarget;
+  const inputs = form.querySelectorAll('input,textarea,button');
+  inputs.forEach((el) => {
+    el.setAttribute('disabled', true);
   });
+
+  let signUrl = 'https://api.djnd.si/sign/';
+  signUrl += `?name=${encodeURIComponent(name)}`;
+  signUrl += `&email=${encodeURIComponent(email)}`;
+  signUrl += `&peticija=${encodeURIComponent(peticijaType)}`;
+
+  fetch(signUrl)
+    .then((res) => res.text())
+    .then((text) => {
+      if (text === 'Saved') {
+        fetchSignatures();
+        alert('Hvala!');
+        document.querySelector('#reci').scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+          inline: 'nearest',
+        });
+      } else {
+        alert('Napaka: ' + text);
+      }
+      inputs.forEach((el) => {
+        el.removeAttribute('disabled');
+      });
+    });
+});
 
 
 // ---
