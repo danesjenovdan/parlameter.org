@@ -340,19 +340,27 @@
           <div class="col-lg-5">
             <form action="javascript:;" class="petition__form">
               <div class="form-group">
-                <input id="petition-name" class="form-control form-control-lg" placeholder="Ime i prezime">
+                <input id="petition-name" class="form-control form-control-lg" placeholder="Ime i prezime *">
               </div>
               <div class="form-group">
-                <input id="petition-email" class="form-control form-control-lg" placeholder="E-mail adresa" type="email">
+                <input id="petition-email" class="form-control form-control-lg" placeholder="E-mail adresa **" type="email">
               </div>
               <div class="form-group">
                 <div class="custom-control custom-checkbox">
                   <input type="checkbox" class="custom-control-input" id="petition-show-name">
-                  <label class="custom-control-label" for="petition-show-name">Dozvoljavam da objavite moje ime <strong>*</strong></label>
+                  <label class="custom-control-label" for="petition-show-name">Dozvoljavam da objavite moje ime</label>
                 </div>
               </div>
               <div class="js-petition-error"></div>
               <button type="submit" class="btn btn-lg btn-primary btn-block">Potpisujem!</button>
+              <div class="petition-footnotes">
+                <div class="mt-3">
+                  <small>* Ime i prezime tražimo isključivo u svrhu podrške zahtjevima za otvaranje Sabora i ne objavljujemo ih bez privole niti u bilo koje druge svrhe.</small>
+                </div>
+                <div class="mt-2">
+                  <small>** Ostavite e-mail adresu ako želite primati obavjesti o kampanji za otvaranje podatka i o aktivnostima Parlametra.</small>
+                </div>
+              </div>
             </form>
           </div>
         </div>
@@ -397,7 +405,7 @@
       </div>
     </div>
 
-    <div class="container-fluid bg-secondary-gradient spaced-container">
+    <div class="container-fluid bg-secondary-gradient spaced-container" id="reci">
       <div class="container">
         <h2 class="text-center" data-aos="fade-up"><em>RECI I DRUGIMA DA JE OVO VAŽNO!</em></h2>
         <div class="social text-center pt-3 pt-md-5">
