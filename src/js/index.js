@@ -211,7 +211,7 @@ document.querySelector('.petition__form').addEventListener('submit', (event) => 
           inline: 'nearest',
         });
       } else {
-        alert('Napaka: ' + text);
+        alert('Greška: ' + text);
       }
       inputs.forEach((el) => {
         el.removeAttribute('disabled');
