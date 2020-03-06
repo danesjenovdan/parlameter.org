@@ -235,7 +235,7 @@ const text = 'Tko je glasao za, a tko protiv smjene ministra financija spašenog
 const hashtags = '';
 
 document.querySelector('.js-facebook').addEventListener('click', () => {
-  const url = `https://www.facebook.com/dialog/feed?app_id=301375193309601&redirect_uri=${encodeURIComponent(document.location.href)}&link=${encodeURIComponent(document.location.href)}&ref=responsive&name=${encodeURIComponent(title)}`;
+  const url = `https://www.facebook.com/dialog/feed?app_id=217978989255065&redirect_uri=${encodeURIComponent(document.location.href)}&link=${encodeURIComponent(document.location.href)}&ref=responsive&name=${encodeURIComponent(title)}`;
   window.open(url, '_blank');
 });
 document.querySelector('.js-twitter').addEventListener('click', () => {
