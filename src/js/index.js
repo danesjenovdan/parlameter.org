@@ -149,7 +149,7 @@ if (showAllSignaturesButton) {
 const peticija = 'otvaranje-sabora';
 
 function fetchSignatures() {
-  fetch(`https://api.djnd.si/getAllSignaturesAndCountForMultiple/?peticije=${peticija}`)
+  fetch(`https://api.djnd.si/getPublicSignaturesAndFullCountForMultiple/?peticije=${peticija}`)
     .then((res) => res.json())
     .then((json) => {
       const sigNames = document.querySelector('.js-signature-names');
