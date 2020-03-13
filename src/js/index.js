@@ -180,12 +180,16 @@ document.querySelector('.petition__form').addEventListener('submit', (event) => 
   event.preventDefault();
 
   const name = document.querySelector('#petition-name').value;
-  const email = document.querySelector('#petition-email').value;
+  let email = document.querySelector('#petition-email').value;
   const isPublic = document.querySelector('#petition-show-name').checked;
   const peticijaType = `${peticija}${isPublic ? '.public' : '.private'}.sign`;
 
   if (!name) {
     return;
+  }
+  
+  if (!email.trim()) {
+    email = 'dont@me.pls';
   }
 
   const form = event.currentTarget;
