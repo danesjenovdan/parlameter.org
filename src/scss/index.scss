@@ -555,3 +555,9 @@ h2 {
     }
   }
 }
+
+.sm-text-align-center {
+  @media (max-width: 767.98px) {
+    text-align: center;
+  }
+}
