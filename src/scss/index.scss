@@ -64,6 +64,10 @@ a {
   &:hover {
     text-decoration: none;
   }
+
+  &.white {
+    color: $secondary-light;
+  }
 }
 
 .djnd-link {
@@ -407,8 +411,18 @@ h2 {
 }
 
 .contact-info {
+  justify-self: center;
+  width: 150px;
+  height: 150px;
+  background: $secondary-light;
+  border-radius: 50%;
+  padding: 10px;
+
   .contact-icon {
     height: 84px;
+    width: 130px;
+    text-align: center;
+    line-height: 121px;
 
     svg {
       height: 100%;
