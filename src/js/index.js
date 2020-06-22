@@ -17,7 +17,9 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 // ---
 // Animate/fade in elements on scroll
 // ---
-AOS.init({ duration: 800 });
+window.addEventListener('load', () => {
+  AOS.init({ duration: 800 });
+});
 
 
 // ---
@@ -187,7 +189,7 @@ document.querySelector('.petition__form').addEventListener('submit', (event) => 
   if (!name) {
     return;
   }
-  
+
   if (!email.trim()) {
     email = 'dont@me.pls';
   }
