@@ -184,7 +184,14 @@ document.querySelector('.petition__form').addEventListener('submit', (event) => 
   const name = document.querySelector('#petition-name').value;
   let email = document.querySelector('#petition-email').value;
   const isPublic = document.querySelector('#petition-show-name').checked;
-  const peticijaType = `${peticija}${isPublic ? '.public' : '.private'}.sign`;
+
+  const parlament = document.querySelector('input[name="parlament"]:checked');
+  let parlamentId = '';
+  if (parlament) {
+    parlamentId = parlament.id;
+  }
+
+  const peticijaType = `${peticija}${parlamentId ? `.${parlamentId}` : ''}${isPublic ? '.public' : '.private'}.sign`;
 
   if (!name) {
     return;
