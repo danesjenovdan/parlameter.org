@@ -148,7 +148,7 @@ if (showAllSignaturesButton) {
 // ---
 // Get signatures
 // ---
-const peticija = 'otvaranje-sabora';
+const peticija = 'ekonsultacije-bih';
 
 function fetchSignatures() {
   fetch(`https://api.djnd.si/getPublicSignaturesAndFullCountForMultiple/?peticije=${peticija}`)
