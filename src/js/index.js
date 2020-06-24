@@ -243,12 +243,12 @@ fetch(`https://parla.me/shortner/generate?url=${encodeURIComponent(document.loca
     link = text;
   });
 
-const title = 'Imamo pravo znati!';
-const text = 'Tko je glasao za, a tko protiv smjene ministra financija spašenog jednim glasom? Što su zaključila saborska istražna povjerenstva o Agrokoru i Imunološkom zavodu? Što se uopće događa na sjednicama saborskih radnih tijela? Na koju e-mail adresu možemo pisati zastupnicama? Potpiši za otvaranje Hrvatskog sabora!';
+const title = 'Zahtjevajmo e-konsultacije!';
+const text = 'Uključimo se procese kreiranja pravnih propisa i drugih akata u institucijama i zahtjevajmo e-konsultacije na entitetskim nivoima.';
 const hashtags = '';
 
 document.querySelector('.js-facebook').addEventListener('click', () => {
-  const url = `https://www.facebook.com/dialog/feed?app_id=217978989255065&redirect_uri=${encodeURIComponent(document.location.href)}&link=${encodeURIComponent(document.location.href)}&ref=responsive&name=${encodeURIComponent(title)}`;
+  const url = `https://www.facebook.com/dialog/feed?app_id=783085488892649&redirect_uri=${encodeURIComponent(document.location.href)}&link=${encodeURIComponent(document.location.href)}&ref=responsive&name=${encodeURIComponent(title)}`;
   window.open(url, '_blank');
 });
 document.querySelector('.js-twitter').addEventListener('click', () => {
