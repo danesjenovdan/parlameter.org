@@ -55,6 +55,10 @@ body {
   font-size: 1.5rem;
 }
 
+strong {
+  font-weight: 500;
+}
+
 h1 {
   font-size: 4rem;
   font-weight: 300;
@@ -234,6 +238,10 @@ label {
       width: 75%;
       height: 75%;
     }
+
+    &:hover {
+      background-color: rgba($primary, 0.2);
+    }
   }
 }
 
@@ -264,4 +272,30 @@ label {
 .petition-footnotes {
   line-height: 1.2;
   font-style: italic;
+}
+
+.parlameter-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @include media-breakpoint-down(md) {
+    position: static;
+    background-color: rgba($primary, 1);
+  }
+
+  a {
+    width: 8rem;
+    padding: 1rem;
+    background-image: linear-gradient(90deg, #fff 0, hsla(0, 0%, 100%, 0.5));
+    margin: 0 auto;
+
+    @include media-breakpoint-down(sm) {
+      width: 6rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-top: 1.5rem;
+    }
+  }
 }
