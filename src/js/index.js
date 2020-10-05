@@ -41,7 +41,7 @@ document.querySelectorAll('.nav-link').forEach((link) => {
 // ---
 // Load counters
 // ---
-fetch('https://analize.parlametar.hr/v1/s/getBuggyStats/')
+fetch('https://analize.10.parlametar.hr/v1/s/getBuggyStats/')
   .then((res) => res.json()).then((json) => {
     Object.keys(json).forEach((key) => {
       const el = document.querySelector(`.js-${key}`);
@@ -187,7 +187,7 @@ document.querySelector('.petition__form').addEventListener('submit', (event) => 
   if (!name) {
     return;
   }
-  
+
   if (!email.trim()) {
     email = 'dont@me.pls';
   }
