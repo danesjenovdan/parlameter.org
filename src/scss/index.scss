@@ -3,10 +3,12 @@
 @import 'colors';
 @import 'animations';
 
+// ?
 ::selection {
   background-color: $secondary;
 }
 
+// ?
 html {
   @media (max-width: 767.98px) {
     font-size: 12px;
@@ -14,7 +16,7 @@ html {
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Barlow, sans-serif;
 }
 
 .bg-primary {
@@ -25,29 +27,33 @@ body {
   color: $primary !important;
 }
 
+.text-secondary {
+  color: $secondary !important;
+}
+
 .btn-primary {
   &,
   &:hover,
   &:not(:disabled):not(.disabled):active {
-    background-color: $primary;
-    border-color: $primary;
+    background-color: $secondary;
+    border-color: $secondary;
   }
 
   &:hover {
-    background-color: rgba($primary, 0.75);
-    border-color: rgba($primary, 0.75);
+    background-color: rgba($secondary, 0.75);
+    border-color: rgba($secondary, 0.75);
   }
 
   &:focus,
   &:not(:disabled):not(.disabled).active:focus,
   &:not(:disabled):not(.disabled):active:focus {
-    box-shadow: 0 0 0 0.2rem rgba($primary, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba($secondary, 0.5);
   }
 }
 
 .bg-secondary {
-  background-color: $secondary !important;
-  background-image: linear-gradient(-224deg, $secondary 0%, $secondary-light 100%) !important;
+  //background-color: $secondary !important;
+  background-image: linear-gradient(-225deg, $primary-light1 0%, $primary-light2 100%) !important;
 }
 
 a {
@@ -64,10 +70,6 @@ a {
   &:hover {
     text-decoration: none;
   }
-
-  &.white {
-    color: $secondary-light;
-  }
 }
 
 .djnd-link {
@@ -79,19 +81,23 @@ a {
 }
 
 .djnd {
-  font-family: 'Titillium Web';
+  //font-family: 'Titillium Web';
+  //background-image: url('../img/logo.png');
+  /*
   font-weight: 900;
   font-size: 1.5rem;
   color: $primary;
 
   &::before {
     content: 'DANES JE NOV DAN';
-  }
+  }*/
 }
 
 h2 {
   font-size: 2.5rem;
-  font-weight: 300;
+  font-weight: 700;
+  font-style: italic;
+  color: $secondary;
   margin-bottom: 5rem;
 
   strong {
@@ -125,35 +131,43 @@ h2 {
 }
 
 .navbar {
-  padding: 1.7rem 0;
+  padding: 1rem 0;
 
   .navbar-brand {
-    font-size: 1.8rem;
-    font-weight: 500;
+    font-size: 1.5rem;
+    font-weight: 400;
     text-decoration: none;
 
     &,
     &:hover,
     &:active {
-      color: $primary;
+      color: $secondary;
     }
   }
 
   .nav-item {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding-left: 0;
     padding-right: 0;
     margin-right: 1.5rem;
     text-decoration: none;
+    font-style: italic;
+    color: #000000;
 
     &:last-of-type {
       margin-right: 0;
     }
+
+    &.nav-link.active {
+      color: $secondary;
+      font-weight: 500;
+    }
   }
 
+  // language switch
   .custom-select {
     border-radius: 0;
-    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3e%3cpath fill="%23#{str-slice("#{$primary}", 2)}" d="M12 15L8 9h8z"/%3e%3c/svg%3e');
+    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"%3e%3cpath fill="%23#{str-slice("#{secondary}", 2)}" d="M12 15L8 9h8z"/%3e%3c/svg%3e');
     background-size: contain;
     background-position: right -0.15rem center;
     padding-right: 2rem;
@@ -169,9 +183,10 @@ h2 {
 }
 
 .jumbotron {
-  padding-top: 7.8rem;
+  padding-top: 6rem;
   padding-bottom: 7.8rem;
   margin-bottom: 0;
+  color: $secondary;
   // min-height: calc(100vh - 10rem);
 
   @media (max-width: 767.98px) {
@@ -180,29 +195,37 @@ h2 {
   }
 
   &.jumbotron-about {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-image: url('../img/consul-ekipa-slika.jpg');
+    background-size: cover;
   }
 
   h1 {
-    font-weight: 300;
-    font-size: 4.3rem;
+    font-weight: 700;
+    font-size: 3rem;
+    font-style: italic;
 
     strong {
       font-weight: 500;
     }
   }
+
+  p {
+    font-size: 1.25rem;
+  }
 }
 
 .jumbo-image {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 40%;
-  height: 80%;
-  background-image: url('../img/site-landing@2x.jpg');
-  background-size: cover;
-  background-position: top center;
+  top: 0;
+  width: 100%;
+  height: 150%;
+  background-image: url('../img/site-landing@2x.png');
+  //background-size: cover;
+  // background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
 
   @media (max-width: 767.98px) {
     position: static;
@@ -212,15 +235,32 @@ h2 {
   }
 }
 
+.about-us-content {
+  p {
+    color: $secondary;
+  }
+}
+
+.midsection {
+  h3 {
+    font-weight: 500;
+  }
+
+  h2 {
+    margin-bottom: 0;
+    font-style: normal;
+  }
+}
+
 .lead-boxes {
-  text-align: center;
+  //text-align: center;
 
   & > div {
     margin-bottom: 1.5rem;
   }
 
   .lead-box {
-    border: 1px solid $primary;
+    //border: 1px solid $primary;
     height: 100%;
     padding: 1.5rem;
 
@@ -234,17 +274,29 @@ h2 {
       }
     }
 
+    // for only index.html
     .lead-box-icon {
-      height: 100px;
-      margin-top: 1rem;
-      margin-bottom: 2rem;
+      height: 250px;
+      //margin-top: 1rem;
+      //margin-bottom: 2rem;
 
       svg {
         width: 100%;
         height: 100%;
       }
+
+      img {
+        height: 100%;
+      }
     }
 
+    // for only index.html
+    .lead-box-text {
+      padding: 1.5rem;
+      box-shadow: 0 0 1.5rem rgba(26, 29, 64, 0.2);
+    }
+
+    // for only about.html
     .lead-box-image {
       margin: -1.5rem -1.5rem 1.5rem -1.5rem;
 
@@ -255,7 +307,8 @@ h2 {
 
     h3 {
       font-size: 1.8rem;
-      font-weight: 400;
+      font-weight: 700;
+      font-style: italic;
       margin-top: 1rem;
 
       em {
@@ -267,9 +320,11 @@ h2 {
       width: 45%;
       height: 5px;
       border: 0;
-      background-image: linear-gradient(to right, $primary 0%, $secondary 100%);
-      margin-top: 2rem;
-      margin-bottom: 2rem;
+      background-image: linear-gradient(to right, $primary 0%, #d9dbf1 100%);
+      //background-image: linear-gradient(to right, $primary 0%, $secondary 100%);
+      margin-top: 1rem;
+      margin-bottom: 1.5rem;
+      margin-left: 0;
     }
 
     p {
@@ -285,43 +340,82 @@ h2 {
     font-size: 2rem;
   }
 }
+.showcase-container {
+  margin-bottom: 6.2rem;
+  background-image: linear-gradient(to right, #dcdef3 0%, #f9f9fc 100%);
 
-.showcase-boxes {
-
-  & > div {
-    margin-bottom: 1.5rem;
-  }
-
-  .showcase-box {
-    display: block;
-    border: 1px solid $primary;
-    height: 100%;
-    padding: 1.5rem;
-    text-decoration: none;
-    color: #000;
-
-    &:hover {
-      background-color: $secondary-light;
-    }
-
-    .showcase-box-icon {
-      height: 61px;
-
-      svg {
-        height: 100%;
-      }
-
-      &.slo {
-        height: 51px;
-        margin-bottom: 10px;
-      }
-    }
-
-    p {
-      font-size: 1.1;
-      font-weight: 500;
-      padding-top: 1rem;
+  .showcase {
+    h2 {
       margin-bottom: 0;
+    }
+
+    .showcase-boxes {
+
+      & > div {
+        margin-bottom: 1.5rem;
+      }
+
+      .showcase-box {
+        //display: block;
+        //border: 1px solid $primary;
+        border: 4px solid $secondary;
+        //height: 100%;
+        padding: 2rem 1.5rem;
+        text-decoration: none;
+        color: #000;
+        margin-right: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+
+        &:hover {
+          //background-color: $secondary-light;
+        }
+
+        .showcase-box-icon {
+          display: inline-block;
+          margin: 1rem;
+          //height: 61px;
+
+          img {
+            height: 50px;
+            vertical-align: unset;
+          }
+
+          /*svg {
+            height: 100%;
+          }*/
+
+          /*&.slo {
+            height: 51px;
+            margin-bottom: 10px;
+          }*/
+        }
+
+        p {
+          display: inline-block;
+          width: 100px;
+          font-size: 1.5rem;
+          line-height: 1.25rem;
+          font-weight: 400;
+          color: $secondary;
+          //padding-top: 1rem;
+          margin-bottom: 0;
+        }
+
+        .showcase-box-button {
+          position: absolute;
+          bottom: -0.7rem;
+          right: 0.75rem;
+          background-color: #7c7fae;
+          border-radius: 1rem;
+          font-size: 0.75rem;
+          color: #ffffff;
+          padding: 0.25rem 1rem;
+        }
+      }
     }
   }
 }
@@ -334,7 +428,7 @@ h2 {
       display: flex;
       align-items: center;
       position: absolute;
-      height: 100%;
+      //height: 100%;
 
       img {
         opacity: 0;
@@ -351,9 +445,8 @@ h2 {
   dl {
     margin-left: 1rem;
     display: flex;
-    height: 804px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
 
     @media (max-width: 991.98px) {
       height: auto !important;
@@ -364,13 +457,13 @@ h2 {
       margin-bottom: 1rem;
       font-size: 1.8rem;
       line-height: 1.2;
-      font-weight: 500;
+      font-weight: 700;
       position: relative;
-      color: rgba(0, 0, 0, 0.6);
+      color: $secondary;
       cursor: pointer;
 
       &.active {
-        color: #000;
+        //color: #000;
       }
 
       &::before {
@@ -379,7 +472,7 @@ h2 {
         left: -1rem;
         display: block;
         width: 5px;
-        height: 100%;
+        //height: 100%;
         background-image: linear-gradient(to bottom, $primary 0%, $secondary 100%);
       }
     }
@@ -411,33 +504,30 @@ h2 {
 }
 
 .contact-info {
-  justify-self: center;
-  width: 150px;
-  height: 150px;
-  background: $secondary-light;
-  border-radius: 50%;
-  padding: 10px;
 
   .contact-icon {
-    height: 84px;
-    width: 130px;
-    text-align: center;
-    line-height: 121px;
+    background-color: #f7e5e1;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
 
     svg {
-      height: 100%;
+      height: 40%;
     }
   }
 
   h3 {
-    font-size: 2.5rem;
-    font-weight: 300;
-    margin-top: 1rem;
+    font-weight: 700;
+    color: $secondary;
   }
 
   p {
+    color: $secondary;
     font-weight: 300;
-    font-size: 1.1rem;
+
+    a {
+      color: $secondary;
+    }
   }
 }
 
@@ -511,8 +601,6 @@ h2 {
       }
     }
   }
-
-
 
   p {
     font-weight: 300;
