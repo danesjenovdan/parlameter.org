@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Parlameter.org</title>
+  <title>Consul</title>
 
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
@@ -42,8 +42,8 @@
           <div class="collapse navbar-collapse justify-content-center">
             <div class="navbar-nav">
               <a class="nav-item nav-link active" href="#overview" data-t="nav-overview">Overview <span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="#contact" data-t="nav-features">Contact</a>
-              <a class="nav-item nav-link" href="/about" data-t="nav-contact">About the team</a>
+              <a class="nav-item nav-link" href="#contact" data-t="nav-contact">Contact</a>
+              <a class="nav-item nav-link" href="about" data-t="nav-about-the-team">About the team</a>
             </div>
           </div>
           <form class="form-inline">
@@ -59,18 +59,18 @@
 
   <div class="page-padding">
     <div class="container-fluid bg-primary position-relative">
-      <div class="container ">
+      <div class="container">
         <div class="jumbotron jumbotron-fluid bg-transparent" data-aos="fade-up">
           <div class="row justify-content-md-center">
-            <div class="col-md-5">
+            <div class="col-12 col-lg-5 text-center text-lg-left mb-5 mb-lg-0">
               <h1 class="mt-4" data-t="tagline">
                 Demokracija je temelj zaupanja!
               </h1>
               <p data-t="description">
-                Celovita rešitev za vodenje participativnega odločanja s pomočjo digitalnih orodij.
+                Sprejemajte odločitve na demokratičen način, s pomočjo digitalnih orodij.
               </p>
             </div>
-            <div class="col-md-5">
+            <div class="col-12 col-lg-5">
               <div class="jumbo-image" data-aos="fade" data-aos-delay="150"></div>
             </div>
           </div>
@@ -83,7 +83,7 @@
     <div class="container">
       <div class="midsection text-center" data-aos="fade-up">
         <h3 data-t="available-for-pre">Participativno odločanje za vašo</h3>
-        <h2 data-t="available-for-list">organizacijo.</h2>
+        <h2 class="replace-me" data-t="available-for-list">organizacijo.</h2>
       </div>
     </div>
   </div>
@@ -92,7 +92,7 @@
     <div class="container-fluid bg-secondary spaced-container pb-0" id="features">
       <div class="container">
         <h2 class="text-center" data-aos="fade-up" data-t="nav-features">
-          Consul je celovita rešitev za vodenje participativnega odločanja
+          Consul je celovita rešitev za izvedbo participativnega proračuna
         </h2>
         <div class="features">
           <div class="carousel">
@@ -101,16 +101,16 @@
                 <div class="images">
                   <div class="image">
                     <!--<img data-attr-t data-attr-t-interpolate src-t="/gif/{{gif-prefix}}org-v-gif1.gif" src="http://placekitten.com/200/300" class="img-fluid active">-->
-                    <img data-attr-t data-attr-t-interpolate src-t="/gif/{{gif-prefix}}org-v-gif1.gif" src="../static/img/prikaz-predlogi.png" class="img-fluid active">
+                    <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-predlogi-{{img-lang}}.png" src="../static/img/prikaz-predlogi-sl.png" class="img-fluid active">
                   </div>
                   <div class="image">
-                    <img data-attr-t data-attr-t-interpolate src-t="/gif/{{gif-prefix}}org-v-gif2.gif" src="../static/img/prikaz-glasovanje.png" class="img-fluid">
+                    <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-glasovanje-{{img-lang}}.png" src="../static/img/prikaz-glasovanje-sl.png" class="img-fluid">
                   </div>
                   <div class="image">
-                    <img data-attr-t data-attr-t-interpolate src-t="/gif/{{gif-prefix}}org-v-gif3.gif" src="../static/img/prikaz-mobile.png" class="img-fluid">
+                    <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-mobile-{{img-lang}}.png" src="../static/img/prikaz-mobile-sl.png" class="img-fluid">
                   </div>
                   <div class="image">
-                    <img data-attr-t data-attr-t-interpolate src-t="/gif/{{gif-prefix}}org-v-gif4.gif" src="../static/img/prikaz-upravljanje.png" class="img-fluid">
+                    <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-upravljanje-{{img-lang}}.png" src="../static/img/prikaz-upravljanje-sl.png" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -123,7 +123,7 @@
                     <div>
                       <span data-t="feature-1-desc">Zbiranje predlogov poteka skozi jasen in enostaven proces. Vsebina predloga je predstavljena strukturirano in pregledno. Omogočeno je dodajanje fotografij in lokacije.</span>
                       <div class="image d-block d-lg-none">
-                        <img data-attr-t data-attr-t-interpolate src-t="/gif/{{gif-prefix}}org-v-gif1.gif" src="http://placekitten.com/200/300" class="img-fluid active">
+                        <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-predlogi-{{img-lang}}.png" src="../static/img/prikaz-predlogi-sl.png" class="img-fluid active">
                       </div>
                     </div>
                   </dd>
@@ -134,7 +134,7 @@
                     <div>
                       <span data-t="feature-2-desc">Glasovanje o predlogih poteka po zaščitenem protokolu, ki preprečuje zlorabe. Varno, transparentno in hitro.</span>
                       <div class="image d-block d-lg-none">
-                        <img data-attr-t data-attr-t-interpolate src-t="/gif/{{gif-prefix}}org-v-gif2.gif" src="http://placekitten.com/200/300" class="img-fluid active">
+                        <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-glasovanje-{{img-lang}}.png" src="../static/img/prikaz-glasovanje-sl.png" class="img-fluid active">
                       </div>
                     </div>
                   </dd>
@@ -145,7 +145,7 @@
                     <div>
                       <span data-t="feature-3-desc">Izkušnja je prilagojena za mobilne naprave in omogoča, da uporabniki oddajajo in glasujejo za predloge kar na svojih mobilnih napravah.</span>
                       <div class="image d-block d-lg-none">
-                        <img data-attr-t data-attr-t-interpolate src-t="/gif/{{gif-prefix}}org-v-gif3.gif" src="http://placekitten.com/200/300" class="img-fluid active">
+                        <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-mobile-{{img-lang}}.png" src="../static/img/prikaz-mobile-sl.png" class="img-fluid active">
                       </div>
                     </div>
                   </dd>
@@ -156,7 +156,7 @@
                     <div>
                       <span data-t="feature-4-desc">Kot urednik participativnega proračuna imate popoln nadzor nad vsebinami in fazami procesa. Kontrolna plošča vam omogoča, da participativno odločanje izvedete popolnoma samostojno, brez programerskega znanja.</span>
                       <div class="image d-block d-lg-none">
-                        <img data-attr-t data-attr-t-interpolate src-t="/gif/{{gif-prefix}}org-v-gif4.gif" src="http://placekitten.com/200/300" class="img-fluid active">
+                        <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-upravljanje-{{img-lang}}.png" src="../static/img/prikaz-upravljanje-sl.png" class="img-fluid active">
                       </div>
                     </div>
                   </dd>
@@ -169,103 +169,103 @@
     </div>
   </div>
 
-    <div class="container-fluid spaced-container">
-      <div class="container">
-        <h2 class="text-center" data-aos="fade-up">
-          <span data-t="available-for-pre">Z vami smo v vseh fazah procesa</span>
-        </h2>
-        <div class="xxx">
-          <div class="row lead-boxes">
-            <div class="col-lg-4 col-sm-12">
-              <div class="lead-box" data-aos="fade-up" data-aos-delay="200">
-                <div class="lead-box-icon">
-                  <img src="../static/img/svetovanje.svg" alt="svetovanje">
-                  <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.87 61.28"><path d="M41.23 0a30.6 30.6 0 0 0-27 16.16 30 30 0 0 0-3.65 14.48 30.74 30.74 0 0 0 3.33 13.9l-.12.38A28.76 28.76 0 0 1 .6 56.82a1 1 0 0 0 .17 1.9 30.1 30.1 0 0 0 7 .81 30.51 30.51 0 0 0 15.37-4.14 30.36 30.36 0 0 0 18.06 5.89A30.64 30.64 0 1 0 41.23 0zm0 59.27a28.37 28.37 0 0 1-17.39-5.89 1 1 0 0 0-.61-.21 1 1 0 0 0-.53.15 28.44 28.44 0 0 1-14.91 4.2 27.66 27.66 0 0 1-3.66-.24A30.67 30.67 0 0 0 15.6 45.83a1.08 1.08 0 0 0 .08-.19l.29-.88a1 1 0 0 0-.07-.76 28.66 28.66 0 0 1-3.3-13.34A28.14 28.14 0 0 1 16 17.11a28.62 28.62 0 1 1 25.23 42.16z"/><path d="M55.05 13.21a6.71 6.71 0 0 0-9.13-.36l-.21.19-.15.15-.23.24-.16.21a6.72 6.72 0 0 0-1.44 5.38v.15S25.36 37.41 25.31 37.5l-2.44 7a.28.28 0 0 0 .07.31.3.3 0 0 0 .23.11h.08l7.22-2.17 7.85-8v9.33h-5.6a1.61 1.61 0 0 0-1.66 1.53v.91a1.78 1.78 0 0 0 1.66 1.7H52a1.54 1.54 0 0 0 1.36-1.7v-.91A1.38 1.38 0 0 0 52 44.13h-9.2V30.45l6-6 .4.21a2.59 2.59 0 0 0 1.07.15 6.85 6.85 0 0 0 4.27-1.58l.4-.4.15-.15.19-.21a6.79 6.79 0 0 0-.23-9.26zM41 22.81l1.1 1.09-14.89 14.88-1.1-1.09zm1.6 1.58l1.16 1.15-14.89 14.88-1.16-1.16zm-16.2 19l-1.81-1.81 1.13-3.26 4 4zM52 45a.58.58 0 0 1 .67.65v.91c0 .48-.21 1-.67 1H32.76a1.14 1.14 0 0 1-.94-1v-.91c0-.31.25-.65.94-.65zm-12.9-.89v-9.94l1.66-1.72 1.37-1.33v13zm4.08-15L42 30.3 30.39 42l-1.06-1.07L44.23 26l1 1.09zm2.65-2.54l-4.29-4.3 2.54-2.54 4.3 4.29zm8.25-3.71a6.1 6.1 0 0 1-3.75 1.39 3.07 3.07 0 0 1-1-.19l-5-5v-.1a6.15 6.15 0 0 1 1.22-4.72l.21-.27 4.21 4.19 4.39 4.5zm.93-1l-.21.25-8.63-8.62.25-.21a6 6 0 0 1 3.87-1.39 6.07 6.07 0 0 1 6.08 5.83A5.93 5.93 0 0 1 55 21.86z" stroke="#000"/></svg>-->
-                </div>
-                <div class="lead-box-text">
-                  <h3 data-t="overview-1">SVETOVANJE</h3>
-                  <hr>
-                  <p data-t="overview-1-desc">
-                    If unstructured, data is practically inaccessible. Help the media and research institutions explore your datasets, daily serving them analyses and visualizations ready for immediate publishing.
-                  </p>
-                </div>
+  <div class="container-fluid spaced-container">
+    <div class="container">
+      <h2 class="text-center" data-aos="fade-up">
+        <span data-t="nav-process">Z vami smo v vseh fazah procesa</span>
+      </h2>
+      <div class="xxx">
+        <div class="row lead-boxes">
+          <div class="col-lg-4 col-sm-12">
+            <div class="lead-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="lead-box-icon text-center">
+                <img src="../static/img/svetovanje.svg" alt-t="process-1-alt">
+                <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.87 61.28"><path d="M41.23 0a30.6 30.6 0 0 0-27 16.16 30 30 0 0 0-3.65 14.48 30.74 30.74 0 0 0 3.33 13.9l-.12.38A28.76 28.76 0 0 1 .6 56.82a1 1 0 0 0 .17 1.9 30.1 30.1 0 0 0 7 .81 30.51 30.51 0 0 0 15.37-4.14 30.36 30.36 0 0 0 18.06 5.89A30.64 30.64 0 1 0 41.23 0zm0 59.27a28.37 28.37 0 0 1-17.39-5.89 1 1 0 0 0-.61-.21 1 1 0 0 0-.53.15 28.44 28.44 0 0 1-14.91 4.2 27.66 27.66 0 0 1-3.66-.24A30.67 30.67 0 0 0 15.6 45.83a1.08 1.08 0 0 0 .08-.19l.29-.88a1 1 0 0 0-.07-.76 28.66 28.66 0 0 1-3.3-13.34A28.14 28.14 0 0 1 16 17.11a28.62 28.62 0 1 1 25.23 42.16z"/><path d="M55.05 13.21a6.71 6.71 0 0 0-9.13-.36l-.21.19-.15.15-.23.24-.16.21a6.72 6.72 0 0 0-1.44 5.38v.15S25.36 37.41 25.31 37.5l-2.44 7a.28.28 0 0 0 .07.31.3.3 0 0 0 .23.11h.08l7.22-2.17 7.85-8v9.33h-5.6a1.61 1.61 0 0 0-1.66 1.53v.91a1.78 1.78 0 0 0 1.66 1.7H52a1.54 1.54 0 0 0 1.36-1.7v-.91A1.38 1.38 0 0 0 52 44.13h-9.2V30.45l6-6 .4.21a2.59 2.59 0 0 0 1.07.15 6.85 6.85 0 0 0 4.27-1.58l.4-.4.15-.15.19-.21a6.79 6.79 0 0 0-.23-9.26zM41 22.81l1.1 1.09-14.89 14.88-1.1-1.09zm1.6 1.58l1.16 1.15-14.89 14.88-1.16-1.16zm-16.2 19l-1.81-1.81 1.13-3.26 4 4zM52 45a.58.58 0 0 1 .67.65v.91c0 .48-.21 1-.67 1H32.76a1.14 1.14 0 0 1-.94-1v-.91c0-.31.25-.65.94-.65zm-12.9-.89v-9.94l1.66-1.72 1.37-1.33v13zm4.08-15L42 30.3 30.39 42l-1.06-1.07L44.23 26l1 1.09zm2.65-2.54l-4.29-4.3 2.54-2.54 4.3 4.29zm8.25-3.71a6.1 6.1 0 0 1-3.75 1.39 3.07 3.07 0 0 1-1-.19l-5-5v-.1a6.15 6.15 0 0 1 1.22-4.72l.21-.27 4.21 4.19 4.39 4.5zm.93-1l-.21.25-8.63-8.62.25-.21a6 6 0 0 1 3.87-1.39 6.07 6.07 0 0 1 6.08 5.83A5.93 5.93 0 0 1 55 21.86z" stroke="#000"/></svg>-->
+              </div>
+              <div class="lead-box-text">
+                <h3 data-t="process-1">SVETOVANJE</h3>
+                <hr>
+                <p data-t="process-1-desc">
+                  Naši strokovnjaki vam bodo pomagali pri razmisleku o načinu izvedbe participativnega proračuna in svetovali o pravnih okvirjih ter najboljših možnosti za vaše potrebe.
+                </p>
               </div>
             </div>
-            <div class="col-lg-4 col-sm-12">
-              <div class="lead-box" data-aos="fade-up" data-aos-delay="300">
-                <div class="lead-box-icon">
-                  <img src="../static/img/razvoj.svg" alt="razvoj">
-                  <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.87 61.28"><defs><style>.cls-1,.cls-2{fill:none;stroke:#000}.cls-1{stroke-width:2px}</style></defs><path d="M41.23 0a30.6 30.6 0 0 0-27 16.16 30 30 0 0 0-3.65 14.48 30.74 30.74 0 0 0 3.33 13.9l-.12.38A28.76 28.76 0 0 1 .6 56.82a1 1 0 0 0 .17 1.9 30.1 30.1 0 0 0 7 .81 30.51 30.51 0 0 0 15.37-4.14 30.36 30.36 0 0 0 18.06 5.89A30.64 30.64 0 1 0 41.23 0zm0 59.27a28.37 28.37 0 0 1-17.39-5.89 1 1 0 0 0-.61-.21 1 1 0 0 0-.53.15 28.44 28.44 0 0 1-14.91 4.2 27.66 27.66 0 0 1-3.66-.24A30.67 30.67 0 0 0 15.6 45.83a1.08 1.08 0 0 0 .08-.19l.29-.88a1 1 0 0 0-.07-.76 28.66 28.66 0 0 1-3.3-13.34A28.14 28.14 0 0 1 16 17.11a28.62 28.62 0 1 1 25.23 42.16z"/><path class="cls-1" d="M56 43.13a2.92 2.92 0 0 1-2.92 2.92H29.33a2.93 2.93 0 0 1-2.93-2.92V19.37a2.93 2.93 0 0 1 2.93-2.92h23.75A2.92 2.92 0 0 1 56 19.37zM26.95 22.3h28.87"/><path class="cls-2" d="M29.87 19.37h4.39"/><circle class="cls-2" cx="45.31" cy="19.37" r=".89"/><circle class="cls-2" cx="48.97" cy="19.37" r=".89"/><circle class="cls-2" cx="52.62" cy="19.37" r=".89"/><path class="cls-1" d="M36.3 36.54l-3.51-3.51 3.51-3.52m9.8 7.03l3.52-3.51-3.52-3.52m-3.95.03l-2.44 6.97"/></svg>-->
-                </div>
-                <div class="lead-box-text">
-                  <h3 data-t="overview-2">RAZVOJ</h3>
-                  <hr>
-                  <p data-t="overview-2-desc">
-                    Show developers some love without troubling your IT people. With Parlameter, your data will be exportable, machine-readable, and ready for action!
-                  </p>
-                </div>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="lead-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="lead-box-icon text-center">
+                <img src="../static/img/razvoj.svg" alt-t="process-2-alt">
+                <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.87 61.28"><defs><style>.cls-1,.cls-2{fill:none;stroke:#000}.cls-1{stroke-width:2px}</style></defs><path d="M41.23 0a30.6 30.6 0 0 0-27 16.16 30 30 0 0 0-3.65 14.48 30.74 30.74 0 0 0 3.33 13.9l-.12.38A28.76 28.76 0 0 1 .6 56.82a1 1 0 0 0 .17 1.9 30.1 30.1 0 0 0 7 .81 30.51 30.51 0 0 0 15.37-4.14 30.36 30.36 0 0 0 18.06 5.89A30.64 30.64 0 1 0 41.23 0zm0 59.27a28.37 28.37 0 0 1-17.39-5.89 1 1 0 0 0-.61-.21 1 1 0 0 0-.53.15 28.44 28.44 0 0 1-14.91 4.2 27.66 27.66 0 0 1-3.66-.24A30.67 30.67 0 0 0 15.6 45.83a1.08 1.08 0 0 0 .08-.19l.29-.88a1 1 0 0 0-.07-.76 28.66 28.66 0 0 1-3.3-13.34A28.14 28.14 0 0 1 16 17.11a28.62 28.62 0 1 1 25.23 42.16z"/><path class="cls-1" d="M56 43.13a2.92 2.92 0 0 1-2.92 2.92H29.33a2.93 2.93 0 0 1-2.93-2.92V19.37a2.93 2.93 0 0 1 2.93-2.92h23.75A2.92 2.92 0 0 1 56 19.37zM26.95 22.3h28.87"/><path class="cls-2" d="M29.87 19.37h4.39"/><circle class="cls-2" cx="45.31" cy="19.37" r=".89"/><circle class="cls-2" cx="48.97" cy="19.37" r=".89"/><circle class="cls-2" cx="52.62" cy="19.37" r=".89"/><path class="cls-1" d="M36.3 36.54l-3.51-3.51 3.51-3.52m9.8 7.03l3.52-3.51-3.52-3.52m-3.95.03l-2.44 6.97"/></svg>-->
+              </div>
+              <div class="lead-box-text">
+                <h3 data-t="process-2">RAZVOJ</h3>
+                <hr>
+                <p data-t="process-2-desc">
+                  Naša razvijalska ekipa bo na podlagi vaših želja hitro prilagodila in postavila testno okolje ter nastavila vse potrebno za izvedbo vašega participativnega proračuna.
+                </p>
               </div>
             </div>
-            <div class="col-lg-4 col-sm-12">
-              <div class="lead-box" data-aos="fade-up" data-aos-delay="400">
-                <div class="lead-box-icon">
-                  <img src="../static/img/podpora.svg" alt="podpora">
-                  <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.87 61.28"><path d="M41.23 0a30.6 30.6 0 0 0-27 16.16 30 30 0 0 0-3.65 14.48 30.74 30.74 0 0 0 3.33 13.9l-.12.38A28.76 28.76 0 0 1 .6 56.82a1 1 0 0 0 .17 1.9 30.1 30.1 0 0 0 7 .81 30.51 30.51 0 0 0 15.37-4.14 30.36 30.36 0 0 0 18.06 5.89A30.64 30.64 0 1 0 41.23 0zm0 59.27a28.37 28.37 0 0 1-17.39-5.89 1 1 0 0 0-.61-.21 1 1 0 0 0-.53.15 28.44 28.44 0 0 1-14.91 4.2 27.66 27.66 0 0 1-3.66-.24A30.67 30.67 0 0 0 15.6 45.83a1.08 1.08 0 0 0 .08-.19l.29-.88a1 1 0 0 0-.07-.76 28.66 28.66 0 0 1-3.3-13.34A28.14 28.14 0 0 1 16 17.11a28.62 28.62 0 1 1 25.23 42.16z"/><path d="M53.52 28.53c-4-3-8.12-4.48-12-4.48s-8 1.55-12 4.49A30.51 30.51 0 0 0 24.71 33l-.49.56.49.58a30 30 0 0 0 4.89 4.46c4 3 8.12 4.5 12 4.5s8-1.55 12-4.5a30 30 0 0 0 4.89-4.46l.49-.58-.57-.56a30 30 0 0 0-4.89-4.47zm-12-1.69a5.7 5.7 0 1 1-5.69 5.7 5.69 5.69 0 0 1 5.65-5.7zm.08 14.47c-7.06 0-13.14-5.85-14.93-7.74a27.44 27.44 0 0 1 10.15-6.88 7.51 7.51 0 1 0 10.56 1.15 7.9 7.9 0 0 0-1.27-1.25 27.26 27.26 0 0 1 10.42 7c-1.82 1.87-7.9 7.72-14.97 7.72z"/><path d="M41.48 35.08a2.56 2.56 0 1 0-2.55-2.56 2.55 2.55 0 0 0 2.55 2.56zm0-3.29a.75.75 0 1 1-.74.75.74.74 0 0 1 .74-.74z"/><path d="M60.17 28.47a40.94 40.94 0 0 0-3.49-2.64l2.72-3.54a.9.9 0 0 0-1.4-1.1l-2.81 3.66a32.69 32.69 0 0 0-4.83-2.45l1.55-4a.92.92 0 0 0-.52-1.18.9.9 0 0 0-1.17.52l-1.57 4a23.32 23.32 0 0 0-6-1.15 1.1 1.1 0 0 0 0-.18V16a.91.91 0 1 0-1.81 0v4.59a22.67 22.67 0 0 0-5.89 1l-1.55-4a.91.91 0 0 0-1.69.65l1.54 4a33 33 0 0 0-5 2.46l-2.65-3.27a.9.9 0 0 0-1.27-.08.89.89 0 0 0-.13 1.22l2.52 3.12a44.3 44.3 0 0 0-4 3 .9.9 0 0 0-.1 1.28.89.89 0 0 0 1.27.1c4.11-3.47 10.5-7.61 17.64-7.61S55 26.5 59 29.89a.9.9 0 0 0 1.28-.11.91.91 0 0 0-.11-1.28z"/></svg>-->
-                </div>
-                <div class="lead-box-text">
-                  <h3 data-t="overview-3">PODPORA</h3>
-                  <hr>
-                  <p data-t="overview-3-desc">
-                    People will benefit twice - through the work of journalists and developers, as well as by sifting through data by themselves.
-                  </p>
-                </div>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <div class="lead-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="lead-box-icon text-center">
+                <img src="../static/img/podpora.svg" alt-t="process-3-alt">
+                <!--<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.87 61.28"><path d="M41.23 0a30.6 30.6 0 0 0-27 16.16 30 30 0 0 0-3.65 14.48 30.74 30.74 0 0 0 3.33 13.9l-.12.38A28.76 28.76 0 0 1 .6 56.82a1 1 0 0 0 .17 1.9 30.1 30.1 0 0 0 7 .81 30.51 30.51 0 0 0 15.37-4.14 30.36 30.36 0 0 0 18.06 5.89A30.64 30.64 0 1 0 41.23 0zm0 59.27a28.37 28.37 0 0 1-17.39-5.89 1 1 0 0 0-.61-.21 1 1 0 0 0-.53.15 28.44 28.44 0 0 1-14.91 4.2 27.66 27.66 0 0 1-3.66-.24A30.67 30.67 0 0 0 15.6 45.83a1.08 1.08 0 0 0 .08-.19l.29-.88a1 1 0 0 0-.07-.76 28.66 28.66 0 0 1-3.3-13.34A28.14 28.14 0 0 1 16 17.11a28.62 28.62 0 1 1 25.23 42.16z"/><path d="M53.52 28.53c-4-3-8.12-4.48-12-4.48s-8 1.55-12 4.49A30.51 30.51 0 0 0 24.71 33l-.49.56.49.58a30 30 0 0 0 4.89 4.46c4 3 8.12 4.5 12 4.5s8-1.55 12-4.5a30 30 0 0 0 4.89-4.46l.49-.58-.57-.56a30 30 0 0 0-4.89-4.47zm-12-1.69a5.7 5.7 0 1 1-5.69 5.7 5.69 5.69 0 0 1 5.65-5.7zm.08 14.47c-7.06 0-13.14-5.85-14.93-7.74a27.44 27.44 0 0 1 10.15-6.88 7.51 7.51 0 1 0 10.56 1.15 7.9 7.9 0 0 0-1.27-1.25 27.26 27.26 0 0 1 10.42 7c-1.82 1.87-7.9 7.72-14.97 7.72z"/><path d="M41.48 35.08a2.56 2.56 0 1 0-2.55-2.56 2.55 2.55 0 0 0 2.55 2.56zm0-3.29a.75.75 0 1 1-.74.75.74.74 0 0 1 .74-.74z"/><path d="M60.17 28.47a40.94 40.94 0 0 0-3.49-2.64l2.72-3.54a.9.9 0 0 0-1.4-1.1l-2.81 3.66a32.69 32.69 0 0 0-4.83-2.45l1.55-4a.92.92 0 0 0-.52-1.18.9.9 0 0 0-1.17.52l-1.57 4a23.32 23.32 0 0 0-6-1.15 1.1 1.1 0 0 0 0-.18V16a.91.91 0 1 0-1.81 0v4.59a22.67 22.67 0 0 0-5.89 1l-1.55-4a.91.91 0 0 0-1.69.65l1.54 4a33 33 0 0 0-5 2.46l-2.65-3.27a.9.9 0 0 0-1.27-.08.89.89 0 0 0-.13 1.22l2.52 3.12a44.3 44.3 0 0 0-4 3 .9.9 0 0 0-.1 1.28.89.89 0 0 0 1.27.1c4.11-3.47 10.5-7.61 17.64-7.61S55 26.5 59 29.89a.9.9 0 0 0 1.28-.11.91.91 0 0 0-.11-1.28z"/></svg>-->
+              </div>
+              <div class="lead-box-text">
+                <h3 data-t="process-3">PODPORA</h3>
+                <hr>
+                <p data-t="process-3-desc">
+                  Z vami smo v vseh fazah projekta. Nudili vam bomo strokovno pomoč ter hiter odziv na morebitna vprašanja in izzive ob izvedbi.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
   <div class="container-fluid spaced-container showcase-container">
     <div class="container">
       <div class="showcase row">
-        <h2 class="wild-title col-lg-3" data-aos="fade-up" data-t="in-the-wild">
+        <h2 class="wild-title col-12 col-lg-3 text-center text-lg-left mb-5 mb-lg-0" data-aos="fade-up" data-t="nav-organizations">
           Organizacije, ki nam že zaupajo
         </h2>
-        <div class="showcase-boxes col-lg-9 d-flex flex-row">
-          <div class="showcase-box" data-aos="fade-up" data-aos-delay="200">
-            <a href="https://parlameter.si" target="_blank">
-              <div class="showcase-box-icon slo">
-                <img src="img/ikona-koper.png" alt="podpora">
+        <div class="showcase-boxes col-12 col-lg-9 d-lg-flex flex-lg-row">
+          <div class="showcase-box mr-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <a href="/" target="_blank">
+              <div class="showcase-box-icon">
+                <img src="img/ikona-koper.png" alt-t="organizations-koper-alt">
               </div>
-              <p data-t="na-slovenia">
+              <p data-t="organizations-koper">
                 Mestna občina Koper
               </p>
             </a>
-            <a href="https://parlameter.si" target="_blank"><div class="showcase-box-button">Študija primera</div></a>
+            <a href="/" target="_blank"><div class="showcase-box-button" data-t="organizations-button">Študija primera</div></a>
 
           </div>
-          <div class="showcase-box" data-aos="fade-up" data-aos-delay="200">
-            <a href="https://parlametar.hr" target="_blank">
+          <div class="showcase-box mr-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <a href="/" target="_blank">
               <div class="showcase-box-icon">
-                <img src="img/ikona-hrpelje-kozina.png" alt="podpora">
+                <img src="img/ikona-hrpelje-kozina.png" alt-t="organizations-hrpelje-kozina-alt">
               </div>
-              <p data-t="na-croatia">
+              <p data-t="organizations-hrpelje-kozina">
                 Občina Hrpelje-Kozina
               </p>
             </a>
-            <a href="https://parlameter.si" target="_blank"><div class="showcase-box-button">Študija primera</div></a>
+            <a href="/" target="_blank"><div class="showcase-box-button">Študija primera</div></a>
           </div>
-          <div class="showcase-box" data-aos="fade-up" data-aos-delay="200">
-            <a href="https://parlameter.si" target="_blank">
+          <div class="showcase-box mr-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <a href="/" target="_blank">
               <div class="showcase-box-icon slo">
-                <img src="img/ikona-koper.png" alt="podpora">
+                <img src="img/ikona-koper.png" alt-t="organizations-koper-alt">
               </div>
-              <p data-t="na-slovenia">
+              <p data-t="organizations-koper">
                 Mestna občina Koper
               </p>
             </a>
-            <a href="https://parlameter.si" target="_blank"><div class="showcase-box-button">Študija primera</div></a>
+            <a href="/" target="_blank"><div class="showcase-box-button">Študija primera</div></a>
           </div>
         </div>
       </div>
@@ -273,42 +273,50 @@
   </div>
 
   <div class="page-padding">
-    <div class="container-fluid spaced-container-md bg-primary text-white" id="contact">
+    <div class="container-fluid spaced-container-md bg-primary" id="contact">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-md-5 p-0">
-            <div class="contact-info d-flex justify-content-center align-items-center">
-              <div class="contact-icon d-flex justify-content-center align-items-center" data-aos="fade-up">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="15 25 70 54"><path fill="#320ca0" d="M56 29.26c-.41 0-.82 0-1.23.06v-.5c.42 0 .85-.06 1.27-.06s.86 0 1.27.06v.5c-.5-.04-.91-.06-1.31-.06zM30.16 49.1a3.27 3.27 0 0 0 .34-1.45 3.19 3.19 0 0 0 0-.56q-.05-.29-.08-.58h-.5q0 .31.08.62a2.72 2.72 0 0 1 0 .47 2.77 2.77 0 0 1-.29 1.23zm.84-6.37l-.45-.21a7.76 7.76 0 0 0-.67 2.48l.5.05a7.26 7.26 0 0 1 .62-2.32zM37.08 38a7.73 7.73 0 0 0-2.51.61l.2.46a7.23 7.23 0 0 1 2.35-.57zm4 1.08v-.5a2.75 2.75 0 0 1-.82-.15 7.81 7.81 0 0 0-1.6-.38l-.06.5a7.27 7.27 0 0 1 1.5.35 3.26 3.26 0 0 0 .9.2zM19.11 55.77a7.61 7.61 0 0 0-.35 2.23v.29h.5v-.28a7.1 7.1 0 0 1 .32-2.12zm25-18.65l.16-.36-.46-.21-.16.37a2.75 2.75 0 0 1-1.29 1.39l.23.45a3.25 3.25 0 0 0 1.55-1.64zM20.44 62a7.08 7.08 0 0 1-1-2.21l-.49.12a7.57 7.57 0 0 0 1 2.36zM25 50.52a7.6 7.6 0 0 0-2.42.89l.25.43a7.07 7.07 0 0 1 2.28-.84zm2.11 15.14v-.5h-.71a7.13 7.13 0 0 1-1.7-.2l-.12.49a7.62 7.62 0 0 0 1.82.22zm-5.8-13.34a7.66 7.66 0 0 0-1.62 2l.44.24a7.15 7.15 0 0 1 1.51-1.88zm57.07.42a7.15 7.15 0 0 1 1.49 1.9l.44-.24a7.63 7.63 0 0 0-1.59-2zM71 50.4v.5h2.51v-.5H71zm-2.51-3.7a13.23 13.23 0 0 0 .62-2.3l-.49-.09a12.74 12.74 0 0 1-.62 2.22l-.06.18.48.15zm.2-6.31a13 13 0 0 1 .11 1.71v.75h.5v-.78a13.57 13.57 0 0 0-.12-1.77zm-22.6-7.25a13.35 13.35 0 0 0-1.52 2l.43.26a12.84 12.84 0 0 1 1.47-2zM75 51a7.07 7.07 0 0 1 2.26.86l.25-.43a7.57 7.57 0 0 0-2.42-.92zm-45.9-.68l-.29-.41a2.74 2.74 0 0 1-1.57.49h-.69v.5h.69a3.24 3.24 0 0 0 1.86-.58zm33.23-19.38a12.92 12.92 0 0 1 2 1.42l.33-.38a13.46 13.46 0 0 0-2.09-1.47zm-13.08-.37a13.35 13.35 0 0 0-2.07 1.49l.33.38a12.83 12.83 0 0 1 2-1.44zM53 29.08a13.35 13.35 0 0 0-2.43.8l.2.46a12.83 12.83 0 0 1 2.34-.77zm8.16.74a13.34 13.34 0 0 0-2.43-.77l-.1.49a12.75 12.75 0 0 1 2.34.74zM23.33 64.47a7.15 7.15 0 0 1-2-1.39l-.35.35a7.65 7.65 0 0 0 2.11 1.49zm45.51-15.25a2.73 2.73 0 0 1-.44-1l-.49.1a3.25 3.25 0 0 0 1.55 2.14l.25-.43a2.72 2.72 0 0 1-.87-.81zM67.6 36.64a12.73 12.73 0 0 1 .83 2.31l.48-.12a13.24 13.24 0 0 0-.86-2.4zm1.19 29h2.51v-.5h-2.5zm-1.51 0v-.5h-.37v.5zM65.77 33l-.37.34a13 13 0 0 1 1.49 2l.42-.26A13.47 13.47 0 0 0 65.77 33zm15.47 25.4v-.37a7.6 7.6 0 0 0-.32-2.19l-.48.14a7.11 7.11 0 0 1 .3 2v.35zm-1.29 3.9A7.58 7.58 0 0 0 81 59.94l-.48-.12a7.08 7.08 0 0 1-1 2.2zM76.83 65A7.63 7.63 0 0 0 79 63.49l-.35-.36a7.13 7.13 0 0 1-2 1.37zm-4 .21v.5h.81a7.66 7.66 0 0 0 1.74-.2l-.13-.51a7.13 7.13 0 0 1-1.63.19zm-41.67 0h-2.52v.5h2.51zm2 .5a5.1 5.1 0 0 1 .34-.5h-.82v.5zm.09-26.28a7.86 7.86 0 0 0-1.85 1.8l.4.3a7.36 7.36 0 0 1 1.7-1.73zm26.4 30.68a1 1 0 0 1-1 1H46.9a1 1 0 0 1-1-1c0-5.14 3.08-9.33 6.86-9.33s6.86 4.14 6.86 9.29zm-2-1c-.33-3.57-2.36-6.33-4.82-6.33s-4.48 2.81-4.82 6.33zM49 55.42a3.71 3.71 0 1 1 3.71 3.71A3.72 3.72 0 0 1 49 55.42zm2 0a1.71 1.71 0 1 0 1.71-1.71A1.72 1.72 0 0 0 51 55.42zm22.57-8.77h-1.11a17.1 17.1 0 0 0-31.86-12 11.56 11.56 0 0 0-14.51 11.17v.84a11.38 11.38 0 0 0 .28 22.76h7.16a4.43 4.43 0 0 1-.07-2H26.4a9.38 9.38 0 0 1 0-18.77h.85a1 1 0 0 0 1-1.17A9.56 9.56 0 0 1 40.82 36.8a1 1 0 0 0 1.25-.55 15.1 15.1 0 0 1 28.08 11.06 1 1 0 0 0 .94 1.34h2.53a9.38 9.38 0 0 1 0 18.77h-6.7v2h6.7a11.38 11.38 0 0 0 0-22.77zm-9.7 1.1v26.73a3.84 3.84 0 0 1-3.83 3.83H41.59a3.84 3.84 0 0 1-3.83-3.83v-4.64h-.7a1.58 1.58 0 0 1 0-3.17h.7v-4h-.7a1.58 1.58 0 0 1 0-3.17h.7v-4h-.7a1.58 1.58 0 0 1 0-3.17h.7v-4.58a3.84 3.84 0 0 1 3.83-3.83h18.5a3.84 3.84 0 0 1 3.83 3.83zM42.1 45.92h-.51a1.84 1.84 0 0 0-1.83 1.83v26.73a1.84 1.84 0 0 0 1.83 1.83h.51zm19.83 1.83a1.84 1.84 0 0 0-1.83-1.83h-16v30.4h16a1.84 1.84 0 0 0 1.83-1.83z"/></svg>
+          <div class="col-12 col-lg-5">
+            <div class="contact-info row justify-content-center">
+              <div class="col-12 col-md-4 p-0 d-flex align-items-center justify-content-center">
+                <div data-aos="fade-up">
+                  <div class="contact-icon d-flex justify-content-center align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="15 25 70 54"><path fill="#320ca0" d="M56 29.26c-.41 0-.82 0-1.23.06v-.5c.42 0 .85-.06 1.27-.06s.86 0 1.27.06v.5c-.5-.04-.91-.06-1.31-.06zM30.16 49.1a3.27 3.27 0 0 0 .34-1.45 3.19 3.19 0 0 0 0-.56q-.05-.29-.08-.58h-.5q0 .31.08.62a2.72 2.72 0 0 1 0 .47 2.77 2.77 0 0 1-.29 1.23zm.84-6.37l-.45-.21a7.76 7.76 0 0 0-.67 2.48l.5.05a7.26 7.26 0 0 1 .62-2.32zM37.08 38a7.73 7.73 0 0 0-2.51.61l.2.46a7.23 7.23 0 0 1 2.35-.57zm4 1.08v-.5a2.75 2.75 0 0 1-.82-.15 7.81 7.81 0 0 0-1.6-.38l-.06.5a7.27 7.27 0 0 1 1.5.35 3.26 3.26 0 0 0 .9.2zM19.11 55.77a7.61 7.61 0 0 0-.35 2.23v.29h.5v-.28a7.1 7.1 0 0 1 .32-2.12zm25-18.65l.16-.36-.46-.21-.16.37a2.75 2.75 0 0 1-1.29 1.39l.23.45a3.25 3.25 0 0 0 1.55-1.64zM20.44 62a7.08 7.08 0 0 1-1-2.21l-.49.12a7.57 7.57 0 0 0 1 2.36zM25 50.52a7.6 7.6 0 0 0-2.42.89l.25.43a7.07 7.07 0 0 1 2.28-.84zm2.11 15.14v-.5h-.71a7.13 7.13 0 0 1-1.7-.2l-.12.49a7.62 7.62 0 0 0 1.82.22zm-5.8-13.34a7.66 7.66 0 0 0-1.62 2l.44.24a7.15 7.15 0 0 1 1.51-1.88zm57.07.42a7.15 7.15 0 0 1 1.49 1.9l.44-.24a7.63 7.63 0 0 0-1.59-2zM71 50.4v.5h2.51v-.5H71zm-2.51-3.7a13.23 13.23 0 0 0 .62-2.3l-.49-.09a12.74 12.74 0 0 1-.62 2.22l-.06.18.48.15zm.2-6.31a13 13 0 0 1 .11 1.71v.75h.5v-.78a13.57 13.57 0 0 0-.12-1.77zm-22.6-7.25a13.35 13.35 0 0 0-1.52 2l.43.26a12.84 12.84 0 0 1 1.47-2zM75 51a7.07 7.07 0 0 1 2.26.86l.25-.43a7.57 7.57 0 0 0-2.42-.92zm-45.9-.68l-.29-.41a2.74 2.74 0 0 1-1.57.49h-.69v.5h.69a3.24 3.24 0 0 0 1.86-.58zm33.23-19.38a12.92 12.92 0 0 1 2 1.42l.33-.38a13.46 13.46 0 0 0-2.09-1.47zm-13.08-.37a13.35 13.35 0 0 0-2.07 1.49l.33.38a12.83 12.83 0 0 1 2-1.44zM53 29.08a13.35 13.35 0 0 0-2.43.8l.2.46a12.83 12.83 0 0 1 2.34-.77zm8.16.74a13.34 13.34 0 0 0-2.43-.77l-.1.49a12.75 12.75 0 0 1 2.34.74zM23.33 64.47a7.15 7.15 0 0 1-2-1.39l-.35.35a7.65 7.65 0 0 0 2.11 1.49zm45.51-15.25a2.73 2.73 0 0 1-.44-1l-.49.1a3.25 3.25 0 0 0 1.55 2.14l.25-.43a2.72 2.72 0 0 1-.87-.81zM67.6 36.64a12.73 12.73 0 0 1 .83 2.31l.48-.12a13.24 13.24 0 0 0-.86-2.4zm1.19 29h2.51v-.5h-2.5zm-1.51 0v-.5h-.37v.5zM65.77 33l-.37.34a13 13 0 0 1 1.49 2l.42-.26A13.47 13.47 0 0 0 65.77 33zm15.47 25.4v-.37a7.6 7.6 0 0 0-.32-2.19l-.48.14a7.11 7.11 0 0 1 .3 2v.35zm-1.29 3.9A7.58 7.58 0 0 0 81 59.94l-.48-.12a7.08 7.08 0 0 1-1 2.2zM76.83 65A7.63 7.63 0 0 0 79 63.49l-.35-.36a7.13 7.13 0 0 1-2 1.37zm-4 .21v.5h.81a7.66 7.66 0 0 0 1.74-.2l-.13-.51a7.13 7.13 0 0 1-1.63.19zm-41.67 0h-2.52v.5h2.51zm2 .5a5.1 5.1 0 0 1 .34-.5h-.82v.5zm.09-26.28a7.86 7.86 0 0 0-1.85 1.8l.4.3a7.36 7.36 0 0 1 1.7-1.73zm26.4 30.68a1 1 0 0 1-1 1H46.9a1 1 0 0 1-1-1c0-5.14 3.08-9.33 6.86-9.33s6.86 4.14 6.86 9.29zm-2-1c-.33-3.57-2.36-6.33-4.82-6.33s-4.48 2.81-4.82 6.33zM49 55.42a3.71 3.71 0 1 1 3.71 3.71A3.72 3.72 0 0 1 49 55.42zm2 0a1.71 1.71 0 1 0 1.71-1.71A1.72 1.72 0 0 0 51 55.42zm22.57-8.77h-1.11a17.1 17.1 0 0 0-31.86-12 11.56 11.56 0 0 0-14.51 11.17v.84a11.38 11.38 0 0 0 .28 22.76h7.16a4.43 4.43 0 0 1-.07-2H26.4a9.38 9.38 0 0 1 0-18.77h.85a1 1 0 0 0 1-1.17A9.56 9.56 0 0 1 40.82 36.8a1 1 0 0 0 1.25-.55 15.1 15.1 0 0 1 28.08 11.06 1 1 0 0 0 .94 1.34h2.53a9.38 9.38 0 0 1 0 18.77h-6.7v2h6.7a11.38 11.38 0 0 0 0-22.77zm-9.7 1.1v26.73a3.84 3.84 0 0 1-3.83 3.83H41.59a3.84 3.84 0 0 1-3.83-3.83v-4.64h-.7a1.58 1.58 0 0 1 0-3.17h.7v-4h-.7a1.58 1.58 0 0 1 0-3.17h.7v-4h-.7a1.58 1.58 0 0 1 0-3.17h.7v-4.58a3.84 3.84 0 0 1 3.83-3.83h18.5a3.84 3.84 0 0 1 3.83 3.83zM42.1 45.92h-.51a1.84 1.84 0 0 0-1.83 1.83v26.73a1.84 1.84 0 0 0 1.83 1.83h.51zm19.83 1.83a1.84 1.84 0 0 0-1.83-1.83h-16v30.4h16a1.84 1.84 0 0 0 1.83-1.83z"/></svg>
+                  </div>
+                </div>
               </div>
-              <div class="contact-desc pl-4 pr-4">
+              <div class="col-12 col-md-8 pl-4 pr-4 text-center text-md-left align-items-center justify-content-center">
                 <h3 data-aos="fade-up" data-t="contact" class="pt-2">
-                  Get in touch.
+                  Kontaktiraj nas
                 </h3>
                 <p data-aos="fade-up" data-t="contact-desc">
-                  Comply with tomorrow's standards today.
+                  Pripravljenost na prihodnost se začne danes. Z veseljem odgovorimo na vsa vaša vprašanja.
                 </p>
                 <p data-aos="fade-up">
                   <span data-t="contact-email">Contact us at</span>
-                  <a class="white" href="mailto:parlameter@danesjenovdan.si">parlameter@danesjenovdan.si</a>.
+                  <a href="mailto:consul@involve.today">consul@involve.today</a>.
                 </p>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-5 p-0 align-items-center justify-content-center sm-text-align-center">
-            <div class="contact-info d-flex justify-content-center align-items-center">
-              <div class="contact-icon d-flex justify-content-center align-items-center" data-aos="fade-up">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="15 25 70 54"><path fill="#320ca0" d="M56 29.26c-.41 0-.82 0-1.23.06v-.5c.42 0 .85-.06 1.27-.06s.86 0 1.27.06v.5c-.5-.04-.91-.06-1.31-.06zM30.16 49.1a3.27 3.27 0 0 0 .34-1.45 3.19 3.19 0 0 0 0-.56q-.05-.29-.08-.58h-.5q0 .31.08.62a2.72 2.72 0 0 1 0 .47 2.77 2.77 0 0 1-.29 1.23zm.84-6.37l-.45-.21a7.76 7.76 0 0 0-.67 2.48l.5.05a7.26 7.26 0 0 1 .62-2.32zM37.08 38a7.73 7.73 0 0 0-2.51.61l.2.46a7.23 7.23 0 0 1 2.35-.57zm4 1.08v-.5a2.75 2.75 0 0 1-.82-.15 7.81 7.81 0 0 0-1.6-.38l-.06.5a7.27 7.27 0 0 1 1.5.35 3.26 3.26 0 0 0 .9.2zM19.11 55.77a7.61 7.61 0 0 0-.35 2.23v.29h.5v-.28a7.1 7.1 0 0 1 .32-2.12zm25-18.65l.16-.36-.46-.21-.16.37a2.75 2.75 0 0 1-1.29 1.39l.23.45a3.25 3.25 0 0 0 1.55-1.64zM20.44 62a7.08 7.08 0 0 1-1-2.21l-.49.12a7.57 7.57 0 0 0 1 2.36zM25 50.52a7.6 7.6 0 0 0-2.42.89l.25.43a7.07 7.07 0 0 1 2.28-.84zm2.11 15.14v-.5h-.71a7.13 7.13 0 0 1-1.7-.2l-.12.49a7.62 7.62 0 0 0 1.82.22zm-5.8-13.34a7.66 7.66 0 0 0-1.62 2l.44.24a7.15 7.15 0 0 1 1.51-1.88zm57.07.42a7.15 7.15 0 0 1 1.49 1.9l.44-.24a7.63 7.63 0 0 0-1.59-2zM71 50.4v.5h2.51v-.5H71zm-2.51-3.7a13.23 13.23 0 0 0 .62-2.3l-.49-.09a12.74 12.74 0 0 1-.62 2.22l-.06.18.48.15zm.2-6.31a13 13 0 0 1 .11 1.71v.75h.5v-.78a13.57 13.57 0 0 0-.12-1.77zm-22.6-7.25a13.35 13.35 0 0 0-1.52 2l.43.26a12.84 12.84 0 0 1 1.47-2zM75 51a7.07 7.07 0 0 1 2.26.86l.25-.43a7.57 7.57 0 0 0-2.42-.92zm-45.9-.68l-.29-.41a2.74 2.74 0 0 1-1.57.49h-.69v.5h.69a3.24 3.24 0 0 0 1.86-.58zm33.23-19.38a12.92 12.92 0 0 1 2 1.42l.33-.38a13.46 13.46 0 0 0-2.09-1.47zm-13.08-.37a13.35 13.35 0 0 0-2.07 1.49l.33.38a12.83 12.83 0 0 1 2-1.44zM53 29.08a13.35 13.35 0 0 0-2.43.8l.2.46a12.83 12.83 0 0 1 2.34-.77zm8.16.74a13.34 13.34 0 0 0-2.43-.77l-.1.49a12.75 12.75 0 0 1 2.34.74zM23.33 64.47a7.15 7.15 0 0 1-2-1.39l-.35.35a7.65 7.65 0 0 0 2.11 1.49zm45.51-15.25a2.73 2.73 0 0 1-.44-1l-.49.1a3.25 3.25 0 0 0 1.55 2.14l.25-.43a2.72 2.72 0 0 1-.87-.81zM67.6 36.64a12.73 12.73 0 0 1 .83 2.31l.48-.12a13.24 13.24 0 0 0-.86-2.4zm1.19 29h2.51v-.5h-2.5zm-1.51 0v-.5h-.37v.5zM65.77 33l-.37.34a13 13 0 0 1 1.49 2l.42-.26A13.47 13.47 0 0 0 65.77 33zm15.47 25.4v-.37a7.6 7.6 0 0 0-.32-2.19l-.48.14a7.11 7.11 0 0 1 .3 2v.35zm-1.29 3.9A7.58 7.58 0 0 0 81 59.94l-.48-.12a7.08 7.08 0 0 1-1 2.2zM76.83 65A7.63 7.63 0 0 0 79 63.49l-.35-.36a7.13 7.13 0 0 1-2 1.37zm-4 .21v.5h.81a7.66 7.66 0 0 0 1.74-.2l-.13-.51a7.13 7.13 0 0 1-1.63.19zm-41.67 0h-2.52v.5h2.51zm2 .5a5.1 5.1 0 0 1 .34-.5h-.82v.5zm.09-26.28a7.86 7.86 0 0 0-1.85 1.8l.4.3a7.36 7.36 0 0 1 1.7-1.73zm26.4 30.68a1 1 0 0 1-1 1H46.9a1 1 0 0 1-1-1c0-5.14 3.08-9.33 6.86-9.33s6.86 4.14 6.86 9.29zm-2-1c-.33-3.57-2.36-6.33-4.82-6.33s-4.48 2.81-4.82 6.33zM49 55.42a3.71 3.71 0 1 1 3.71 3.71A3.72 3.72 0 0 1 49 55.42zm2 0a1.71 1.71 0 1 0 1.71-1.71A1.72 1.72 0 0 0 51 55.42zm22.57-8.77h-1.11a17.1 17.1 0 0 0-31.86-12 11.56 11.56 0 0 0-14.51 11.17v.84a11.38 11.38 0 0 0 .28 22.76h7.16a4.43 4.43 0 0 1-.07-2H26.4a9.38 9.38 0 0 1 0-18.77h.85a1 1 0 0 0 1-1.17A9.56 9.56 0 0 1 40.82 36.8a1 1 0 0 0 1.25-.55 15.1 15.1 0 0 1 28.08 11.06 1 1 0 0 0 .94 1.34h2.53a9.38 9.38 0 0 1 0 18.77h-6.7v2h6.7a11.38 11.38 0 0 0 0-22.77zm-9.7 1.1v26.73a3.84 3.84 0 0 1-3.83 3.83H41.59a3.84 3.84 0 0 1-3.83-3.83v-4.64h-.7a1.58 1.58 0 0 1 0-3.17h.7v-4h-.7a1.58 1.58 0 0 1 0-3.17h.7v-4h-.7a1.58 1.58 0 0 1 0-3.17h.7v-4.58a3.84 3.84 0 0 1 3.83-3.83h18.5a3.84 3.84 0 0 1 3.83 3.83zM42.1 45.92h-.51a1.84 1.84 0 0 0-1.83 1.83v26.73a1.84 1.84 0 0 0 1.83 1.83h.51zm19.83 1.83a1.84 1.84 0 0 0-1.83-1.83h-16v30.4h16a1.84 1.84 0 0 0 1.83-1.83z"/></svg>
+          <div class="col-12 col-lg-5 pt-4 pt-lg-0">
+            <div class="contact-info row justify-content-center">
+              <div class="col-12 col-md-4 p-0 d-flex align-items-center justify-content-center">
+                <div data-aos="fade-up">
+                  <div class="contact-icon d-flex justify-content-center align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="15 25 70 54"><path fill="#320ca0" d="M56 29.26c-.41 0-.82 0-1.23.06v-.5c.42 0 .85-.06 1.27-.06s.86 0 1.27.06v.5c-.5-.04-.91-.06-1.31-.06zM30.16 49.1a3.27 3.27 0 0 0 .34-1.45 3.19 3.19 0 0 0 0-.56q-.05-.29-.08-.58h-.5q0 .31.08.62a2.72 2.72 0 0 1 0 .47 2.77 2.77 0 0 1-.29 1.23zm.84-6.37l-.45-.21a7.76 7.76 0 0 0-.67 2.48l.5.05a7.26 7.26 0 0 1 .62-2.32zM37.08 38a7.73 7.73 0 0 0-2.51.61l.2.46a7.23 7.23 0 0 1 2.35-.57zm4 1.08v-.5a2.75 2.75 0 0 1-.82-.15 7.81 7.81 0 0 0-1.6-.38l-.06.5a7.27 7.27 0 0 1 1.5.35 3.26 3.26 0 0 0 .9.2zM19.11 55.77a7.61 7.61 0 0 0-.35 2.23v.29h.5v-.28a7.1 7.1 0 0 1 .32-2.12zm25-18.65l.16-.36-.46-.21-.16.37a2.75 2.75 0 0 1-1.29 1.39l.23.45a3.25 3.25 0 0 0 1.55-1.64zM20.44 62a7.08 7.08 0 0 1-1-2.21l-.49.12a7.57 7.57 0 0 0 1 2.36zM25 50.52a7.6 7.6 0 0 0-2.42.89l.25.43a7.07 7.07 0 0 1 2.28-.84zm2.11 15.14v-.5h-.71a7.13 7.13 0 0 1-1.7-.2l-.12.49a7.62 7.62 0 0 0 1.82.22zm-5.8-13.34a7.66 7.66 0 0 0-1.62 2l.44.24a7.15 7.15 0 0 1 1.51-1.88zm57.07.42a7.15 7.15 0 0 1 1.49 1.9l.44-.24a7.63 7.63 0 0 0-1.59-2zM71 50.4v.5h2.51v-.5H71zm-2.51-3.7a13.23 13.23 0 0 0 .62-2.3l-.49-.09a12.74 12.74 0 0 1-.62 2.22l-.06.18.48.15zm.2-6.31a13 13 0 0 1 .11 1.71v.75h.5v-.78a13.57 13.57 0 0 0-.12-1.77zm-22.6-7.25a13.35 13.35 0 0 0-1.52 2l.43.26a12.84 12.84 0 0 1 1.47-2zM75 51a7.07 7.07 0 0 1 2.26.86l.25-.43a7.57 7.57 0 0 0-2.42-.92zm-45.9-.68l-.29-.41a2.74 2.74 0 0 1-1.57.49h-.69v.5h.69a3.24 3.24 0 0 0 1.86-.58zm33.23-19.38a12.92 12.92 0 0 1 2 1.42l.33-.38a13.46 13.46 0 0 0-2.09-1.47zm-13.08-.37a13.35 13.35 0 0 0-2.07 1.49l.33.38a12.83 12.83 0 0 1 2-1.44zM53 29.08a13.35 13.35 0 0 0-2.43.8l.2.46a12.83 12.83 0 0 1 2.34-.77zm8.16.74a13.34 13.34 0 0 0-2.43-.77l-.1.49a12.75 12.75 0 0 1 2.34.74zM23.33 64.47a7.15 7.15 0 0 1-2-1.39l-.35.35a7.65 7.65 0 0 0 2.11 1.49zm45.51-15.25a2.73 2.73 0 0 1-.44-1l-.49.1a3.25 3.25 0 0 0 1.55 2.14l.25-.43a2.72 2.72 0 0 1-.87-.81zM67.6 36.64a12.73 12.73 0 0 1 .83 2.31l.48-.12a13.24 13.24 0 0 0-.86-2.4zm1.19 29h2.51v-.5h-2.5zm-1.51 0v-.5h-.37v.5zM65.77 33l-.37.34a13 13 0 0 1 1.49 2l.42-.26A13.47 13.47 0 0 0 65.77 33zm15.47 25.4v-.37a7.6 7.6 0 0 0-.32-2.19l-.48.14a7.11 7.11 0 0 1 .3 2v.35zm-1.29 3.9A7.58 7.58 0 0 0 81 59.94l-.48-.12a7.08 7.08 0 0 1-1 2.2zM76.83 65A7.63 7.63 0 0 0 79 63.49l-.35-.36a7.13 7.13 0 0 1-2 1.37zm-4 .21v.5h.81a7.66 7.66 0 0 0 1.74-.2l-.13-.51a7.13 7.13 0 0 1-1.63.19zm-41.67 0h-2.52v.5h2.51zm2 .5a5.1 5.1 0 0 1 .34-.5h-.82v.5zm.09-26.28a7.86 7.86 0 0 0-1.85 1.8l.4.3a7.36 7.36 0 0 1 1.7-1.73zm26.4 30.68a1 1 0 0 1-1 1H46.9a1 1 0 0 1-1-1c0-5.14 3.08-9.33 6.86-9.33s6.86 4.14 6.86 9.29zm-2-1c-.33-3.57-2.36-6.33-4.82-6.33s-4.48 2.81-4.82 6.33zM49 55.42a3.71 3.71 0 1 1 3.71 3.71A3.72 3.72 0 0 1 49 55.42zm2 0a1.71 1.71 0 1 0 1.71-1.71A1.72 1.72 0 0 0 51 55.42zm22.57-8.77h-1.11a17.1 17.1 0 0 0-31.86-12 11.56 11.56 0 0 0-14.51 11.17v.84a11.38 11.38 0 0 0 .28 22.76h7.16a4.43 4.43 0 0 1-.07-2H26.4a9.38 9.38 0 0 1 0-18.77h.85a1 1 0 0 0 1-1.17A9.56 9.56 0 0 1 40.82 36.8a1 1 0 0 0 1.25-.55 15.1 15.1 0 0 1 28.08 11.06 1 1 0 0 0 .94 1.34h2.53a9.38 9.38 0 0 1 0 18.77h-6.7v2h6.7a11.38 11.38 0 0 0 0-22.77zm-9.7 1.1v26.73a3.84 3.84 0 0 1-3.83 3.83H41.59a3.84 3.84 0 0 1-3.83-3.83v-4.64h-.7a1.58 1.58 0 0 1 0-3.17h.7v-4h-.7a1.58 1.58 0 0 1 0-3.17h.7v-4h-.7a1.58 1.58 0 0 1 0-3.17h.7v-4.58a3.84 3.84 0 0 1 3.83-3.83h18.5a3.84 3.84 0 0 1 3.83 3.83zM42.1 45.92h-.51a1.84 1.84 0 0 0-1.83 1.83v26.73a1.84 1.84 0 0 0 1.83 1.83h.51zm19.83 1.83a1.84 1.84 0 0 0-1.83-1.83h-16v30.4h16a1.84 1.84 0 0 0 1.83-1.83z"/></svg>
+                  </div>
+                </div>
               </div>
-              <div class="contact-desc pl-4 pr-4">
-                <h3 data-aos="fade-up" data-t="contact" class="pt-2">
-                  Get in touch.
+              <div class="col-12 col-md-8 pl-4 pr-4 text-center text-md-left align-items-center justify-content-center">
+                <h3 data-aos="fade-up" data-t="about" class="pt-2">
+                  O ekipi
                 </h3>
-                <p data-aos="fade-up" data-t="contact-desc">
-                  Comply with tomorrow's standards today.
+                <p data-aos="fade-up" data-t="about-desc">
+                  S Consulom upravlja Danes je nov dan, Inštitut za druga vprašanja.
                 </p>
                 <p data-aos="fade-up">
-                  <a href="about" data-t="about">About the team</a>
+                  <a href="about" data-t="about-link">DJND ekipa</a>
                 </p>
               </div>
             </div>
@@ -327,8 +335,7 @@
               <div>
                 <p class="mb-2" data-t="developed-by">Developed by</p>
                 <a href="https://danesjenovdan.si/" target="_blank" class="djnd-link">
-                  <!--<span class="djnd"></span>-->
-                  <img src="img/logo.png" alt="podpora">
+                  <img src="img/logo.png" alt="DJND logo">
                 </a>
               </div>
             </div>
@@ -343,19 +350,19 @@
                 </a>
               </p>
             </div>
-            <div class="col-12 col-lg-4 footer-col">
-              <p data-t="developed-with-support">
-                Developed with kind support from
+            <div class="col-12 col-lg-4 footer-col part-of">
+              <p data-t="part-of">
+                We are part of
               </p>
               <div class="row">
                 <div class="col align-items-center d-flex logo">
-                  <a href="https://newsinitiative.withgoogle.com/dnifund/" target="_blank">
-                    <img src="img/consul_logo@1.5x.png" alt="Google DNI logo" class="img-fluid">
+                  <a href="/" target="_blank">
+                    <img src="img/consul_logo@1.5x.png" alt="Consul logo" class="img-fluid">
                   </a>
                 </div>
                 <div class="col align-items-center d-flex logo">
-                  <a href="https://www.ned.org/" target="_blank">
-                    <img src="img/CONSUL_DEMOCRACY_foundation@1.5x.png" alt="NED logo" class="img-fluid">
+                  <a href="/" target="_blank">
+                    <img src="img/CONSUL_DEMOCRACY_foundation@1.5x.png" alt="Consul Democracy foundation logo" class="img-fluid">
                   </a>
                 </div>
               </div>
