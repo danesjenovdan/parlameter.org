@@ -5,6 +5,7 @@
 
 ::selection {
   background-color: $secondary;
+  color: #ffffff;
 }
 
 html {
@@ -186,7 +187,7 @@ h2 {
 
   h1 {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-style: italic;
 
     strong {
@@ -195,7 +196,7 @@ h2 {
   }
 
   p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -217,9 +218,30 @@ h2 {
 }
 
 .about-us-content {
+  .about-us-lead {
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
   p {
     color: $secondary;
+    font-size: 1.2rem;
   }
+
+  .about-img-1 {
+    position: absolute;
+    top: 10%;
+    left: -2.5rem;
+    z-index: -1;
+  }
+
+  .about-img-2 {
+    position: absolute;
+    top: 5%;
+    left: -2.5rem;
+  }
+
 }
 
 .midsection {
@@ -483,7 +505,7 @@ h2 {
     border-radius: 50%;
 
     svg {
-      height: 40%;
+      height: 50%;
     }
   }
 
