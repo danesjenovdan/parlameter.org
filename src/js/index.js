@@ -45,6 +45,18 @@ document.querySelectorAll('.nav-link').forEach((link) => {
 });
 
 // ---
+// Scroll to 6 new showcase boxes
+// ---
+const showcaseButton = document.querySelector('.showcase-boxes-more-btn');
+showcaseButton.addEventListener('click', () => {
+  const showcaseRow = document.querySelector('.showcase-boxes .row');
+  showcaseRow.scrollBy({
+    left: showcaseRow.offsetWidth,
+    behavior: 'smooth',
+  });
+});
+
+// ---
 // Handle language select
 // ---
 const langSelect = document.querySelector('.select-lang');

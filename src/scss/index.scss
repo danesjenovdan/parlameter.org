@@ -60,18 +60,23 @@ a {
   &:focus,
   &:active,
   &:visited {
-    color: $primary;
-    text-decoration: underline;
-    font-weight: 500;
+    color: $secondary;
+    text-decoration: none;
+    //font-weight: 500;
   }
-
+  /*
   &:hover {
     text-decoration: none;
   }
+  */
 }
 
 .djnd-link {
   text-decoration: none;
+
+  img {
+    max-height: 50px;
+  }
 
   &:hover {
     text-decoration: underline;
@@ -182,6 +187,8 @@ h2 {
     padding-top: 8rem;
     padding-bottom: 8rem;
     background-image: url('../img/consul-ekipa-slika.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
   }
 
@@ -229,19 +236,20 @@ h2 {
     font-size: 1.2rem;
   }
 
-  .about-img-1 {
-    position: absolute;
-    top: 10%;
-    left: -2.5rem;
-    z-index: -1;
-  }
+  @media (min-width: 992px) {
+    .about-img-1 {
+      position: absolute;
+      top: 10%;
+      left: -2.5rem;
+      z-index: -1;
+    }
 
-  .about-img-2 {
-    position: absolute;
-    top: 5%;
-    left: -2.5rem;
+    .about-img-2 {
+      position: absolute;
+      top: 5%;
+      left: -2.5rem;
+    }
   }
-
 }
 
 .midsection {
@@ -257,13 +265,11 @@ h2 {
 
 .lead-boxes {
 
-  & > div {
-    margin-bottom: 1.5rem;
-  }
-
   .lead-box {
     height: 100%;
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
 
     &.lead-box--last {
       @media (max-width: 767.98px) {
@@ -282,13 +288,6 @@ h2 {
         height: 150px;
       }
 
-      /*
-      svg {
-        width: 100%;
-        height: 100%;
-      }
-      */
-
       img {
         height: 100%;
       }
@@ -297,6 +296,7 @@ h2 {
     .lead-box-text {
       padding: 1.5rem;
       box-shadow: 0 0 1.5rem rgba(26, 29, 64, 0.2);
+      flex: 1;
     }
 
     .lead-box-image {
@@ -355,15 +355,17 @@ h2 {
         margin-bottom: 1.5rem;
       }
 
+      .row {
+        overflow-x: auto;
+      }
+
       .showcase-box {
         border: 4px solid $secondary;
-        padding: 2rem 1.5rem;
+        //padding: 3rem 1rem;
         text-decoration: none;
         color: #000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         position: relative;
+        height: 180px;
         max-width: 400px;
 
         @media (max-width: 991.98px) {
@@ -378,18 +380,15 @@ h2 {
         }
 
         .showcase-box-icon {
-          display: inline-block;
-          margin: 1rem;
 
           img {
             height: 50px;
-            vertical-align: unset;
           }
 
         }
 
         p {
-          display: inline-block;
+          //display: inline-block;
           width: 100px;
           font-size: 1.5rem;
           line-height: 1.25rem;
@@ -408,6 +407,18 @@ h2 {
           color: #ffffff;
           padding: 0.25rem 1rem;
         }
+      }
+    }
+
+    .showcase-boxes-more-btn {
+      cursor: pointer;
+      svg {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+
+      span {
+        color: $secondary;
       }
     }
   }
@@ -520,6 +531,8 @@ h2 {
 
     a {
       color: $secondary;
+      text-decoration: underline;
+      font-weight: 500;
     }
   }
 }
@@ -616,7 +629,8 @@ h2 {
 
   .btn.github {
     display: inline-block;
-    padding: .15rem 1.5rem;
+    padding: 0 1.5rem .15rem 1.5rem;
+    line-height: 2rem;
     color: #fff;
 
     // IE 10
