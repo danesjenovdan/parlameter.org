@@ -24,7 +24,7 @@ AOS.init({ duration: 800 });
 // ---
 const replaceElem = document.querySelector('.replace-me');
 if (replaceElem) {
-  new window.ReplaceMe(replaceElem, { speed: 5000 }).start();
+  new window.ReplaceMe(replaceElem, { speed: 2000 }).start();
 }
 
 // ---
