@@ -357,7 +357,14 @@ h2 {
 
       .row {
         overflow-x: auto;
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
         overflow-y: hidden;
+      }
+
+      .row::-webkit-scrollbar { /* WebKit */
+        width: 0;
+        height: 0;
       }
 
       .showcase-box {
@@ -413,14 +420,34 @@ h2 {
     }
 
     .showcase-boxes-more-btn {
-      cursor: pointer;
-      svg {
-        width: 1.5rem;
-        height: 1.5rem;
-      }
+      div {
+        cursor: pointer;
+        //background-color: $secondary;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
 
-      span {
-        color: $secondary;
+        svg {
+          width: 2rem;
+          height: 2rem;
+          fill: white;
+        }
+
+        span {
+          color: $secondary;
+          font-size: 1.5rem;
+        }
+
+        &:hover {
+          //background-color: $secondary;
+          span {
+            color: white;
+          }
+          svg {
+            fill: white;
+          }
+
+        }
       }
     }
   }
@@ -459,16 +486,18 @@ h2 {
 
     .carousel-text-element {
       margin-bottom: 3rem;
+      border-left: solid 4px;
+      border-right: 0;
+      border-image: linear-gradient(to bottom, #f0b9ad, #d9dbf1) 0 100%;
 
-      @media (min-width: 991.98px) {
-        border-left: solid 4px;
-        border-image: linear-gradient(to bottom, #f0b9ad, #d9dbf1) 0 100%;
+      @media (max-width: 991.98px) {
+        border: none;
       }
     }
 
     dt {
       margin-left: 1rem;
-      margin-bottom: 0;
+      margin-bottom: 1rem;
       transition: margin-bottom 1s ease;
       font-size: 1.8rem;
       line-height: 1;
@@ -477,13 +506,16 @@ h2 {
       color: $secondary;
       cursor: pointer;
 
-      &.active {
-        margin-bottom: 0.5rem;
-      }
+      @media (min-width: 991.99px) {
+        margin-bottom: 0;
 
-      &.active, &:hover {
-        //color: #212529;
-        color: #181a34;
+        &.active {
+          margin-bottom: 0.5rem;
+        }
+
+        &.active, &:hover {
+          color: #181a34;
+        }
       }
     }
 
@@ -505,6 +537,10 @@ h2 {
           margin: 2rem 0;
           text-align: center;
         }
+      }
+
+      @media (max-width: 991.98px) {
+        height: auto
       }
     }
 

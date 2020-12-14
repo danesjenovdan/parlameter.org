@@ -98,17 +98,6 @@ function changeCarousel(dt, i) {
 
 let loopTID = null;
 
-document.querySelectorAll('.carousel dt').forEach((dt, i) => {
-  dt.addEventListener('click', (event) => {
-    event.preventDefault();
-    if (loopTID) {
-      clearTimeout(loopTID);
-      loopTID = null;
-    }
-    changeCarousel(dt, i);
-  });
-});
-
 function loopCarousel(i) {
   const dts = document.querySelectorAll('.carousel dt');
   if (dts.length) {
@@ -121,7 +110,23 @@ function loopCarousel(i) {
   }
 }
 
-loopCarousel(0);
+// Create a media condition that targets viewports at least 992px wide
+const mediaQuery = window.matchMedia('(min-width: 991.99px)');
+
+// Check if the media query is true
+if (mediaQuery.matches) {
+  document.querySelectorAll('.carousel dt').forEach((dt, i) => {
+    dt.addEventListener('click', (event) => {
+      event.preventDefault();
+      if (loopTID) {
+        clearTimeout(loopTID);
+        loopTID = null;
+      }
+      changeCarousel(dt, i);
+    });
+  });
+  loopCarousel(0);
+}
 
 
 // ---
