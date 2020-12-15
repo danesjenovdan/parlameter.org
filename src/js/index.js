@@ -50,8 +50,15 @@ document.querySelectorAll('.nav-link').forEach((link) => {
 const showcaseButton = document.querySelector('.showcase-boxes-more-btn');
 showcaseButton.addEventListener('click', () => {
   const showcaseRow = document.querySelector('.showcase-boxes .row');
+  let scrolled = showcaseRow.offsetWidth;
+  if (showcaseButton.classList.contains('scrolled')) {
+    scrolled *= -1;
+    showcaseButton.classList.remove('scrolled');
+  } else {
+    showcaseButton.classList.add('scrolled');
+  }
   showcaseRow.scrollBy({
-    left: showcaseRow.offsetWidth,
+    left: scrolled,
     behavior: 'smooth',
   });
 });

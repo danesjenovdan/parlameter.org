@@ -373,7 +373,7 @@ h2 {
         color: #000;
         position: relative;
         height: 180px;
-        max-width: 400px;
+        //max-width: 400px;
         transition: background-color 0.2s ease;
 
         @media (max-width: 991.98px) {
@@ -420,34 +420,56 @@ h2 {
     }
 
     .showcase-boxes-more-btn {
-      div {
-        cursor: pointer;
-        //background-color: $secondary;
-        height: 4rem;
-        width: 4rem;
-        border-radius: 50%;
+      cursor: pointer;
+      //background-color: $secondary;
+      height: 4rem;
+      width: 4rem;
+      border-radius: 50%;
 
+      svg {
+        width: 2rem;
+        height: 2rem;
+        fill: white;
+      }
+
+      .bi-arrow-left {
+        opacity: 0;
+        transition: opacity 0.2s ease;
+        position: absolute;
+      }
+      .bi-arrow-right {
+        opacity: 1;
+        transition: opacity 0.6s ease;
+        position: static;
+      }
+
+      &.scrolled {
+        .bi-arrow-left {
+          opacity: 1;
+          transition: opacity 0.6s ease;
+          position: static;
+        }
+        .bi-arrow-right {
+          opacity: 0;
+          transition: opacity 0.2s ease;
+          position: absolute;
+        }
+      }
+
+      span {
+        color: $secondary;
+        font-size: 1.5rem;
+      }
+
+      &:hover {
+        //background-color: $secondary;
+        span {
+          color: white;
+        }
         svg {
-          width: 2rem;
-          height: 2rem;
           fill: white;
         }
 
-        span {
-          color: $secondary;
-          font-size: 1.5rem;
-        }
-
-        &:hover {
-          //background-color: $secondary;
-          span {
-            color: white;
-          }
-          svg {
-            fill: white;
-          }
-
-        }
       }
     }
   }
