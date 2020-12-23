@@ -8,12 +8,6 @@
   color: #ffffff;
 }
 
-html {
-  @media (max-width: 767.98px) {
-    font-size: 12px;
-  }
-}
-
 body {
   font-family: Barlow, sans-serif;
 }
@@ -329,7 +323,7 @@ h2 {
     }
 
     p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       font-weight: 300;
       line-height: 1.4;
     }
@@ -390,17 +384,23 @@ h2 {
         }
 
         .showcase-box-icon {
+          div {
+            height: 60px;
+            width: 60px;
+            background-color: white;
+            border-radius: 50%;
+          }
 
           img {
-            height: 50px;
+            max-height: 65%;
+            max-width: 65%;
           }
         }
 
         p {
-          //display: inline-block;
           width: 100px;
-          font-size: 1.5rem;
-          line-height: 1.25rem;
+          font-size: 1.2rem;
+          line-height: 1.2rem;
           font-weight: 400;
           color: $secondary;
           margin-bottom: 0;
@@ -548,7 +548,7 @@ h2 {
     dd {
       margin-left: 1rem;
       margin-bottom: 0;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
       font-weight: 300;
       overflow: hidden;
       height: 0;
@@ -562,7 +562,7 @@ h2 {
       }
 
       @media (max-width: 991.98px) {
-        height: auto
+        height: auto;
       }
     }
 
