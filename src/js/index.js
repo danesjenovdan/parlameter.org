@@ -48,20 +48,22 @@ document.querySelectorAll('.nav-link').forEach((link) => {
 // Scroll to 6 new showcase boxes
 // ---
 const showcaseButton = document.querySelector('.showcase-boxes-more-btn');
-showcaseButton.addEventListener('click', () => {
-  const showcaseRow = document.querySelector('.showcase-boxes .row');
-  let scrolled = showcaseRow.offsetWidth;
-  if (showcaseButton.classList.contains('scrolled')) {
-    scrolled *= -1;
-    showcaseButton.classList.remove('scrolled');
-  } else {
-    showcaseButton.classList.add('scrolled');
-  }
-  showcaseRow.scrollBy({
-    left: scrolled,
-    behavior: 'smooth',
+if (showcaseButton) {
+  showcaseButton.addEventListener('click', () => {
+    const showcaseRow = document.querySelector('.showcase-boxes .row');
+    let scrolled = showcaseRow.offsetWidth;
+    if (showcaseButton.classList.contains('scrolled')) {
+      scrolled *= -1;
+      showcaseButton.classList.remove('scrolled');
+    } else {
+      showcaseButton.classList.add('scrolled');
+    }
+    showcaseRow.scrollBy({
+      left: scrolled,
+      behavior: 'smooth',
+    });
   });
-});
+}
 
 // ---
 // Handle language select
@@ -155,6 +157,7 @@ if (dl) {
 // ---
 // Contact form
 // ---
+/*
 const contactForm = document.querySelector('.contact-form');
 if (contactForm) {
   contactForm.addEventListener('submit', (event) => {
@@ -206,3 +209,4 @@ if (contactForm) {
       });
   });
 }
+*/
