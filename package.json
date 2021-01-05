@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel ./src/*.html ./src/case-studies/*.html --open",
-    "build": "rimraf dist && parcel build ./src/*.html ./src/case-studies/*.html && static-i18n -i en -i sl -o dist dist"
+    "build": "rimraf dist && parcel build ./src/*.html ./src/case-studies/*.html && static-i18n -l sl -i sl -i en -o dist dist"
   },
   "author": "danesjenovdan",
   "license": "Unlicense",

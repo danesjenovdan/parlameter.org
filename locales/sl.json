@@ -1,4 +1,5 @@
 {
+  "lang": "",
   "nav-brand": "Consul storitve",
   "nav-overview": "Pregled",
   "nav-contact": "Kontakt",
@@ -16,7 +17,6 @@
   "feature-3-desc": "Izkušnja je prilagojena za mobilne naprave in omogoča, da uporabniki oddajajo in glasujejo za predloge kar na svojih mobilnih napravah.",
   "feature-4": "Enostavno urednikovanje",
   "feature-4-desc": "Kot urednik participativnega proračuna imate popoln nadzor nad vsebinami in fazami procesa. Kontrolna plošča vam omogoča, da participativno odločanje izvedete popolnoma samostojno, brez programerskega znanja.",
-  "img-lang": "sl",
   "nav-process": "Z vami smo v vseh fazah procesa",
   "process-1": "SVETOVANJE",
   "process-1-alt": "slika svetovanje",

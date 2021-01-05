@@ -19,14 +19,14 @@
   <meta name="twitter:description" data-attr-t content-t="og-description" content="A comprehensive solution for implementing participatory budgeting.">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" data-attr-t content-t="og-title" content="Consul Services: participatory budgeting made easy">
-  <meta name="twitter:image" content="https://consul.parlameter.org/img/consul_prodajni_og.png">
+  <meta name="twitter:image" data-attr-t data-attr-t-interpolate content-t="https://consul.danesjenovdan.si/img/consul_prodajni_og-{{lang}}.png">
 
   <meta property="og:description" data-attr-t content-t="og-description" content="A comprehensive solution for implementing participatory budgeting.">
   <meta property="og:type" content="website">
   <meta property="og:title" data-attr-t content-t="og-title" content="Consul Services: participatory budgeting made easy">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image" content="https://consul.parlameter.org/img/consul_prodajni_og.png">
+  <meta property="og:image" data-attr-t data-attr-t-interpolate content-t="https://consul.danesjenovdan.si/img/consul_prodajni_og-{{lang}}.png">
 
   <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,500,700" rel="stylesheet">
 
@@ -38,18 +38,18 @@
     <div class="container-fluid" id="overview">
       <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light" data-aos="fade">
-          <a class="navbar-brand" href="/" data-t="nav-brand">Consul storitve</a>
+          <a class="navbar-brand" data-attr-t data-attr-t-interpolate href-t="/{{lang}}" data-t="nav-brand">Consul storitve</a>
           <div class="collapse navbar-collapse justify-content-center">
             <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="/" data-t="nav-overview">Overview <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link active" data-attr-t data-attr-t-interpolate href-t="/{{lang}}" data-t="nav-overview">Overview <span class="sr-only">(current)</span></a>
               <a class="nav-item nav-link" href="#contact" data-t="nav-contact">Contact</a>
-              <a class="nav-item nav-link" href="about" data-t="nav-about-the-team">About the team</a>
+              <a class="nav-item nav-link" data-attr-t data-attr-t-interpolate href-t="about" data-t="nav-about-the-team">About the team</a>
             </div>
           </div>
           <form class="form-inline">
             <select class="custom-select select-lang">
-              <option value="/">EN</option>
-              <option value="/sl/">SL</option>
+              <option value="/">SL</option>
+              <option value="/en/">EN</option>
             </select>
           </form>
         </nav>
@@ -101,16 +101,16 @@
                 <div class="images">
                   <div class="image">
                     <!--<img data-attr-t data-attr-t-interpolate src-t="/gif/{{gif-prefix}}org-v-gif1.gif" src="http://placekitten.com/200/300" class="img-fluid active">-->
-                    <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-predlogi-{{img-lang}}.png" src="../static/img/prikaz-predlogi-sl.png" class="img-fluid active">
+                    <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-predlogi-{{lang}}.png" src="../static/img/prikaz-predlogi-.png" class="img-fluid active">
                   </div>
                   <div class="image">
-                    <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-glasovanje-{{img-lang}}.png" src="../static/img/prikaz-glasovanje-sl.png" class="img-fluid">
+                    <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-glasovanje-{{lang}}.png" src="../static/img/prikaz-glasovanje-.png" class="img-fluid">
                   </div>
                   <div class="image">
-                    <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-mobile-{{img-lang}}.png" src="../static/img/prikaz-mobile-sl.png" class="img-fluid">
+                    <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-mobile-{{lang}}.png" src="../static/img/prikaz-mobile-.png" class="img-fluid">
                   </div>
                   <div class="image">
-                    <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-upravljanje-{{img-lang}}.png" src="../static/img/prikaz-upravljanje-sl.png" class="img-fluid">
+                    <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-upravljanje-{{lang}}.png" src="../static/img/prikaz-upravljanje-.png" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -124,7 +124,7 @@
                       <div>
                         <span data-t="feature-1-desc">Zbiranje predlogov poteka skozi jasen in enostaven proces. Vsebina predloga je predstavljena strukturirano in pregledno. Omogočeno je dodajanje fotografij in lokacije.</span>
                         <div class="image d-block d-lg-none">
-                          <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-predlogi-{{img-lang}}.png" src="../static/img/prikaz-predlogi-sl.png" class="img-fluid active">
+                          <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-predlogi-{{lang}}.png" src="../static/img/prikaz-predlogi-.png" class="img-fluid active">
                         </div>
                       </div>
                     </dd>
@@ -137,7 +137,7 @@
                       <div>
                         <span data-t="feature-2-desc">Glasovanje o predlogih poteka po zaščitenem protokolu, ki preprečuje zlorabe. Varno, transparentno in hitro.</span>
                         <div class="image d-block d-lg-none">
-                          <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-glasovanje-{{img-lang}}.png" src="../static/img/prikaz-glasovanje-sl.png" class="img-fluid active">
+                          <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-glasovanje-{{lang}}.png" src="../static/img/prikaz-glasovanje-.png" class="img-fluid active">
                         </div>
                       </div>
                     </dd>
@@ -150,7 +150,7 @@
                       <div>
                         <span data-t="feature-3-desc">Izkušnja je prilagojena za mobilne naprave in omogoča, da uporabniki oddajajo in glasujejo za predloge kar na svojih mobilnih napravah.</span>
                         <div class="image d-block d-lg-none">
-                          <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-mobile-{{img-lang}}.png" src="../static/img/prikaz-mobile-sl.png" class="img-fluid active">
+                          <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-mobile-{{lang}}.png" src="../static/img/prikaz-mobile-.png" class="img-fluid active">
                         </div>
                       </div>
                     </dd>
@@ -163,7 +163,7 @@
                       <div>
                         <span data-t="feature-4-desc">Kot urednik participativnega proračuna imate popoln nadzor nad vsebinami in fazami procesa. Kontrolna plošča vam omogoča, da participativno odločanje izvedete popolnoma samostojno, brez programerskega znanja.</span>
                         <div class="image d-block d-lg-none">
-                          <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-upravljanje-{{img-lang}}.png" src="../static/img/prikaz-upravljanje-sl.png" class="img-fluid active">
+                          <img data-attr-t data-attr-t-interpolate src-t="/img/prikaz-upravljanje-{{lang}}.png" src="../static/img/prikaz-upravljanje-.png" class="img-fluid active">
                         </div>
                       </div>
                     </dd>

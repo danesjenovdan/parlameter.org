@@ -1,4 +1,5 @@
 {
+  "lang": "en",
   "nav-brand": "Consul Services",
   "nav-overview": "Overview",
   "nav-contact": "Contact",
@@ -16,7 +17,6 @@
   "feature-3-desc": "Consul works equally great on desktop and mobile devices. Users can submit and vote for proposals at home and on the go.",
   "feature-4": "Painless management",
   "feature-4-desc": "You have complete control over every stage of the process. The control panel allows you to implement participatory budgeting completely on your own. You don't need any programming skills.",
-  "img-lang": "en",
   "nav-process": "We will support you throughout the process",
   "process-1": "CONSULTING",
   "process-1-alt": "consulting picture",
