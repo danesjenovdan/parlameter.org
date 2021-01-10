@@ -1,4 +1,4 @@
-import Promise from 'es6-promise';
+// import Promise from 'es6-promise';
 import { fetch } from 'whatwg-fetch';
 import AOS from 'aos';
 
@@ -6,13 +6,14 @@ import AOS from 'aos';
 // ---
 // Polyfill
 // ---
+/*
 if (!window.Promise) {
   window.Promise = Promise;
 }
 if (window.NodeList && !NodeList.prototype.forEach) {
   NodeList.prototype.forEach = Array.prototype.forEach;
 }
-
+*/
 
 // ---
 // Animate/fade in elements on scroll
@@ -23,6 +24,7 @@ AOS.init({ duration: 800 });
 // ---
 // Smooth scroll to content on nav link click
 // ---
+/*
 document.querySelectorAll('.nav-link').forEach((link) => {
   link.addEventListener('click', (event) => {
     const href = link.getAttribute('href');
@@ -36,11 +38,12 @@ document.querySelectorAll('.nav-link').forEach((link) => {
     }
   });
 });
-
+*/
 
 // ---
 // Load counters
 // ---
+/*
 fetch('https://analize.10.parlametar.hr/v1/s/getBuggyStats/')
   .then((res) => res.json()).then((json) => {
     Object.keys(json).forEach((key) => {
@@ -50,11 +53,12 @@ fetch('https://analize.10.parlametar.hr/v1/s/getBuggyStats/')
       }
     });
   });
-
+*/
 
 // ---
 // Carousel/Accordion combo
 // ---
+/*
 function changeCarousel(dt, i) {
   if (!dt.classList.contains('active')) {
     const imgs = document.querySelectorAll('.carousel img');
@@ -105,11 +109,12 @@ function loopCarousel(i) {
 }
 
 loopCarousel(0);
-
+*/
 
 // ---
 // Fix carousel height
 // ---
+/*
 const dl = document.querySelector('.carousel dl');
 if (dl) {
   const height = dl.offsetHeight;
@@ -121,11 +126,12 @@ if (dl) {
   });
   dl.style.height = `${height + largest}px`;
 }
-
+*/
 
 // ---
 // Show all signatures
 // ---
+/*
 const showAllSignaturesButton = document.querySelector('.js-show-all-signatures');
 
 function showAllSignatures() {
@@ -141,11 +147,12 @@ function showAllSignatures() {
 if (showAllSignaturesButton) {
   showAllSignaturesButton.addEventListener('click', showAllSignatures);
 }
-
+*/
 
 // ---
 // Get signatures
 // ---
+/*
 const peticija = 'otvaranje-sabora';
 
 function fetchSignatures() {
@@ -172,10 +179,11 @@ function fetchSignatures() {
 }
 
 fetchSignatures();
-
+*/
 // ---
 // Submit signature
 // ---
+/*
 document.querySelector('.petition__form').addEventListener('submit', (event) => {
   event.preventDefault();
 
@@ -222,7 +230,7 @@ document.querySelector('.petition__form').addEventListener('submit', (event) => 
       });
     });
 });
-
+*/
 
 // ---
 // Social share buttons
