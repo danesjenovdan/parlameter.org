@@ -48,6 +48,7 @@ h2 {
     a {
       position: absolute;
       top: 2rem;
+      z-index: 10;
 
       img {
         text-align: center;
@@ -87,10 +88,6 @@ h2 {
       }
     }
   }
-}
-
-.info-line {
-  width: 20%;
 }
 
 .legend {
@@ -312,17 +309,24 @@ h2 {
     }
   }
 
-  a {
+  span {
     margin-left: 1rem;
     color: black;
     text-decoration: underline;
     font-weight: 500;
     font-style: italic;
     font-size: 1.25rem;
+    cursor: pointer;
 
     @include media-breakpoint-up(sm) {
       margin-left: 3rem;
     }
+  }
+
+  a.btn {
+    margin-left: 0;
+    color: white;
+    text-decoration: none;
   }
 }
 
