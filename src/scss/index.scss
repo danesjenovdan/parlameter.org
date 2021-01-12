@@ -157,7 +157,7 @@ h2 {
   .lead-box {
     border: 2px solid $primary;
     height: 100%;
-    padding: 1rem 2rem;
+    //padding: 1rem 2rem;
 
     .lead-box-icon {
       height: 110px;
@@ -216,6 +216,80 @@ h2 {
   }
 }
 
+/*
+.canvas {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.scratchcard {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  // margin: 0 auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+
+}
+*/
+
+.sc__inner {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem;
+}
+.sc__wrapper {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.sc__container {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.sc__container > img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+
+.sc__container canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.scratchcard-text {
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  display: none;
+
+  @include media-breakpoint-up(lg) {
+    display: flex;
+  }
+}
+
 .lead-content {
   margin-top: 5rem;
   font-size: 1.85rem;
@@ -230,6 +304,11 @@ h2 {
   p {
     margin-top: 4rem;
     margin-bottom: 2rem;
+  }
+
+  p.text-small {
+    font-size: 1.5rem;
+    margin-bottom: 0;
   }
 
   h2 {

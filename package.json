@@ -24,6 +24,7 @@
     "es6-promise": "^4.2.8",
     "mailgo": "^0.11.2",
     "replaceme": "git+https://github.com/adrianklimek/replaceme.git#40e51929cda5ca94ea99273fa9484e224211f524",
+    "scratchcard-js": "^1.4.9",
     "whatwg-fetch": "^3.0.0"
   }
 }
