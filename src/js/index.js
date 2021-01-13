@@ -44,7 +44,8 @@ fetch(`https://parla.me/shortner/generate?url=${encodeURIComponent(document.loca
   });
 
 const title = 'Korona nije opravdanje: Imamo pravo znati kako zastupnici_e glasaju u naše ime';
-const text = 'Hrvatska je jedina zemlja EU koja je zbog COVID-a prestala objavljivati kako su zastupnice_i pojedinačno glasali. Neprihvatljivo je da se Sabor skriva iza epidemioloških mjera i manjkavosti sustava elektronskog glasanja.';
+const textTwitter = 'Hrvatska je jedina zemlja EU koja je zbog COVID-a prestala objavljivati kako su zastupnice_i pojedinačno glasali. Neprihvatljivo je da se Sabor skriva iza epidemioloških mjera i manjkavosti sustava elektronskog glasanja.';
+const textMail = 'Hrvatski sabor jedini je nacionalni parlament u EU koji je, pod izgovorom korone, prestao objavljivati kako je glasala koja zastupnica i zastupnik. Neprihvatljivo je da se Sabor skriva iza epidemioloških mjera i manjkavosti sustava elektronskog glasanja predviđenog samo za sabornicu. Imamo pravo znati tko i kako odlučuje u naše ime.';
 const hashtags = '';
 
 document.querySelector('.js-facebook').addEventListener('click', () => {
@@ -52,11 +53,11 @@ document.querySelector('.js-facebook').addEventListener('click', () => {
   window.open(url, '_blank');
 });
 document.querySelector('.js-twitter').addEventListener('click', () => {
-  const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(`${text.slice(0, 250)}… ${hashtags} ${link}`)}`;
+  const url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(`${textTwitter.slice(0, 250)}… ${hashtags} ${link}`)}`;
   window.open(url, '_blank');
 });
 document.querySelector('.js-email').addEventListener('click', () => {
-  const url = `mailto:?subject=${encodeURIComponent(title)}&body=${text} ${encodeURIComponent(document.location.href)}`;
+  const url = `mailto:?subject=${encodeURIComponent(title)}&body=${textMail} ${encodeURIComponent(document.location.href)}`;
   window.open(url, '_blank');
 });
 
