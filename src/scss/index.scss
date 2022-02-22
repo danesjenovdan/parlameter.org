@@ -410,8 +410,16 @@ h2 {
   }
 }
 
+.contact-box {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  height: 100%;
+}
+
 .contact-info {
-  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 150px;
   height: 150px;
   background: $secondary-light;
@@ -419,14 +427,10 @@ h2 {
   padding: 10px;
 
   .contact-icon {
-    height: 84px;
-    width: 130px;
+    height: 100px;
+    width: 100px;
     text-align: center;
-    line-height: 121px;
-
-    svg {
-      height: 100%;
-    }
+    line-height: 100px;
   }
 
   h3 {
@@ -496,31 +500,31 @@ h2 {
 }
 
 .footer {
+  .footer-col {
+    display: flex;
+    align-items: center;
 
-  & > .row {
-    @media (max-width: 991.98px) {
-      max-width: 400px;
-      margin: 0 auto;
-    }
-
-    .footer-col:not(:last-of-type) {
-      @media (max-width: 991.98px) {
-        border-bottom: 2px solid $primary;
-        padding-bottom: 2rem;
-        margin-bottom: 2rem;
-      }
+    @media (max-width: 1199.98px) {
+      flex-direction: column;
     }
   }
 
-
-
   p {
     font-weight: 300;
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    margin: 0;
 
-    &:last-child {
-      margin-bottom: 0;
+    @media (max-width: 1199.98px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  hr {
+    border-top: 1px solid #2e149a;
+    margin-bottom: 3.1rem;
+
+    @media (max-width: 1199.98px) {
+      margin-bottom: 2rem;
     }
   }
 
@@ -549,15 +553,30 @@ h2 {
   }
 
   .logo {
+    img {
+      max-width: 140px;
+    }
     a {
       display: block;
       width: 100%;
     }
+
+    @media (max-width: 767.98px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .developed-by {
+    margin-right: 20px;
+  }
+  
+  .djnd-logo {
+    width: 120px;
   }
 }
 
 .sm-text-align-center {
-  @media (max-width: 767.98px) {
+  @media (max-width: 1199.98px) {
     text-align: center;
   }
 }
