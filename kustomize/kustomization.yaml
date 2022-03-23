@@ -6,4 +6,4 @@ resources:
 images:
   - name: parlameter-landing
     newName: rg.fr-par.scw.cloud/djnd/parlameter-landing
-    newTag: '9def6184502f97b7aa879de297d433e43a975294'
+    newTag: 'dce533c44ee3d839a4f13a04d3d979f7e61e8a80'
