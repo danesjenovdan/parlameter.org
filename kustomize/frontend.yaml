@@ -42,7 +42,7 @@ spec:
   tls:
   - hosts:
     - parlameter.lb.djnd.si
-    # - parlameter.org
+    - parlameter.org
     secretName: parlameter-landing-tls
   rules:
   - host: parlameter.lb.djnd.si
@@ -55,13 +55,13 @@ spec:
             name: parlameter-landing
             port:
               number: 80
-  # - host: parlameter.org
-  #   http:
-  #     paths:
-  #     - path: /
-  #       pathType: Prefix
-  #       backend:
-  #         service:
-  #           name: parlameter-landing
-  #           port:
-  #             number: 80
+  - host: parlameter.org
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: parlameter-landing
+            port:
+              number: 80
