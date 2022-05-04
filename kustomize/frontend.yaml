@@ -39,6 +39,7 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: "letsencrypt-production"
 spec:
+  ingressClassName: nginx
   tls:
   - hosts:
     - parlameter.lb.djnd.si
