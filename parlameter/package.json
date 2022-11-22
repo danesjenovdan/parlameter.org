@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "parcel ./src/*.html --open",
-    "build": "rimraf dist && parcel build ./src/*.html && static-i18n -i en -i sl --locales-path locales -o dist dist"
+    "build": "rimraf dist && parcel build ./src/*.html && static-i18n -i en -i sl -i bs --locales-path locales -o dist dist"
   },
   "author": "danesjenovdan",
   "license": "Unlicense",
