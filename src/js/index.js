@@ -1,5 +1,5 @@
 import Promise from 'es6-promise';
-import { fetch } from 'whatwg-fetch';
+// import { fetch } from 'whatwg-fetch';
 import AOS from 'aos';
 import 'replaceme';
 
@@ -51,15 +51,23 @@ const showcaseButton = document.querySelector('.showcase-boxes-more-btn');
 if (showcaseButton) {
   showcaseButton.addEventListener('click', () => {
     const showcaseRow = document.querySelector('.showcase-boxes .row');
-    let scrolled = showcaseRow.offsetWidth;
-    if (showcaseButton.classList.contains('scrolled')) {
-      scrolled *= -1;
-      showcaseButton.classList.remove('scrolled');
-    } else {
+    const currentScroll = showcaseRow.scrollLeft;
+    const maxScroll = showcaseRow.scrollWidth - showcaseRow.offsetWidth;
+    let toScroll = showcaseRow.offsetWidth * 0.67;
+
+    // add class to turn the arrow around if next click will scroll back to the beginning
+    if ((currentScroll + toScroll + 5) >= maxScroll) {
       showcaseButton.classList.add('scrolled');
     }
+
+    // scroll to the beginning if we are at the end (5px tolerance)
+    if ((currentScroll + 5) >= maxScroll) {
+      toScroll = -maxScroll;
+      showcaseButton.classList.remove('scrolled');
+    }
+
     showcaseRow.scrollBy({
-      left: scrolled,
+      left: toScroll,
       behavior: 'smooth',
     });
   });
