@@ -42,11 +42,11 @@ spec:
   ingressClassName: nginx
   tls:
   - hosts:
-    - consul-tmp.lb.djnd.si
+    - consul.djnd.si
     - consul.danesjenovdan.si
     secretName: consul-landing-tls
   rules:
-  - host: consul-tmp.lb.djnd.si
+  - host: consul.djnd.si
     http:
       paths:
       - path: /
