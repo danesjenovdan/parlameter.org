@@ -6,4 +6,4 @@ resources:
 images:
   - name: consul-landing
     newName: rg.fr-par.scw.cloud/djnd/consul-landing
-    newTag: '742050d7d75c5b2869898c909d8f523941b9a82a'
+    newTag: '56ceab463c0d6612719245e1b888656444ece009'
