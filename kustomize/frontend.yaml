@@ -43,9 +43,20 @@ spec:
   tls:
   - hosts:
     - consul-tmp.lb.djnd.si
+    - consul.danesjenovdan.si
     secretName: consul-landing-tls
   rules:
   - host: consul-tmp.lb.djnd.si
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: consul-landing
+            port:
+              number: 80
+  - host: consul.danesjenovdan.si
     http:
       paths:
       - path: /
