@@ -29,6 +29,8 @@
   "feature-7": "Primerjalnik glasovanj",
   "feature-7-desc": "Odgovarja na uporabniška vprašanja tipa \"kdaj so člani ene skupine glasovali enako kot člani skupine, s katero sicer nimajo veliko skupnega\".",
   "in-the-wild": "Parlameter že poganja digitalna življenja spodnjih institucij:",
+  "in-the-wild-national": "Parlamenti",
+  "in-the-wild-municipal": "Občinski sveti",
   "na-slovenia": "Državni zbor Republike Slovenije",
   "na-croatia": "Hrvaški sabor",
   "na-bih": "Bosanski parlament",
