@@ -1,7 +1,7 @@
 # ---
 # build stage image
 # ---
-FROM node:14-alpine as build
+FROM node:20-alpine AS build
 RUN apk add --update --no-cache git
 
 # set current directory
@@ -22,3 +22,6 @@ FROM nginx:alpine
 
 # copy built files from the 'build' container into the nginx container
 COPY --from=build /app/dist /usr/share/nginx/html
+
+# copy custom nginx config to support routes without .html
+COPY nginx.conf /etc/nginx/conf.d/default.conf

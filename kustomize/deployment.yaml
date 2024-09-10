@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: consul-landing
+  labels:
+    app: consul-landing
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: consul-landing
+  template:
+    metadata:
+      labels:
+        app: consul-landing
+    spec:
+      containers:
+        - name: consul-landing
+          image: consul-landing
+          ports:
+            - containerPort: 80
