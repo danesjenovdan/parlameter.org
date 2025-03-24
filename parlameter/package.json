@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "parcel ./src/*.html --open",
+    "lint": "eslint ./src",
     "build": "rimraf dist && parcel build ./src/*.html && static-i18n -i en -i sl -i bs --locales-path locales -o dist dist"
   },
   "author": "danesjenovdan",
@@ -15,16 +16,13 @@
     "eslint-plugin-import": "^2.25.2",
     "parcel": "^2.14.2",
     "parcel-reporter-static-files-copy": "^1.5.3",
-    "process": "^0.11.10",
     "rimraf": "^6.0.1",
     "sass": "^1.86.0",
     "static-i18n": "^0.2.10"
   },
   "dependencies": {
     "aos": "^2.3.4",
-    "es6-promise": "^4.2.8",
     "replaceme": "git+https://github.com/adrianklimek/replaceme.git#40e51929cda5ca94ea99273fa9484e224211f524",
-    "static-i18n": "^0.2.10",
-    "whatwg-fetch": "^3.6.20"
+    "static-i18n": "^0.2.10"
   }
 }

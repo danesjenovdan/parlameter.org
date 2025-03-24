@@ -1,8 +1,5 @@
-import Promise from 'es6-promise';
-import { fetch } from 'whatwg-fetch';
 import AOS from 'aos';
 import 'replaceme';
-
 
 // ---
 // Polyfill
@@ -63,7 +60,7 @@ langSelect.querySelectorAll('option').forEach((option) => {
 function changeCarousel(dt, i) {
   if (!dt.classList.contains('active')) {
     const imgs = document.querySelectorAll('.carousel img');
-    imgs.forEach(img => img.classList.remove('active'));
+    imgs.forEach((img) => img.classList.remove('active'));
     imgs[i % imgs.length].classList.add('active');
     dt.closest('dl').querySelectorAll('dt').forEach((e) => {
       const dd = e.nextElementSibling;
@@ -111,7 +108,6 @@ function loopCarousel(i) {
 
 loopCarousel(0);
 
-
 // ---
 // Fix carousel height
 // ---
@@ -126,7 +122,6 @@ if (dl) {
   });
   dl.style.height = `${height + largest}px`;
 }
-
 
 // ---
 // Contact form
@@ -146,12 +141,14 @@ if (contactForm) {
     ];
 
     if (el.email.value === '') {
+      // eslint-disable-next-line no-alert
       alert('You need to enter an email address.');
-      return false;
+      return;
     }
     if (el.humanity.value !== '25') {
+      // eslint-disable-next-line no-alert
       alert('Please provide a correct answer to the last question.');
-      return false;
+      return;
     }
 
     btn.setAttribute('disabled', true);
@@ -163,7 +160,7 @@ if (contactForm) {
       },
       body: data.join('&'),
     })
-      .then(res => res.text())
+      .then((res) => res.text())
       .then((text) => {
         if (text.toLowerCase().indexOf('error') === -1) {
           btn.textContent = 'Done!';
