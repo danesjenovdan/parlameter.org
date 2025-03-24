@@ -1,10 +1,11 @@
-@import 'npm:aos/dist/aos.css';
+@use "sass:string";
+@use "colors";
+@use "animations";
 
-@import 'colors';
-@import 'animations';
+@import "npm:aos/dist/aos.css";
 
 ::selection {
-  background-color: $secondary;
+  background-color: colors.$secondary;
 }
 
 html {
@@ -18,36 +19,40 @@ body {
 }
 
 .bg-primary {
-  background-color: $primary !important;
+  background-color: colors.$primary !important;
 }
 
 .text-primary {
-  color: $primary !important;
+  color: colors.$primary !important;
 }
 
 .btn-primary {
   &,
   &:hover,
   &:not(:disabled):not(.disabled):active {
-    background-color: $primary;
-    border-color: $primary;
+    background-color: colors.$primary;
+    border-color: colors.$primary;
   }
 
   &:hover {
-    background-color: rgba($primary, 0.75);
-    border-color: rgba($primary, 0.75);
+    background-color: rgba(colors.$primary, 0.75);
+    border-color: rgba(colors.$primary, 0.75);
   }
 
   &:focus,
   &:not(:disabled):not(.disabled).active:focus,
   &:not(:disabled):not(.disabled):active:focus {
-    box-shadow: 0 0 0 0.2rem rgba($primary, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(colors.$primary, 0.5);
   }
 }
 
 .bg-secondary {
-  background-color: $secondary !important;
-  background-image: linear-gradient(-224deg, $secondary 0%, $secondary-light 100%) !important;
+  background-color: colors.$secondary !important;
+  background-image: linear-gradient(
+    -224deg,
+    colors.$secondary 0%,
+    colors.$secondary-light 100%
+  ) !important;
 }
 
 a {
@@ -56,7 +61,7 @@ a {
   &:focus,
   &:active,
   &:visited {
-    color: $primary;
+    color: colors.$primary;
     text-decoration: underline;
     font-weight: 500;
   }
@@ -66,7 +71,7 @@ a {
   }
 
   &.white {
-    color: $secondary-light;
+    color: colors.$secondary-light;
   }
 }
 
@@ -79,13 +84,13 @@ a {
 }
 
 .djnd {
-  font-family: 'Titillium Web';
+  font-family: "Titillium Web";
   font-weight: 900;
   font-size: 1.5rem;
-  color: $primary;
+  color: colors.$primary;
 
   &::before {
-    content: 'DANES JE NOV DAN';
+    content: "DANES JE NOV DAN";
   }
 }
 
@@ -135,7 +140,7 @@ h2 {
     &,
     &:hover,
     &:active {
-      color: $primary;
+      color: colors.$primary;
     }
   }
 
@@ -200,7 +205,7 @@ h2 {
   bottom: 0;
   width: 40%;
   height: 80%;
-  background-image: url('../img/site-landing@2x.jpg');
+  background-image: url("../img/site-landing@2x.jpg");
   background-size: cover;
   background-position: top center;
 
@@ -220,13 +225,12 @@ h2 {
   }
 
   .lead-box {
-    border: 1px solid $primary;
+    border: 1px solid colors.$primary;
     height: 100%;
     padding: 1.5rem;
 
     &.lead-box--last {
       @media (max-width: 767.98px) {
-
         .lead-box-image,
         hr {
           display: none;
@@ -267,7 +271,11 @@ h2 {
       width: 45%;
       height: 5px;
       border: 0;
-      background-image: linear-gradient(to right, $primary 0%, $secondary 100%);
+      background-image: linear-gradient(
+        to right,
+        colors.$primary 0%,
+        colors.$secondary 100%
+      );
       margin-top: 2rem;
       margin-bottom: 2rem;
     }
@@ -287,7 +295,6 @@ h2 {
 }
 
 .showcase-boxes {
-
   & > div {
     margin-bottom: 1.5rem;
     flex-basis: 25%;
@@ -306,14 +313,14 @@ h2 {
 
   .showcase-box {
     display: block;
-    border: 1px solid $primary;
+    border: 1px solid colors.$primary;
     height: 100%;
     padding: 1.5rem;
     text-decoration: none;
     color: #000;
 
     &:hover {
-      background-color: $secondary-light;
+      background-color: colors.$secondary-light;
     }
 
     .showcase-box-icon {
@@ -386,13 +393,17 @@ h2 {
       }
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         left: -1rem;
         display: block;
         width: 5px;
         height: 100%;
-        background-image: linear-gradient(to bottom, $primary 0%, $secondary 100%);
+        background-image: linear-gradient(
+          to bottom,
+          colors.$primary 0%,
+          colors.$secondary 100%
+        );
       }
     }
 
@@ -434,7 +445,7 @@ h2 {
   justify-content: center;
   width: 150px;
   height: 150px;
-  background: $secondary-light;
+  background: colors.$secondary-light;
   border-radius: 50%;
   padding: 10px;
 
@@ -464,11 +475,11 @@ h2 {
     label {
       position: absolute;
       top: -0.9rem;
-      left: .75rem;
+      left: 0.75rem;
       font-size: 1.1rem;
       font-weight: 300;
-      padding: 0 .5rem;
-      background-color: $primary;
+      padding: 0 0.5rem;
+      background-color: colors.$primary;
     }
 
     .form-control {
@@ -544,14 +555,14 @@ h2 {
     display: inline-block;
     width: 22px;
     height: 20px;
-    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23#{str-slice("#{$primary}", 2)}"%3e%3cpath d="M88.037 17.963A23.7 23.7 0 0 0 71.226 11a23.699 23.699 0 0 0-16.81 6.963L50 22.379l-4.416-4.416A23.699 23.699 0 0 0 28.774 11a23.7 23.7 0 0 0-16.811 6.963c-9.284 9.284-9.284 24.337 0 33.621L50 89.621l38.037-38.037c9.284-9.284 9.284-24.337 0-33.621"/%3e%3c/svg%3e');
+    background-image: url('data:image/svg+xml,%3csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="%23#{string.slice("#{colors.$primary}", 2)}"%3e%3cpath d="M88.037 17.963A23.7 23.7 0 0 0 71.226 11a23.699 23.699 0 0 0-16.81 6.963L50 22.379l-4.416-4.416A23.699 23.699 0 0 0 28.774 11a23.7 23.7 0 0 0-16.811 6.963c-9.284 9.284-9.284 24.337 0 33.621L50 89.621l38.037-38.037c9.284-9.284 9.284-24.337 0-33.621"/%3e%3c/svg%3e');
     background-repeat: no-repeat;
     background-position: center;
   }
 
   .btn.github {
     display: inline-block;
-    padding: .15rem 1.5rem;
+    padding: 0.15rem 1.5rem;
     color: #fff;
 
     // IE 10
