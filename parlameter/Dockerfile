@@ -1,7 +1,7 @@
 # ---
 # build stage image
 # ---
-FROM node:14-alpine as build
+FROM node:22-alpine as build
 RUN apk add --update --no-cache git
 
 # set current directory
