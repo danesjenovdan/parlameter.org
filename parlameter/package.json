@@ -23,7 +23,6 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
-    "replaceme": "git+https://github.com/adrianklimek/replaceme.git#40e51929cda5ca94ea99273fa9484e224211f524",
-    "static-i18n": "^0.2.10"
+    "replaceme": "git+https://github.com/adrianklimek/replaceme.git#40e51929cda5ca94ea99273fa9484e224211f524"
   }
 }
