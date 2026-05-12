@@ -2,8 +2,8 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 namespace: parlameter-landing
 resources:
-- frontend.yaml
+  - frontend.yaml
 images:
   - name: parlameter-landing
     newName: rg.fr-par.scw.cloud/djnd/parlameter-landing
-    newTag: 'c054ff4f72c0ec2c07f4898b1a47bb526853c60c'
+    newTag: "latest"
