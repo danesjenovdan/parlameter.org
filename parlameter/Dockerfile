@@ -1,19 +1,18 @@
 # ---
 # build stage image
 # ---
-FROM node:22-alpine as build
-RUN apk add --update --no-cache git
+FROM node:26-alpine AS build
 
 # set current directory
 WORKDIR /app
 
 # install dependencies
-COPY package.json yarn.lock ./
-RUN yarn
+COPY package.json package-lock.json ./
+RUN npm ci
 
 # copy all files and run build
 COPY . .
-RUN yarn build
+RUN npm run build
 
 # ---
 # actual image
