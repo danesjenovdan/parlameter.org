@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:position="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Consul</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#32366a">
+
+  <meta name="author" content="Danes je nov dan">
+  <meta name="description" data-attr-t content-t="og-description" content="A comprehensive solution for implementing participatory budgeting.">
+
+  <meta name="twitter:creator" content="@danesjenovdan">
+  <meta name="twitter:description" data-attr-t content-t="og-description" content="A comprehensive solution for implementing participatory budgeting.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" data-attr-t content-t="og-title" content="Consul Services: participatory budgeting made easy">
+  <meta name="twitter:image" data-attr-t data-attr-t-interpolate content-t="https://consul.danesjenovdan.si/img/consul_prodajni_og-{{lang}}.png">
+
+  <meta property="og:description" data-attr-t content-t="og-description" content="A comprehensive solution for implementing participatory budgeting.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" data-attr-t content-t="og-title" content="Consul Services: participatory budgeting made easy">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image" data-attr-t data-attr-t-interpolate content-t="https://consul.danesjenovdan.si/img/consul_prodajni_og-{{lang}}.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Barlow:300,400,500,700" rel="stylesheet">
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" rel="stylesheet">
+  <link href="./scss/index.scss" rel="stylesheet">
+</head>
+<body>
+  <div class="page-padding">
+    <div class="container-fluid" id="overview">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light" data-aos="fade">
+          <a class="navbar-brand" data-attr-t data-attr-t-interpolate href-t="/{{lang}}" data-t="nav-brand">Consul storitve</a>
+          <div class="collapse navbar-collapse justify-content-center">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" data-attr-t data-attr-t-interpolate href-t="/{{lang}}" data-t="nav-overview">Overview</a>
+              <a class="nav-item nav-link" href="#contact" data-t="nav-contact">Contact</a>
+              <a class="nav-item nav-link" data-attr-t data-attr-t-interpolate href-t="about" data-t="nav-about-the-team">About the team</a>
+            </div>
+          </div>
+          <form class="form-inline">
+            <select class="custom-select select-lang">
+              <option value="/">SL</option>
+              <option value="/en/">EN</option>
+            </select>
+          </form>
+        </nav>
+      </div>
+    </div>
+
+
+    <div class="container-fluid spaced-container-sm">
+      <div class="container about-us-content">
+        <div class="row justify-content-lg-center pb-5">
+          <div class="col-12 col-lg-8" data-aos="fade-up">
+            <div class="terms-rich-text">
+              <h1>Splošni pogoji uporabe programske opreme Consul</h1>
+              <p>
+                Consul je odprtokodna programska rešitev, namenjena vključevanju javnosti v
+                demokratične procese in skupnostno odločanje. Organizacijam omogoča
+                vzpostavitev spletnega okolja za sodelovanje posameznikov_ic pri javnih
+                razpravah, oblikovanju predlogov, glasovanjih in izvajanju participativnega
+                proračuna.
+              </p>
+              <p>
+                Danes je nov dan, Inštitut za druga vprašanja (v nadaljevanju: DJND), v okviru
+                svojega delovanja med drugim tudi razvija in prilagaja programske rešitve. Med
+                njimi je tudi Consul, katerega izvorno kodo DJND brezplačno objavlja na
+                platformi GitHub.
+              </p>
+              <p>
+                Ti pogoji urejajo zagotavljanje in uporabo različice programske opreme Consul,
+                ki jo DJND daje na voljo, ter pravice in obveznosti DJND in organizacij, ki
+                programsko opremo uporabljajo. Posebej urejajo tudi primere, ko DJND
+                uporabnikom_cam zagotavlja dodatne storitve v zvezi s programsko opremo.
+              </p>
+              <h2>1. Uvodne določbe</h2>
+              <ol>
+                <li>
+                  <p>
+                    Ti pogoji urejajo zagotavljanje in uporabo programske opreme Consul, ki jo
+                    DJND brezplačno objavlja na platformi GitHub, ter zagotavljanje morebitnih
+                    dodatnih storitev, povezanih z njeno uporabo.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Consul je odprtokodna programska oprema, katere uporaba, spreminjanje in
+                    nadaljnja distribucija so dovoljeni pod pogoji licence, pod katero je
+                    programska oprema objavljena. Ti pogoji ne posegajo v pravice
+                    uporabnikov_ic, ki izhajajo iz veljavne odprtokodne licence.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Uporabniki_ce lahko programsko opremo samostojno prenesejo, namestijo,
+                    prilagodijo in uporabljajo v skladu z veljavno licenco. Za takšno uporabo
+                    ni potrebna sklenitev posebne pogodbe z DJND.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    DJND lahko na podlagi posebnega dogovora zagotavlja tudi dodatne storitve,
+                    povezane s programsko opremo Consul, kot so namestitev, gostovanje,
+                    prilagoditve, tehnična podpora in vzdrževanje. Obseg in način izvajanja
+                    teh storitev, njihova cena ter druge pravice in obveznosti strank se
+                    določijo s posebnim dogovorom.
+                  </p>
+                </li>
+              </ol>
+              <h2>2. Opredelitev izrazov</h2>
+              <p>Izrazi, uporabljeni v teh pogojih, imajo naslednji pomen:</p>
+              <p>
+                <strong>DJND:</strong> Danes je nov dan, Inštitut za druga vprašanja, ki daje
+                na voljo programsko opremo Consul in lahko na podlagi posebnega dogovora
+                zagotavlja dodatne storitve, povezane z njeno uporabo.
+              </p>
+              <p>
+                <strong>Consul oziroma programska oprema:</strong> odprtokodna programska
+                rešitev za sodelovanje javnosti v demokratičnih procesih, v različici, ki jo
+                DJND objavlja na platformi GitHub, vključno z njenimi morebitnimi
+                posodobitvami in dopolnitvami.
+              </p>
+              <p>
+                <strong>Uporabnik_ca:</strong> fizična ali pravna oseba oziroma druga
+                organizacija, ki programsko opremo prenese, namesti, upravlja ali uporablja za
+                svoje potrebe. Kadar je to ustrezno glede na vsebino posamezne določbe, izraz
+                vključuje tudi osebo, ki z DJND sklene dogovor o zagotavljanju dodatnih
+                storitev.
+              </p>
+              <p>
+                <strong>Končni uporabnik_ca:</strong> posameznik_ca, ki dostopa do posamezne
+                vzpostavljene različice Consula in uporablja njene funkcionalnosti, na primer
+                za sodelovanje v razpravah, podajanje predlogov ali glasovanje.
+              </p>
+              <p>
+                <strong>Odprtokodna licenca:</strong> licenca, pod katero je objavljena
+                programska oprema in ki določa pravice ter obveznosti glede njene uporabe,
+                spreminjanja in nadaljnje distribucije.
+              </p>
+              <p>
+                <strong>Dodatne storitve:</strong> storitve, ki jih DJND na podlagi posebnega
+                dogovora zagotavlja uporabniku_ci v povezavi s programsko opremo, zlasti
+                namestitev, konfiguracija, prilagoditve, tehnična podpora, strokovna podpora,
+                vzdrževanje ali gostovanje.
+              </p>
+              <p>
+                <strong>Posebni dogovor: </strong>pogodba, ponudba, naročilnica, dogovor po
+                elektronski pošti ali drug dogovor med DJND in uporabnikom_co, ki določa
+                vrsto, obseg, način izvajanja in ceno dodatnih storitev, povezanih s
+                programsko opremo Consul.
+              </p>
+              <p>
+                <strong>Pogoji:</strong> ti pogoji uporabe programske opreme Consul, skupaj z
+                njihovimi morebitnimi dodatki.
+              </p>
+              <h2>3. Dostopnost in uporaba programske opreme</h2>
+              <ol>
+                <li>
+                  <p>
+                    DJND na platformi GitHub javno in brezplačno objavlja izvorno kodo
+                    programske opreme Consul. Uporabniki_ce lahko programsko opremo brez
+                    plačila DJND samostojno prenesejo, namestijo, uporabljajo, spreminjajo,
+                    prilagajajo svojim potrebam in nadalje distribuirajo v skladu s pogoji
+                    veljavne odprtokodne licence. Za takšno uporabo ni potrebna sklenitev
+                    posebnega dogovora z DJND.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Brezplačna dostopnost programske opreme ne vključuje namestitve,
+                    konfiguracije, prilagoditev, tehnične podpore, vzdrževanja, gostovanja ali
+                    drugih storitev DJND. Te lahko DJND zagotavlja na podlagi posebnega
+                    dogovora, v katerem se določijo tudi stroški njihovega izvajanja.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Uporabnik_ca, ki programsko opremo samostojno namesti in upravlja, je
+                    odgovoren_na za njeno ustrezno konfiguracijo, delovanje in varnost okolja,
+                    v katerem jo uporablja, ter za izpolnjevanje zakonskih obveznosti,
+                    povezanih z njeno uporabo.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    DJND lahko objavljeno različico programske opreme posodablja, spreminja
+                    ali dopolnjuje, vendar ni dolžan zagotavljati rednih posodobitev, novih
+                    funkcionalnosti, odpravljanja napak, vzdrževanja ali tehnične podpore,
+                    razen če je to posebej dogovorjeno.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Uporaba programske opreme je lahko odvisna tudi od drugih programskih
+                    komponent, tehničnih rešitev in storitev tretjih oseb. Za njihovo uporabo
+                    lahko veljajo posebne licence in pogoji njihovih ponudnikov.
+                  </p>
+                </li>
+              </ol>
+              <h2>4. Pravice intelektualne lastnine in odprtokodna licenca</h2>
+              <ol>
+                <li>
+                  <p>
+                    Programska oprema Consul temelji na odprtokodnem projektu CONSUL
+                    DEMOCRACY. Različica programske opreme, ki jo objavlja DJND, je dostopna
+                    pod licenco GNU Affero General Public License, različica 3 (AGPL-3.0).
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Pravice in obveznosti glede uporabe, kopiranja, spreminjanja in nadaljnje
+                    distribucije programske opreme določa navedena licenca, katere besedilo je
+                    dostopno v repozitoriju programske opreme.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Uporabniki_ce so pri uporabi in nadaljnji distribuciji programske opreme
+                    dolžni spoštovati pogoje licence, vključno z obveznostmi glede dostopnosti
+                    izvorne kode, ohranjanja ustreznih obvestil in licenciranja sprememb,
+                    kadar te obveznosti izhajajo iz licence.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Pravice intelektualne lastnine na drugih gradivih, dokumentaciji,
+                    grafičnih elementih ali vsebinah, ki niso zajeti z licenco programske
+                    opreme, pripadajo njihovim imetnikom, razen če je za posamezno gradivo
+                    izrecno določeno drugače.
+                  </p>
+                </li>
+              </ol>
+              <h2>5. Dodatne storitve DJND</h2>
+              <ol>
+                <li>
+                  <p>
+                    DJND lahko na podlagi posebnega dogovora uporabnikom_cam zagotavlja
+                    dodatne storitve, povezane s programsko opremo Consul, kot so namestitev,
+                    konfiguracija, prilagoditve, tehnična podpora, strokovna podpora,
+                    vzdrževanje in gostovanje.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Vrsta, obseg in način izvajanja dodatnih storitev, njihova cena, roki
+                    izvedbe ter druge pravice in obveznosti strank se določijo s posebnim
+                    dogovorom. Ta je lahko sklenjen v katerikoli obliki, ki omogoča ugotovitev
+                    soglasja strank, na primer s pogodbo, potrditvijo ponudbe, naročilnico ali
+                    elektronsko pošto. V primeru neskladja imajo določbe posebnega dogovora
+                    prednost pred temi pogoji glede storitev, ki jih urejajo.
+                  </p>
+                </li>
+              </ol>
+              <h2>6. Upravljanje programske opreme in odgovornost uporabnikov_ic</h2>
+              <ol>
+                <li>
+                  <p>
+                    Uporabnik_ca, ki programsko opremo samostojno namesti in upravlja, je
+                    odgovoren_na za njeno uporabo v skladu z veljavno zakonodajo in za
+                    vzpostavitev ustreznih organizacijskih ter tehničnih ukrepov za njeno
+                    varno delovanje.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Uporabnik_ca sam_a določa namene, za katere uporablja programsko opremo,
+                    pravila sodelovanja končnih uporabnikov_ic, pogoje uporabe svoje platforme
+                    ter način upravljanja in moderiranja objavljenih vsebin.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Uporabnik_ca je odgovoren_na za vsebine, ki jih objavi ali omogoči prek
+                    svoje različice programske opreme, ter za zakonitost njihove objave in
+                    nadaljnje uporabe. DJND zgolj zaradi objave izvorne kode ne prevzema
+                    odgovornosti za takšne vsebine.
+                  </p>
+                </li>
+              </ol>
+              <h2>7. Delovanje programske opreme in odgovornost DJND</h2>
+              <ol>
+                <li>
+                  <p>
+                    Programska oprema je brezplačno dostopna v obliki in stanju, v kakršnem je
+                    objavljena. DJND ne zagotavlja, da bo programska oprema ustrezala vsem
+                    potrebam uporabnikov_ic, delovala brez napak ali bila združljiva z vsemi
+                    informacijskimi okolji.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    DJND ne prevzema odgovornosti za posledice samostojne namestitve,
+                    spreminjanja, konfiguracije ali uporabe programske opreme s strani
+                    uporabnikov_ic oziroma tretjih oseb, razen kadar njegova odgovornost
+                    izhaja iz veljavne zakonodaje ali posebnega dogovora.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    DJND ne odgovarja za motnje, napake ali varnostne pomanjkljivosti, ki so
+                    posledica posegov uporabnika_ce oziroma tretjih oseb, neustrezne
+                    konfiguracije, uporabe nepodprtih komponent ali drugih okoliščin zunaj
+                    njegovega nadzora.
+                  </p>
+                </li>
+              </ol>
+              <h2>8. Varstvo osebnih podatkov</h2>
+              <ol>
+                <li>
+                  <p>
+                    Kadar uporabnik_ca programsko opremo Consul samostojno namesti in
+                    upravlja, brez sodelovanja DJND pri njenem delovanju, DJND ne dostopa do
+                    osebnih podatkov, ki se obdelujejo v okviru te programske opreme, niti ne
+                    sodeluje pri njihovi obdelavi.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Uporabnik_ca je odgovoren_na za zagotavljanje skladnosti obdelave osebnih
+                    podatkov, ki poteka v okviru njegove_njene različice programske opreme
+                    Consul, z veljavno zakonodajo o varstvu osebnih podatkov.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Kadar DJND na podlagi posebnega dogovora zagotavlja dodatne storitve, ki
+                    vključujejo obdelavo osebnih podatkov, se medsebojne pravice in obveznosti
+                    strank glede varstva osebnih podatkov uredijo s posebnim dogovorom oziroma
+                    ločenim sporazumom o obdelavi osebnih podatkov, kadar je ta potreben v
+                    skladu z veljavno zakonodajo.
+                  </p>
+                </li>
+              </ol>
+              <h2>9. Spremembe pogojev</h2>
+              <ol>
+                <li>
+                  <p>
+                    DJND lahko te pogoje spremeni ali dopolni zaradi sprememb zakonodaje,
+                    načina zagotavljanja programske opreme ali drugih razlogov.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Spremenjeni pogoji se objavijo na spletnem mestu DJND oziroma na drugem
+                    ustreznem mestu z navedbo datuma začetka njihove veljavnosti.
+                  </p>
+                </li>
+              </ol>
+              <h2>10. Končne določbe</h2>
+              <ol>
+                <li>
+                  <p>
+                    Za razmerja med DJND in uporabniki_cami, ki jih urejajo ti pogoji, se
+                    uporablja pravo Republike Slovenije.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Morebitne spore si bodo DJND in uporabniki_ce prizadevali rešiti
+                    sporazumno. Če sporazumna rešitev ne bo mogoča, je za odločanje pristojno
+                    sodišče v skladu z veljavnimi predpisi.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    Če se posamezna določba teh pogojev izkaže za neveljavno ali neizvršljivo,
+                    to ne vpliva na veljavnost preostalih določb, če lahko pogoji brez nje še
+                    vedno dosegajo svoj namen.
+                  </p>
+                </li>
+                <li>
+                  <p>Ti pogoji začnejo veljati z 21. 11. 2026.</p>
+                </li>
+              </ol>
+              <div style="margin-bottom: 6rem;"></div>
+              <h2>Podatki o ponudniku</h2>
+              <p>
+                <strong>Naziv:</strong> Danes je nov dan, Inštitut za druga vprašanja
+                <br>
+                <strong>Naslov:</strong> Resljeva cesta 25, 1000 Ljubljana
+                <br>
+                <strong>Matična številka:</strong> 6468594000
+                <br>
+                <strong>Davčna številka:</strong> SI54561710
+                <br>
+                <strong>E-naslov:</strong>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  href="mailto:vsi@danesjenovdan.si"
+                  >vsi@danesjenovdan.si</a
+                >
+                <br>
+                <strong>Spletno mesto:</strong>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  href="https://danesjenovdan.si"
+                  >https://danesjenovdan.si</a
+                >
+                <br>
+                <strong>Izvorna koda:</strong>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  href="https://github.com/danesjenovdan/consul"
+                  >https://github.com/danesjenovdan/consul</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid spaced-container-md bg-primary" id="contact">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-5">
+            <div class="contact-info row justify-content-center">
+              <div class="col-12 col-md-4 p-0 d-flex align-items-center justify-content-center">
+                <div data-aos="fade-up">
+                  <div class="contact-icon d-flex justify-content-center align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="15 25 70 54"><path fill="#32366a" d="M56 29.26c-.41 0-.82 0-1.23.06v-.5c.42 0 .85-.06 1.27-.06s.86 0 1.27.06v.5c-.5-.04-.91-.06-1.31-.06zM30.16 49.1a3.27 3.27 0 0 0 .34-1.45 3.19 3.19 0 0 0 0-.56q-.05-.29-.08-.58h-.5q0 .31.08.62a2.72 2.72 0 0 1 0 .47 2.77 2.77 0 0 1-.29 1.23zm.84-6.37l-.45-.21a7.76 7.76 0 0 0-.67 2.48l.5.05a7.26 7.26 0 0 1 .62-2.32zM37.08 38a7.73 7.73 0 0 0-2.51.61l.2.46a7.23 7.23 0 0 1 2.35-.57zm4 1.08v-.5a2.75 2.75 0 0 1-.82-.15 7.81 7.81 0 0 0-1.6-.38l-.06.5a7.27 7.27 0 0 1 1.5.35 3.26 3.26 0 0 0 .9.2zM19.11 55.77a7.61 7.61 0 0 0-.35 2.23v.29h.5v-.28a7.1 7.1 0 0 1 .32-2.12zm25-18.65l.16-.36-.46-.21-.16.37a2.75 2.75 0 0 1-1.29 1.39l.23.45a3.25 3.25 0 0 0 1.55-1.64zM20.44 62a7.08 7.08 0 0 1-1-2.21l-.49.12a7.57 7.57 0 0 0 1 2.36zM25 50.52a7.6 7.6 0 0 0-2.42.89l.25.43a7.07 7.07 0 0 1 2.28-.84zm2.11 15.14v-.5h-.71a7.13 7.13 0 0 1-1.7-.2l-.12.49a7.62 7.62 0 0 0 1.82.22zm-5.8-13.34a7.66 7.66 0 0 0-1.62 2l.44.24a7.15 7.15 0 0 1 1.51-1.88zm57.07.42a7.15 7.15 0 0 1 1.49 1.9l.44-.24a7.63 7.63 0 0 0-1.59-2zM71 50.4v.5h2.51v-.5H71zm-2.51-3.7a13.23 13.23 0 0 0 .62-2.3l-.49-.09a12.74 12.74 0 0 1-.62 2.22l-.06.18.48.15zm.2-6.31a13 13 0 0 1 .11 1.71v.75h.5v-.78a13.57 13.57 0 0 0-.12-1.77zm-22.6-7.25a13.35 13.35 0 0 0-1.52 2l.43.26a12.84 12.84 0 0 1 1.47-2zM75 51a7.07 7.07 0 0 1 2.26.86l.25-.43a7.57 7.57 0 0 0-2.42-.92zm-45.9-.68l-.29-.41a2.74 2.74 0 0 1-1.57.49h-.69v.5h.69a3.24 3.24 0 0 0 1.86-.58zm33.23-19.38a12.92 12.92 0 0 1 2 1.42l.33-.38a13.46 13.46 0 0 0-2.09-1.47zm-13.08-.37a13.35 13.35 0 0 0-2.07 1.49l.33.38a12.83 12.83 0 0 1 2-1.44zM53 29.08a13.35 13.35 0 0 0-2.43.8l.2.46a12.83 12.83 0 0 1 2.34-.77zm8.16.74a13.34 13.34 0 0 0-2.43-.77l-.1.49a12.75 12.75 0 0 1 2.34.74zM23.33 64.47a7.15 7.15 0 0 1-2-1.39l-.35.35a7.65 7.65 0 0 0 2.11 1.49zm45.51-15.25a2.73 2.73 0 0 1-.44-1l-.49.1a3.25 3.25 0 0 0 1.55 2.14l.25-.43a2.72 2.72 0 0 1-.87-.81zM67.6 36.64a12.73 12.73 0 0 1 .83 2.31l.48-.12a13.24 13.24 0 0 0-.86-2.4zm1.19 29h2.51v-.5h-2.5zm-1.51 0v-.5h-.37v.5zM65.77 33l-.37.34a13 13 0 0 1 1.49 2l.42-.26A13.47 13.47 0 0 0 65.77 33zm15.47 25.4v-.37a7.6 7.6 0 0 0-.32-2.19l-.48.14a7.11 7.11 0 0 1 .3 2v.35zm-1.29 3.9A7.58 7.58 0 0 0 81 59.94l-.48-.12a7.08 7.08 0 0 1-1 2.2zM76.83 65A7.63 7.63 0 0 0 79 63.49l-.35-.36a7.13 7.13 0 0 1-2 1.37zm-4 .21v.5h.81a7.66 7.66 0 0 0 1.74-.2l-.13-.51a7.13 7.13 0 0 1-1.63.19zm-41.67 0h-2.52v.5h2.51zm2 .5a5.1 5.1 0 0 1 .34-.5h-.82v.5zm.09-26.28a7.86 7.86 0 0 0-1.85 1.8l.4.3a7.36 7.36 0 0 1 1.7-1.73zm26.4 30.68a1 1 0 0 1-1 1H46.9a1 1 0 0 1-1-1c0-5.14 3.08-9.33 6.86-9.33s6.86 4.14 6.86 9.29zm-2-1c-.33-3.57-2.36-6.33-4.82-6.33s-4.48 2.81-4.82 6.33zM49 55.42a3.71 3.71 0 1 1 3.71 3.71A3.72 3.72 0 0 1 49 55.42zm2 0a1.71 1.71 0 1 0 1.71-1.71A1.72 1.72 0 0 0 51 55.42zm22.57-8.77h-1.11a17.1 17.1 0 0 0-31.86-12 11.56 11.56 0 0 0-14.51 11.17v.84a11.38 11.38 0 0 0 .28 22.76h7.16a4.43 4.43 0 0 1-.07-2H26.4a9.38 9.38 0 0 1 0-18.77h.85a1 1 0 0 0 1-1.17A9.56 9.56 0 0 1 40.82 36.8a1 1 0 0 0 1.25-.55 15.1 15.1 0 0 1 28.08 11.06 1 1 0 0 0 .94 1.34h2.53a9.38 9.38 0 0 1 0 18.77h-6.7v2h6.7a11.38 11.38 0 0 0 0-22.77zm-9.7 1.1v26.73a3.84 3.84 0 0 1-3.83 3.83H41.59a3.84 3.84 0 0 1-3.83-3.83v-4.64h-.7a1.58 1.58 0 0 1 0-3.17h.7v-4h-.7a1.58 1.58 0 0 1 0-3.17h.7v-4h-.7a1.58 1.58 0 0 1 0-3.17h.7v-4.58a3.84 3.84 0 0 1 3.83-3.83h18.5a3.84 3.84 0 0 1 3.83 3.83zM42.1 45.92h-.51a1.84 1.84 0 0 0-1.83 1.83v26.73a1.84 1.84 0 0 0 1.83 1.83h.51zm19.83 1.83a1.84 1.84 0 0 0-1.83-1.83h-16v30.4h16a1.84 1.84 0 0 0 1.83-1.83z"/></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-8 pl-4 pr-4 text-center text-md-left align-items-center justify-content-center">
+                <h3 data-aos="fade-up" data-t="contact" class="pt-2">
+                  Kontaktiraj nas
+                </h3>
+                <p data-aos="fade-up" data-t="contact-desc">
+                  Pripravljenost na prihodnost se začne danes. Z veseljem odgovorimo na vsa vaša vprašanja.
+                </p>
+                <p data-aos="fade-up">
+                  <span data-t="contact-email">Contact us at</span>
+                  <a href="mailto:consul@danesjenovdan.si">consul@danesjenovdan.si</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5 pt-4 pt-lg-0">
+            <div class="contact-info row justify-content-center">
+              <div class="col-12 col-md-4 p-0 d-flex align-items-center justify-content-center">
+                <div data-aos="fade-up">
+                  <div class="contact-icon d-flex justify-content-center align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" ><path fill="#32366a" d="M53.76,44.063l0.895-9.396C55.061,34.873,55.514,35,56,35c1.654,0,3-1.346,3-3V20.263c0-1.777-1.193-3.358-2.901-3.846  L52,15.246V13.46c1.224-1.099,2-2.688,2-4.46V7c0-3.309-2.691-6-6-6s-6,2.691-6,6v2c0,1.771,0.776,3.36,2,4.46v1.786l-4.099,1.171  C38.193,16.904,37,18.486,37,20.263v1.269l-1-0.286V19.46c1.224-1.099,2-2.688,2-4.46v-2c0-3.309-2.691-6-6-6s-6,2.691-6,6v2  c0,1.771,0.776,3.36,2,4.46v1.786l-1,0.286v-1.269c0-1.777-1.193-3.358-2.901-3.846L20,15.246V13.46c1.224-1.099,2-2.688,2-4.46V7  c0-3.309-2.691-6-6-6s-6,2.691-6,6v2c0,1.771,0.776,3.36,2,4.46v1.786l-4.099,1.171C6.193,16.904,5,18.486,5,20.263V32  c0,1.654,1.346,3,3,3c0.486,0,0.939-0.127,1.345-0.333l0.895,9.396C4.278,46.095,1,48.897,1,52c0,5.333,10.865,11,31,11  s31-5.667,31-11C63,48.897,59.722,46.095,53.76,44.063z M44.909,51l-1.81-19H47v19H44.909z M49,32h3.901l-1.81,19H49V32z M44,7  c0-2.206,1.794-4,4-4s4,1.794,4,4v2c0,2.206-1.794,4-4,4s-4-1.794-4-4V7z M48,15c0.702,0,1.373-0.128,2-0.35v1.074  C49.752,16.107,49.063,17,48,17c-1.065,0-1.755-0.897-2-1.275V14.65C46.627,14.872,47.298,15,48,15z M39,20.263  c0-0.888,0.597-1.679,1.45-1.923l4.12-1.177C45.151,17.919,46.279,19,48,19s2.849-1.081,3.429-1.837l4.12,1.177  c0.854,0.244,1.45,1.035,1.45,1.923V32c0,0.551-0.448,1-1,1s-1-0.449-1-1v-3v-7h-2v7v1H43v-3.737V22h-2v0.815  c-0.281-0.164-0.578-0.306-0.901-0.398L39,22.103V20.263z M28,13c0-2.206,1.794-4,4-4s4,1.794,4,4v2c0,2.206-1.794,4-4,4  s-4-1.794-4-4V13z M32,21c0.702,0,1.373-0.128,2-0.35v1.074C33.752,22.107,33.063,23,32,23s-1.752-0.893-2-1.276V20.65  C30.627,20.872,31.298,21,32,21z M28.571,23.163C29.151,23.919,30.279,25,32,25s2.849-1.081,3.429-1.837l4.12,1.177  c0.854,0.244,1.45,1.035,1.45,1.923V32v6c0,0.551-0.448,1-1,1s-1-0.449-1-1v-4v-6h-2v6v2H27v-2v-6h-2v6v4c0,0.551-0.448,1-1,1  s-1-0.449-1-1v-6v-5.737c0-0.888,0.597-1.679,1.45-1.923L28.571,23.163z M28.909,57l-1.81-19H31v19H28.909z M33,38h3.901l-1.81,19  H33V38z M12.909,51l-1.81-19H15v19H12.909z M17,32h3.901l-1.81,19H17V32z M12,7c0-2.206,1.794-4,4-4s4,1.794,4,4v2  c0,2.206-1.794,4-4,4s-4-1.794-4-4V7z M16,15c0.702,0,1.373-0.128,2-0.35v1.074C17.752,16.107,17.063,17,16,17s-1.752-0.893-2-1.276  V14.65C14.627,14.872,15.298,15,16,15z M8,33c-0.552,0-1-0.449-1-1V20.263c0-0.888,0.597-1.679,1.45-1.923l4.12-1.177  C13.151,17.919,14.279,19,16,19s2.849-1.081,3.429-1.837l4.12,1.177c0.854,0.244,1.45,1.035,1.45,1.923v1.84l-1.099,0.314  c-0.323,0.092-0.62,0.234-0.901,0.398V22h-2v4.263V30H11v-1v-7H9v7v3C9,32.551,8.552,33,8,33z M32,61c-17.09,0-29-4.743-29-9  c0-2.057,2.757-4.221,7.435-5.889L11.091,53h9.818l1.208-12.684C22.634,40.737,23.283,41,24,41c0.486,0,0.939-0.127,1.345-0.333  L27.091,59h9.818l1.746-18.333C39.061,40.873,39.514,41,40,41c0.717,0,1.366-0.263,1.883-0.684L43.091,53h9.818l0.656-6.889  C58.243,47.779,61,49.943,61,52C61,56.257,49.09,61,32,61z"></path></svg>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-8 pl-4 pr-4 text-center text-md-left align-items-center justify-content-center">
+                <h3 data-aos="fade-up" data-t="about" class="pt-2">
+                  O ekipi
+                </h3>
+                <p data-aos="fade-up" data-t="about-desc">
+                  S Consulom upravlja Danes je nov dan, Inštitut za druga vprašanja.
+                </p>
+                <p data-aos="fade-up">
+                  <a href="about" data-t="about-link">DJND ekipa</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid spaced-container-sm">
+      <div class="container">
+        <div class="footer" data-aos="fade">
+          <div class="row text-center justify-content-around">
+            <div class="col-12 col-lg-3 footer-col">
+              <div>
+                <p class="mb-2" data-t="developed-by">Developed by</p>
+                <a href="https://danesjenovdan.si/" target="_blank" class="djnd-link">
+                  <!--<span class="djnd"></span>-->
+                  <img src="img/djndlogo_consul.svg" alt="DJND logo">
+                </a>
+              </div>
+              <div class="mt-3 terms-footer-link">
+                <a href="/terms" data-t="terms-of-use">Terms of use</a>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3 footer-col">
+              <p class="mb-2">
+                <span class="heart"></span><br>
+                <span data-t="open-source">Consul is, and always will be, free and open-source.</span>
+              </p>
+              <p>
+                <a href="https://github.com/danesjenovdan" target="_blank" class="btn btn-primary rounded-0 github">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="141 0 487 132"><path d="M236.375 55.583h-40.356a1.887 1.887 0 0 0-1.886 1.888V77.2a1.89 1.89 0 0 0 1.886 1.89h15.742v24.513s-3.534 1.205-13.308 1.205c-11.529 0-27.636-4.213-27.636-39.632 0-35.424 16.772-40.085 32.518-40.085 13.63 0 19.501 2.398 23.238 3.554 1.175.36 2.26-.808 2.26-1.85l4.502-19.064c0-.487-.166-1.075-.72-1.474-1.518-1.081-10.775-6.261-34.162-6.261-26.94 0-54.576 11.461-54.576 66.563 0 55.101 31.64 63.312 58.303 63.312 22.076 0 35.468-9.434 35.468-9.434.552-.305.612-1.076.612-1.43V57.47a1.887 1.887 0 0 0-1.885-1.888M444.353 6.597A1.88 1.88 0 0 0 442.48 4.7h-22.723a1.89 1.89 0 0 0-1.881 1.897l.006 43.914h-35.42V6.597a1.882 1.882 0 0 0-1.874-1.897h-22.722a1.889 1.889 0 0 0-1.877 1.897v118.904c0 1.05.844 1.903 1.877 1.903h22.722c1.04 0 1.874-.853 1.874-1.903V74.643h35.42l-.062 50.858c0 1.05.842 1.903 1.882 1.903h22.776c1.042 0 1.874-.853 1.876-1.903V6.597M279.253 22.2c0-8.181-6.558-14.793-14.652-14.793-8.085 0-14.65 6.612-14.65 14.793 0 8.175 6.565 14.804 14.65 14.804 8.094 0 14.652-6.63 14.652-14.804m-1.623 78.22V45.533a1.89 1.89 0 0 0-1.88-1.894h-22.653c-1.038 0-1.968 1.072-1.968 2.113v78.636c0 2.31 1.44 2.999 3.303 2.999h20.408c2.24 0 2.79-1.1 2.79-3.036V100.42m253.08-56.603h-22.55c-1.033 0-1.876.854-1.876 1.902v58.302s-5.729 4.191-13.86 4.191c-8.129 0-10.286-3.69-10.286-11.65V45.718c0-1.048-.84-1.902-1.876-1.902h-22.886c-1.032 0-1.878.854-1.878 1.902v54.693c0 23.647 13.178 29.43 31.308 29.43 14.874 0 26.866-8.215 26.866-8.215s.571 4.33.83 4.844c.257.512.93 1.029 1.658 1.029l14.559-.065a1.894 1.894 0 0 0 1.879-1.898l-.008-79.818a1.892 1.892 0 0 0-1.882-1.902m52.737 64.324c-7.821-.237-13.126-3.787-13.126-3.787V66.7s5.233-3.208 11.654-3.782c8.12-.726 15.944 1.726 15.944 21.096 0 20.426-3.53 24.458-14.472 24.127zm8.894-66.993c-12.807 0-21.518 5.714-21.518 5.714V6.597c0-1.049-.84-1.897-1.874-1.897h-22.788a1.887 1.887 0 0 0-1.878 1.897v118.904c0 1.05.842 1.903 1.88 1.903h15.811c.712 0 1.25-.367 1.65-1.01.393-.64.96-5.482.96-5.482s9.317 8.83 26.955 8.83c20.71 0 32.586-10.503 32.586-47.154 0-36.652-18.968-41.441-31.784-41.441m-249.403 2.481h-17.045l-.026-22.517c0-.854-.44-1.279-1.425-1.279h-23.227c-.904 0-1.388.397-1.388 1.265v23.27s-11.64 2.809-12.428 3.037c-.782.227-1.36.95-1.36 1.812v14.623c0 1.052.84 1.9 1.879 1.9h11.91v35.178c0 26.13 18.327 28.696 30.694 28.696 5.652 0 12.412-1.814 13.528-2.226.675-.248 1.067-.948 1.067-1.706l.02-16.086c0-1.048-.887-1.898-1.884-1.898-.995 0-3.535.404-6.151.404-8.373 0-11.21-3.892-11.21-8.932V65.74h17.046c1.039 0 1.88-.848 1.88-1.9V45.523c0-1.05-.841-1.895-1.88-1.895" fill="currentColor"/></svg>
+                </a>
+              </p>
+            </div>
+            <div class="col-12 col-lg-4 footer-col part-of">
+              <p class="mb-2" data-t="part-of">
+                We are part of
+              </p>
+              <div class="row">
+                <div class="col align-items-center d-flex logo">
+                  <a href="https://consulproject.org/en/" target="_blank">
+                    <img src="img/consul_logo@1.5x.png" alt="Consul logo" class="img-fluid">
+                  </a>
+                </div>
+                <div class="col align-items-center d-flex logo">
+                  <a href="https://consulfoundation.org/" target="_blank">
+                    <img src="img/CONSUL_DEMOCRACY_foundation@1.5x.png" alt="Consul Democracy foundation logo" class="img-fluid">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <script type="module" src="./js/index.js"></script>
+</body>
+</html>
