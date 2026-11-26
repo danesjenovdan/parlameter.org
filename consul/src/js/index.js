@@ -17,7 +17,7 @@ if (window.NodeList && !NodeList.prototype.forEach) {
 // ---
 // Animate/fade in elements on scroll
 // ---
-AOS.init({ duration: 800 });
+// AOS.init({ duration: 800 });
 
 // ---
 // Loop text strings
